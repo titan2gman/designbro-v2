@@ -1,0 +1,26 @@
+<tr>
+  <td class='header'>
+    Congrats, your design just got approved on the <%= @project.product_name %> for <%= @project.brand_name %> project. Time to start delivering the files.
+  </td>
+</tr>
+<tr>
+  <td class='text left'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+          Awesome - you just won $<%= @project.winner_prize %>. You will get this credited as soon as you upload the files & get them approved!
+          Not sure what to deliver for this project? Check the <a href='<%= "#{host_url}/d/deliverables" %>'>deliverables guide</a>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td class='padding-bottom-25'>
+    <a href='<%= "#{host_url}/c/projects/#{@project.id}/files" %>' class='main-btn'>
+      Open Project
+
+      <%= image_tag 'arrow_white.png', class: 'arrow' %>
+    </a>
+  </td>
+</tr>

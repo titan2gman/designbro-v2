@@ -1,0 +1,79 @@
+.main-dropdown {
+  position: relative;
+  height: 90px;
+  text-align: left;
+  padding-top: 23px;
+  &:focus {
+    outline: none;
+  }
+  [type='hidden'] {
+    display: none;
+  }
+  .text {
+    display: block;
+    max-width: 100%;
+    font-size: 16px;
+    color: black;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(color(grey-200), 0.5);
+    cursor: pointer;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-bottom: 5px;
+    &.default {
+      color: color(grey-200);
+    }
+  }
+  .menu {
+    min-width: 100%;
+    max-height: 200px;
+    overflow: auto;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0 12px 13px rgba(17, 17, 42, 0.07);
+    border-radius: 8px;
+    visibility: hidden;
+    opacity: 0;
+    padding: 20px 15px 10px;
+
+    &.visible {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  .item {
+    display: block;
+    font-size: 13px;
+    color: black;
+    cursor: pointer;
+    &:hover {
+      color: color(green-500);
+    }
+  }
+  .dropdown.icon {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 5px solid rgba(color(grey-450), 0.5);
+    border-left: 3.5px solid transparent;
+    border-right: 3.5px solid transparent;
+    pointer-events: none;
+  }
+}
+
+.main-dropdown-sm {
+  .text {
+    font-size: 12px;
+    border-bottom-color: transparent;
+  }
+  .dropdown.icon {
+    top: 38px;
+  }
+}

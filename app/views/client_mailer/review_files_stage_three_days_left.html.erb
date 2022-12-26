@@ -1,0 +1,25 @@
+<tr>
+  <td class='header'>
+    Hey - time to check out your design files
+  </td>
+</tr>
+<tr>
+  <td class='text left'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+          Check the files for your project <%= cut_on_word(@project.name) %> by clicking on the link below. In 3 days time, they will be automatically approved, so best to take a quick look now, to make sure everything is there as you would have hoped for!
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td class='padding-bottom-25'>
+    <a href='<%= "#{host_url}/c/projects/#{@project.id}/files" %>' class='main-btn'>
+      Open Project
+
+      <%= image_tag 'arrow_white.png', class: 'arrow' %>
+    </a>
+  </td>
+</tr>

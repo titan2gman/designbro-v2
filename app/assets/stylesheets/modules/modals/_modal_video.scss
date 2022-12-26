@@ -1,0 +1,23 @@
+.modal-video {
+  padding: 15px;
+}
+.modal-video__header {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.modal-video__body {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+.modal-video__content {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

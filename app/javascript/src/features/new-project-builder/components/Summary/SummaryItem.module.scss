@@ -1,0 +1,10 @@
+.summaryItem {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+
+  .summaryItemName {
+    font-size: 16px;
+    color: #0c293f;
+  }
+}

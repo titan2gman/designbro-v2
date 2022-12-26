@@ -1,0 +1,26 @@
+<tr>
+  <td class='header'>
+    Don’t lose your <%= project_type_name(@project) %> for <%= @project.brand_name %>! Be sure you approve the design within the next 24 hours.
+  </td>
+</tr>
+<tr>
+  <td class='text left'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+          The time left on your project is now ending in 24 hours, so don’t risk losing your project, approve the files now!
+          Need just a little more time? Reach out to our support team to purchase additional days.
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td class='padding-bottom-25'>
+    <a href='<%= "#{host_url}/c/projects/#{@project.id}" %>' class='main-btn'>
+      Open Project
+
+      <%= image_tag 'arrow_white.png', class: 'arrow' %>
+    </a>
+  </td>
+</tr>

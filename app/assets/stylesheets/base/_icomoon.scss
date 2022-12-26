@@ -1,0 +1,252 @@
+$icomoon-font-path: "icomoon";
+
+@font-face {
+  font-family: 'icomoon';
+  src:
+      font-url('#{$icomoon-font-path}/icomoon.ttf') format('truetype'),
+      font-url('#{$icomoon-font-path}/icomoon.woff') format('woff'),
+      font-url('#{$icomoon-font-path}/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin icon-base {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  @include icon-base;
+}
+
+$icon-check-outside-circle: "\e933";
+$icon-time-ago-circle: "\e932";
+$icon-ellipsis: "\e931";
+$icon-circle: "\e92f";
+$icon-clock: "\e930";
+$icon-color-bucket: "\e92e";
+$icon-plus-circle: "\e92c";
+$icon-check-circle: "\e901";
+$icon-cross-circle: "\e902";
+$icon-arrow-up: "\e92d";
+$icon-star: "\e92b";
+$icon-search: "\e929";
+$icon-arrow-left-circle: "\e92a";
+$icon-arrow-down-circle: "\e926";
+$icon-arrow-down-long: "\e923";
+$icon-play-circle: "\e924";
+$icon-arrow-right-circle: "\e925";
+$icon-packaging: "\e926";
+$icon-logo: "\e927";
+$icon-branding: "\e928";
+$icon-steps: "\e91f";
+$icon-medal: "\e920";
+$icon-cup: "\e921";
+$icon-flag-10: "\e922";
+$icon-menu: "\e917";
+$icon-preview: "\e908";
+$icon-fullsize: "\e90c";
+$icon-cross: "\e912";
+$icon-caret: "\e913";
+$icon-arrow-down: "\e914";
+$icon-arrow-left: "\e91d";
+$icon-arrow-right: "\e915";
+$icon-arrow-right-long: "\e916";
+$icon-arrow-left-long: "\e927";
+$icon-check: "\e900";
+$icon-check-circle: "\e901";
+$icon-download: "\e903";
+$icon-download-light: "\e904";
+$icon-upload-light: "\e905";
+$icon-eye-crossed: "\e906";
+$icon-info-circle: "\e907";
+$icon-message: "\e90b";
+$icon-bell: "\e909";
+$icon-trash: "\e90a";
+$icon-g-plus: "\e90d";
+$icon-fb-circle: "\e90e";
+$icon-instagram-circle: "\e90f";
+$icon-pinterest-circle: "\e910";
+$icon-twitter-circle: "\e911";
+$icon-warn: "\e918";
+$icon-warn-triangle: "\e91c";
+$icon-landscape: "\e919";
+$icon-time: "\e91a";
+$icon-person: "\e91b";
+$icon-eye: "\e91e";
+
+.icon-check-outside-circle:before {
+  content: $icon-check-outside-circle;
+}
+.icon-time-ago-circle:before {
+  content: $icon-time-ago-circle;
+}
+.icon-ellipsis:before {
+  content: $icon-ellipsis;
+}
+.icon-circle:before {
+  content: $icon-circle;
+}
+.icon-clock:before {
+  content: $icon-clock;
+}
+.icon-color-bucket:before {
+  content: $icon-color-bucket;
+}
+.icon-plus-circle:before {
+  content: $icon-plus-circle;
+}
+.icon-check-circle:before {
+  content: $icon-check-circle;
+}
+.icon-cross-circle:before {
+  content: $icon-cross-circle;
+}
+.icon-arrow-up:before {
+  content: $icon-arrow-up;
+}
+.icon-star:hover {
+  cursor: pointer;
+}
+.icon-star:before {
+  content: $icon-star;
+}
+.icon-search:before {
+  content: $icon-search;
+}
+.icon-arrow-left-circle:before {
+  content: $icon-arrow-left-circle;
+}
+.icon-arrow-down-circle:before {
+  content: $icon-arrow-down-circle;
+}
+.icon-arrow-down-long:before {
+  content: $icon-arrow-down-long;
+}
+.icon-play-circle:before {
+  content: $icon-play-circle;
+}
+.icon-arrow-right-circle:before {
+  content: $icon-arrow-right-circle;
+}
+.icon-packaging:before {
+  content: $icon-packaging;
+}
+.icon-logo:before {
+  content: $icon-logo;
+}
+.icon-branding:before {
+  content: $icon-branding;
+}
+.icon-steps:before {
+  content: $icon-steps;
+}
+.icon-medal:before {
+  content: $icon-medal;
+}
+.icon-cup:before {
+  content: $icon-cup;
+}
+.icon-flag-10:before {
+  content: $icon-flag-10;
+}
+.icon-eye:before {
+  content: $icon-eye;
+}
+.icon-landscape:before {
+  content: $icon-landscape;
+}
+.icon-time:before {
+  content: $icon-time;
+}
+.icon-person:before {
+  content: $icon-person;
+}
+.icon-warn:before {
+  content: $icon-warn;
+}
+.icon-warn-triangle:before {
+  content: $icon-warn-triangle;
+}
+.icon-menu:before {
+  content: $icon-menu;
+}
+.icon-preview:before {
+  content: $icon-preview;
+}
+.icon-fullsize:before {
+  content: $icon-fullsize;
+}
+.icon-cross:before {
+  content: $icon-cross;
+}
+.icon-caret:before {
+  content: $icon-caret;
+}
+.icon-arrow-left:before {
+  content: $icon-arrow-left;
+}
+.icon-arrow-right:before {
+  content: $icon-arrow-right;
+}
+.icon-arrow-right-long:before {
+  content: $icon-arrow-right-long;
+}
+.icon-arrow-left-long:before {
+  content: $icon-arrow-left-long;
+}
+.icon-check:before {
+  content: $icon-check;
+}
+.icon-check-circle:before {
+  content: $icon-check-circle;
+}
+.icon-arrow-down:before {
+  content: $icon-arrow-down;
+}
+.icon-download:before {
+  content: $icon-download;
+}
+.icon-download-light:before {
+  content: $icon-download-light;
+}
+.icon-upload-light:before {
+  content: $icon-upload-light;
+}
+.icon-eye-crossed:before {
+  content: $icon-eye-crossed;
+}
+.icon-info-circle:before {
+  content: $icon-info-circle;
+}
+.icon-message:before {
+  content: $icon-message;
+}
+.icon-bell:before {
+  content: $icon-bell;
+}
+.icon-trash:before {
+  content: $icon-trash;
+}
+.icon-g-plus:before {
+  content: $icon-g-plus;
+}
+.icon-fb-circle:before {
+  content: $icon-fb-circle;
+}
+.icon-instagram-circle:before {
+  content: $icon-instagram-circle;
+}
+.icon-pinterest-circle:before {
+  content: $icon-pinterest-circle;
+}
+.icon-twitter-circle:before {
+  content: $icon-twitter-circle;
+}

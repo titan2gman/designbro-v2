@@ -1,0 +1,25 @@
+<tr>
+  <td class='header'>
+    Pick your finalists: You only have 1 day left before you lose your project!
+  </td>
+</tr>
+<tr>
+  <td class='text left'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+          Hey, you only have 1 day left to pick 3 finalists for your project: <%= cut_on_word(@project.name) %>. Please do this as quickly as possible, you don’t want to lose your project!
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td class='padding-bottom-25'>
+    <a href='<%= "#{host_url}/c/projects/#{@project.id}" %>' class='main-btn'>
+      Open Project
+
+      <%= image_tag 'arrow_white.png', class: 'arrow' %>
+    </a>
+  </td>
+</tr>

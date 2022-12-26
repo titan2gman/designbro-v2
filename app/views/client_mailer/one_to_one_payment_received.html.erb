@@ -1,0 +1,26 @@
+<tr>
+  <td class='header'>
+    Thank you for your payment. We just need a bit more information on your project before the designers can get started
+  </td>
+</tr>
+<tr>
+  <td class='text left'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+          We can’t wait to get start	ed on your new project for <%= @project.brand.name %>- we just need a little more information. Just click the button below to provide all final information.
+          Once you complete this, your project will be fully live.
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td class='padding-bottom-25'>
+    <a href='<%= "#{host_url}/c/projects/#{@project.id}" %>' class='main-btn'>
+      Open Project
+
+      <%= image_tag 'arrow_white.png', class: 'arrow' %>
+    </a>
+  </td>
+</tr>

@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "attributes"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "attributes": {
+            "type": "object",
+            "required": [
+              "description",
+              "workType",
+              "designerId",
+              "url",
+              "fileId"
+            ],
+            "properties": {
+              "description": {
+                "type": "string"
+              },
+              "workType": {
+                "type": "string"
+              },
+              "designerId": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "fileId": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

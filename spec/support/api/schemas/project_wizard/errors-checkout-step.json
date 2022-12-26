@@ -1,0 +1,48 @@
+{
+  "type": "object",
+  "required": [
+    "errors"
+  ],
+  "properties": {
+    "errors": {
+      "type": "object",
+      "required": [
+        "last_name",
+        "first_name",
+        "country_code"
+      ],
+      "properties": {
+        "city": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "country_code": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "address1": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "last_name": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "first_name": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

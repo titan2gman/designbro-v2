@@ -1,0 +1,33 @@
+<tr>
+  <td class='text left'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+          This client timed out in the design stage:
+          <br />
+          <br />
+          Client name: <%= @client.name %>
+          <br />
+          Phone: <%= @client.company.phone %>
+          <br />
+          Email: <%= @client.email %>
+          <br />
+          <br />
+          of designs entered into the competition
+          <br />
+          <br />
+          <% @designers.each do |designer| %>
+            Designer name: <%= designer.name %>
+            <br />
+            Email: <%= designer.email %>
+            <br />
+            <br />
+          <% end %>
+          Last time logged in: <%= @client.last_seen_at %>
+          <br />
+          Method of Payment: <%= @payment_type.to_s.humanize %>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

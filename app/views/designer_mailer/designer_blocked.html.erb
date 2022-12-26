@@ -1,0 +1,31 @@
+<tr>
+  <td class='header'>
+    The client decided to block you.
+  </td>
+</tr>
+
+<tr>
+  <td class='text'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+
+          <%= I18n.t('designer_mailer.designer_blocked.message',
+                     display_name: @designer.name,
+                     project_name: @project.name,
+                     reason: I18n.t("designer_mailer.designer_blocked.reasons.#{@reason_message}")) %>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td class='text'>
+    <a href='<%= "#{host_url}/d" %>' class='main-btn'>
+      Dashboard
+
+      <%= image_tag 'arrow_white.png', class: 'arrow' %>
+    </a>
+  </td>
+</tr>

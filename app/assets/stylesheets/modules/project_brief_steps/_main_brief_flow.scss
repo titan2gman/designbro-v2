@@ -1,0 +1,43 @@
+.bfs-subheader__title {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.bfs-subheader__hint {
+  font-size: 13px;
+  color: rgba(black, 0.5);
+  letter-spacing: 0.4px;
+  line-height: 1.8;
+}
+.bfs-content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.bfs-hint__text {
+  font-size: 13px;
+  line-height: 1.5;
+  color: color(grey-200);
+}
+.bfs-subhint__text {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+@include media-breakpoint-up(lg) {
+  .bfs-subheader__title {
+    margin-bottom: 5px;
+  }
+  .bfs-content {
+    padding-bottom: 70px;
+  }
+  .bfs-slider-row__text-first {
+    text-align: right;
+  }
+  .bfs-slider-row__text {
+    width: calc(100% / 3);
+  }
+  .bfs-content__info-width {
+    width: calc(100% / 3);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

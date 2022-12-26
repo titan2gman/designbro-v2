@@ -1,0 +1,39 @@
+.details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 150px;
+  margin-top: 90px;
+
+  .heading {
+    font-weight: 800;
+    line-height: 1.2;
+    font-size: 26px;
+    color: #0c293f;
+    margin-bottom: 30px;
+    align-self: flex-start;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .totals {
+    max-width: 370px;
+    margin-left: 50px;
+    margin-top: 58px;
+
+    .totalsHeading {
+      font-size: 26px;
+      font-weight: 700;
+      color: #0c293f;
+      margin-bottom: 35px;
+    }
+  }
+
+  .input {
+    margin: 10px 0;
+  }
+}

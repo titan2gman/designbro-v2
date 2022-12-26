@@ -1,0 +1,42 @@
+<tr>
+  <td class='header'>
+    Hi <%= @full_name %>,
+  </td>
+</tr>
+
+<tr>
+  <td class='text left'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+          We are constantly making things better over at DesignBro, most of the time
+          this means adding new things, but occasionally it’s also deleting features.
+
+          <br />
+          <br />
+
+          Currently we are removing the ‘login with Google’ feature
+          on our site, as not enough people seem to use it.
+
+          <br />
+          <br />
+
+          Please visit
+
+          <%= link_to 'restore password page', "#{host_url}/restore-password" %>
+
+          to restore your password. After this, you are
+          good to go again. Thank you for your cooperation!
+          <br />
+
+          <br />
+          <br />
+
+          Best,
+          <br />
+          Chris
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

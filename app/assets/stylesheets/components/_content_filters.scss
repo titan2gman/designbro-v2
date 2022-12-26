@@ -1,0 +1,14 @@
+.content-filter {
+  display: inline-block;
+  font-size: 12px;
+  color: black;
+  cursor: pointer;
+  border-radius: 15px;
+  text-align: center;
+  padding: 8px 18px;
+}
+.content-filter--active {
+  color: white;
+  background-color: black;
+  cursor: default;
+}

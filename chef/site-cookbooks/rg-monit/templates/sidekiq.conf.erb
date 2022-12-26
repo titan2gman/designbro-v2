@@ -1,0 +1,5 @@
+check process sidekiq with pidfile <%= @project_root %>/current/tmp/pids/sidekiq.pid
+  start program = "/bin/su - deployer -lc 'cd <%= @project_root %>/current && /usr/local/bin/bundle exec sidekiq --index 0 --pidfile <%= @project_root %>/shared/tmp/pids/sidekiq.pid --environment <%= node.environment %> --logfile <%= @project_root %>/shared/log/sidekiq.log -d'"
+    with timeout 30 seconds
+  stop program  = "/bin/su - deployer -lc 'cd <%= @project_root %>/current && /usr/local/bin/bundle exec sidekiqctl stop <%= @project_root %>/shared/tmp/pids/sidekiq.pid'"
+    with timeout 30 seconds

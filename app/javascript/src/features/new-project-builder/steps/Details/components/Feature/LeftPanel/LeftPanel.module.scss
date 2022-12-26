@@ -1,0 +1,20 @@
+.leftPanel {
+  display: flex;
+  align-items: flex-start;
+  padding-right: 25px;
+  min-width: 330px;
+
+  &.rightBorder {
+    border-right: 1px solid #ccd2d7;
+  }
+
+  &.noIcon {
+    padding-left: 25px;
+  }
+
+  .featureIcon {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+  }
+}

@@ -1,0 +1,81 @@
+.btn {
+  display: block;
+  background-color: #60f5b5;
+  border: 2px solid #60f5b5;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 100px;
+
+  &:hover {
+    background-color: #fff;
+    color: #60f5b5;
+    border: 2px solid #60f5b5;
+  }
+
+  &:global {
+    &.active {
+      background-color: #60f5b5;
+      color: #fff;
+    }
+  }
+
+  &.add {
+    border-radius: 20px;
+    padding: 8px;
+    height: 40px;
+    min-width: 100px;
+    background-color: #fff;
+    color: #60f5b5;
+    font-size: 16px;
+    font-weight: 700;
+
+    transition-duration: 0.2s;
+    transition-property: background-color, color, display, border;
+    transition-timing-function: ease-in-out;
+
+    &:before {
+      content: "Add";
+    }
+
+    &:not(:disabled):hover {
+      background-color: #60f5b5;
+
+      &:before {
+        color: #fff;
+      }
+    }
+
+    &:disabled {
+      color: #ccd2d7;
+      border-color: #ccd2d7;
+      cursor: default;
+    }
+
+    &.added {
+      &:before {
+        content: "Added";
+      }
+
+      &:hover:not(:disabled):before {
+        content: "Remove";
+      }
+    }
+  }
+}
+
+.disabled {
+  color: #ccd2d7 !important;
+  cursor: not-allowed;
+  background-color: #fff;
+  border: 2px solid #ccd2d7;
+  color: #fff;
+  &:hover {
+    border: 2px solid #ccd2d7;
+  }
+}
+
+.waiting {
+  cursor: wait !important;
+}

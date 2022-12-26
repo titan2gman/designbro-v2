@@ -1,0 +1,25 @@
+<tr>
+  <td class='header'>
+    Action needed: you only have 1 day left to upload your files for the project: <%= cut_on_word(@project.name) %>
+  </td>
+</tr>
+<tr>
+  <td class='text left'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+          Don’t risk out on losing out on your $<%= @project.winner_prize %> prize. All you have to do is upload your design files; do it now!
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td class='padding-bottom-25'>
+    <a href='<%= "#{host_url}/d/projects/#{@project.id}/files" %>' class='main-btn'>
+      Open Project
+
+      <%= image_tag 'arrow_white.png', class: 'arrow' %>
+    </a>
+  </td>
+</tr>

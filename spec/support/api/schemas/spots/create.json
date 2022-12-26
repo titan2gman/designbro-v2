@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": [
+        "id",
+        "type",
+        "attributes"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "object",
+          "required": [
+            "state",
+            "designerName",
+            "uploadedFile",
+            "finalist",
+            "createdAt"
+          ],
+          "properties": {
+            "state": {
+              "type": "string"
+            },
+            "designerName": {
+              "type": "string"
+            },
+            "uploadedFile": {
+              "type": "string | null"
+            },
+            "finalist": {
+              "type": "bool"
+            },
+            "createdAt": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<tr>
+  <td class='header'>
+    Fantastic! The client approved your files for project <%= cut_on_word(@project.name) %> - You won $<%= @project.winner_prize %>
+  </td>
+</tr>
+<tr>
+  <td class='text left'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+          The winnings will be credited to your account! Don’t forget to enrol for other contests to keep a steady flow of winnings.
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td class='padding-bottom-25'>
+    <a href='<%= "#{host_url}/d/discover" %>' class='main-btn'>
+      Discover new projects
+
+      <%= image_tag 'arrow_white.png', class: 'arrow' %>
+    </a>
+  </td>
+</tr>

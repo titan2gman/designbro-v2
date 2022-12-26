@@ -1,0 +1,150 @@
+.pointer-events-none {
+  pointer-events: none;
+  cursor: none;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.relative {
+  position: relative;
+}
+.align-middle {
+  vertical-align: middle;
+}
+.align-center {
+  align-items: center;
+}
+.flex {
+  display: flex;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.direction-column {
+  flex-direction: column;
+}
+.space-between {
+  justify-content: space-between;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.no-shrink {
+  flex-shrink: 0;
+}
+.justify-center {
+  justify-content: center;
+}
+.inline-block {
+  display: inline-block;
+}
+.rotate-180 {
+  transform: rotate(180deg);
+  transform-origin: center;
+}
+.text-underline {
+  text-decoration: underline;
+}
+.text-underline-hover:hover {
+  text-decoration: underline;
+}
+.is-invisible {
+  visibility: hidden;
+}
+.is-visible {
+  visibility: visible !important;
+}
+.no-wrap {
+  white-space: nowrap;
+}
+.color-inherit {
+  color: inherit;
+}
+.semi-transparent {
+  opacity: 0.5;
+}
+.width-full {
+  width: 100%;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.cursor--not-allowed {
+  cursor: not-allowed;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.m-auto {
+  margin: auto;
+}
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+.align-items-start {
+  align-items: flex-start;
+}
+.error {
+  font-size: 13px;
+}
+.hidden {
+  display: none;
+}
+.pre-wrap {
+  white-space: pre-wrap;
+}
+.text-icon-info {
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+.word-break {
+   overflow-wrap: break-word;
+   word-break: break-word;
+ }
+.l-h-1-7 {
+  line-height: 1.7;
+}
+.font-500 {
+  font-weight: 500;
+}
+.width-100 {
+  width: 100%;
+}
+
+@each $side in (left, right, center) {
+  .text-#{$side} {
+    text-align: $side !important;
+  }
+}
+@each $size in (20) {
+  .max-#{$size} {
+    max-width: #{$size * 10}px !important;
+  }
+}
+@each $font in (6, 8, 10, 11, 12, 13, 14, 16, 17, 18, 20, 22, 24, 36, 40, 60) {
+  .font-#{$font} {
+    font-size: #{$font}px !important;
+  }
+}
+@each $size in (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55) {
+  @each $prop in (b: bottom, l: left, r: right) {
+    .m-#{nth($prop, 1)}-#{$size} {
+      margin-#{nth($prop, 2)}: #{$size}px !important;
+    }
+  }
+}
+@each $size in (10, 20, 30, 40) {
+  @each $prop in (t: top, b: bottom, l: left, r: right) {
+    .p-#{nth($prop, 1)}-#{$size} {
+      padding-#{nth($prop, 2)}: #{$size}px !important;
+    }
+  }
+}

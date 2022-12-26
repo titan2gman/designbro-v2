@@ -1,0 +1,23 @@
+.new-project-finish-step,
+.brief-section,
+.settings__content,
+.bfs-stock-images-block {
+  .popover__trigger {
+    font-size: 12px;
+    margin-left: 10px;
+    color: #ccc;
+  }
+
+  .popover__content {
+    margin-left: 20px;
+
+    p {
+      background: #fff;
+      color: #ccc;
+      font-size: 12px;
+      padding: 10px;
+      width: 300px;
+      margin-bottom: 0;
+    }
+  }
+}

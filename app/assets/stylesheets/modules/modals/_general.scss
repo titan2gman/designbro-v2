@@ -1,0 +1,41 @@
+.main-modal {
+  border-radius: 8px;
+  padding: 0;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5) !important;
+}
+.main-modal__inset {
+  padding: 50px 25px 20px;
+}
+.ui.dimmer {
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: none;
+}
+.modal-close {
+  color: color(grey-200);
+  font-size: 12px;
+  padding: 5px;
+  cursor: pointer;
+  &:hover {
+    color: black;
+  }
+}
+.modal__actions--top {
+  padding: 0 10px 15px;
+}
+.modal__actions--top-right {
+  text-align: right;
+  padding: 0 10px 15px;
+}
+.modal__actions--bottom-right {
+  text-align: right;
+  padding: 0 10px 15px;
+}
+
+@include media-breakpoint-up(md) {
+  .modal__actions--top-right {
+    padding: 25px 20px 5px;
+  }
+  .main-modal--xs {
+    max-width: 640px!important;
+  }
+}

@@ -1,0 +1,51 @@
+.rightPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &.designerCounter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .numberWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 34px;
+    margin-right: 10px;
+
+    .counter {
+      font-size: 58px;
+      line-height: 100px;
+      font-weight: 700;
+      color: #0c293f;
+      margin: 0 14px 0;
+    }
+
+    .counterButton {
+      width: 22px;
+      height: 22px;
+      background-color: transparent;
+      border-radius: 50%;
+      border: 2px solid #ccd2d7;
+      color: #ccd2d7;
+      font-size: 25px;
+      padding: 0;
+      line-height: 20px;
+      vertical-align: middle;
+      font-weight: 500;
+
+      &:disabled {
+        color: #fff;
+        background-color: #a4afb8;
+        border: none;
+      }
+
+      &:hover:not(:disabled) {
+        box-shadow: 0 1px 3px 0 rgba(164, 175, 184, 0.75);
+      }
+    }
+  }
+}

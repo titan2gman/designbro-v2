@@ -1,0 +1,40 @@
+.home-start-project {
+  text-align: center;
+  padding-top: 165px;
+  padding-bottom: 135px;
+}
+.home-start-project__link {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  line-height: 1.4;
+}
+.home-start-project__link-text {
+  display: inline-block;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+}
+
+@include media-breakpoint-up(lg) {
+  .home-start-project {
+    padding-top: 165px;
+    padding-bottom: 75px;
+  }
+  .home-start-project__icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+  .home-start-project__icon {
+    height: 80px;
+    opacity: 0.4;
+    margin-right: 90px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  .home-start-project__link-text {
+    margin-bottom: 15px;
+  }
+}

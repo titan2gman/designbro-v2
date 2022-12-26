@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": ["id", "type", "attributes"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "object",
+          "required": ["value", "beginDate", "endDate", "discountType", "usedNum", "maxNum"],
+          "properties": {
+            "value": {
+              "type": "stirng"
+            },
+            "beginDate": {
+              "type": "stirng"
+            },
+            "endDate": {
+              "type": "stirng"
+            },
+            "discountType": {
+              "type": "stirng"
+            },
+            "usedNum": {
+              "type": "stirng"
+            },
+            "maxNum": {
+              "type": "stirng"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": ["id", "type", "attributes"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "object",
+          "required": [
+            "address1",
+            "city",
+            "countryCode",
+            "firstName",
+            "lastName",
+            "email"
+          ],
+          "properties": {
+            "email": {
+              "type": "string"
+            },
+            "zip": {
+              "type": "string"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "adddress1": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "firstName": {
+              "type": "string"
+            },
+            "lastName": {
+              "type": "string"
+            },
+            "countryCode": {
+              "type": "string"
+            },
+            "stateName": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

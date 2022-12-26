@@ -1,0 +1,21 @@
+.explainer-video-section {
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.explainer-video-section__title {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+@include media-breakpoint-up(lg) {
+  .explainer-video-section {
+    padding: 70px $homepage-narrow-container-indent-x-lg;
+  }
+  .explainer-video-section__title {
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+}

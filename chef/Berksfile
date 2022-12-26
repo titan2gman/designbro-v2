@@ -1,0 +1,22 @@
+source 'https://supermarket.chef.io'
+
+cookbook 'chef_hostname'
+cookbook 'firewall'
+cookbook 'imagemagick'
+cookbook 'monit'
+cookbook 'nginx'
+cookbook 'nodejs'
+cookbook 'openssh'
+cookbook 'postgresql_lwrp'
+cookbook 'ruby_build'
+cookbook 'sudo'
+cookbook 'swap_tuning'
+cookbook 'users'
+cookbook 'logrotate'
+
+# dependencies for the local cookbooks
+cookbook 'git'
+cookbook 'zsh'
+
+# third-party cookbooks
+cookbook 'redis', git: 'git://github.com/phlipper/chef-redis.git'

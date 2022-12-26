@@ -1,0 +1,75 @@
+.form {
+  padding-top: 50px;
+  margin-top: 280px;
+  background: #eff1f3;
+  flex: 1;
+}
+
+.content {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 950px;
+  padding: 0 12px;
+  margin-top: -280px;
+}
+
+.questionWrapper {
+  max-width: 950px;
+  flex: 1;
+}
+
+.hint {
+  color: #0c293f;
+  max-width: 425px;
+}
+
+.brandExamples {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+  padding-bottom: 100px;
+  justify-content: center;
+}
+
+.validationWrapper {
+  display: inline-block;
+}
+
+.validationLabel {
+  display: inline-block;
+  margin-left: 15px;
+  color: #a4afb8;
+  font-weight: 500;
+}
+
+.validationMaxCount {
+  color: #ccd2d7;
+}
+
+.popup {
+  text-align: center !important;
+  color: #a4afb8 !important;
+  font-size: 13px !important;
+  border: 0 !important;
+  box-shadow: 0 3px 10px 0 rgba(164, 175, 184, 0.75) !important;
+
+  &:before {
+    box-shadow: none !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    padding: 0 20px;
+  }
+
+  .progressBarWrapper {
+    display: none;
+  }
+  .selectedLabel {
+    display: none;
+  }
+  .questionWrapper {
+    padding-top: 50px;
+  }
+}

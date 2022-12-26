@@ -1,0 +1,16 @@
+{
+  "name": "production",
+  "environment": "production",
+  "project": {
+    "branch": "production"
+  },
+  "run_list": [
+    "role[setup]",
+    "role[database]",
+    "role[web]",
+    "role[security]"
+  ],
+  "automatic": {
+    "ipaddress": "54.154.43.212"
+  }
+}

@@ -1,0 +1,15 @@
+.rating-stars {
+  font-size: 18px;
+  > i {
+    margin-right: 5px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+.rating-stars--lg {
+  font-size: 26px;
+  > i {
+    margin-right: 10px;
+  }
+}

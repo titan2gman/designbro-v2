@@ -1,0 +1,28 @@
+#!/usr/bin/env puma
+
+directory '<%= @project_root %>/current'
+rackup '<%= @project_root %>/current/config.ru'
+environment '<%= @environment %>'
+
+pidfile '<%= @project_root %>/shared/tmp/pids/puma.pid'
+state_path '<%= @project_root %>/shared/tmp/pids/puma.state'
+stdout_redirect '<%= @project_root %>/shared/log/puma.error.log', '<%= @project_root %>/shared/log/puma.access.log', true
+
+threads 4, 16
+
+bind 'unix://<%= @project_root %>/shared/tmp/sockets/puma.sock'
+
+workers 0
+
+preload_app!
+
+on_restart do
+  puts 'Refreshing Gemfile'
+  ENV['BUNDLE_GEMFILE'] = '<%= @project_root %>/current/Gemfile'
+end
+
+on_worker_boot do
+  ActiveSupport.on_load(:active_record) do
+    ActiveRecord::Base.establish_connection
+  end
+end

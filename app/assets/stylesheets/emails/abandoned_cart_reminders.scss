@@ -1,0 +1,193 @@
+.abandoned-cart-reminder {
+  .subheader {
+    padding: 30px;
+
+    p {
+      text-align: center;
+      line-height: 1.65;
+    }
+  }
+
+  .project-details {
+    line-height: 1.75;
+    font-weight: bold;
+    padding: 30px 0;
+
+    .brand-name {
+      td {
+        border-bottom: 1px solid color(dark-grey);
+        font-weight: 800;
+      }
+    }
+    .total {
+      td {
+        border-top: 1px solid color(dark-grey);
+        font-weight: 800;
+      }
+    }
+  }
+
+  .old-price {
+    text-decoration: line-through;
+  }
+
+  .rating {
+    height: 12px;
+    width: 75px;
+    background-image: image-url("emails/shared/stars.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .review {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+
+  .author {
+    font-size: 9px;
+    line-height: 1.25;
+  }
+
+  .testimonials {
+    td.first-review {
+      padding: 0 40px;
+      border-right: 1px solid color(border-grey);
+    }
+    td.last-review {
+      padding: 0 40px;
+    }
+  }
+
+  .money-back-guarantee {
+    background-image: image-url("emails/shared/moneybackguarantee.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 85px;
+  }
+
+  .need-help {
+    line-height: 1.5;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &.set-a {
+    @each $reminder in ('first', 'second', 'third') {
+      &.#{$reminder}_reminder {
+        .header {
+          background-image: image-url("emails/abandoned_cart_reminders/#{$reminder}_reminder.png");
+        }
+      }
+    }
+
+    &.third_reminder {
+      .header {
+        background-size: 410px;
+      }
+    }
+  }
+
+  &.set-b {
+    .header {
+      background-image: image-url("emails/abandoned_cart_reminders/set_b_desktop_pattern.png");
+      background-position: left top !important;
+      background-repeat: no-repeat;
+      background-size: cover !important;
+
+      text-align: center;
+
+      h2 {
+        font-weight: 200;
+        line-height: 1.36;
+      }
+    }
+
+    .arrow {
+      display: inline-block;
+      margin: 0 20px;
+    }
+
+    .brand-name,
+    .total {
+      font-weight: bold;
+    }
+
+    .subheader {
+      font-weight: bold;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .first-review-sm {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width:575px) {
+    &.set-a {
+      @each $reminder in ('first', 'second', 'third') {
+        &.#{$reminder}_reminder {
+          .header {
+            background-image: none !important;
+          }
+        }
+      }
+    }
+
+    &.set-b {
+      .header {
+        background-image: image-url("emails/abandoned_cart_reminders/set_b_mobile_pattern.png") !important;
+      }
+
+      .first-review {
+        padding: 0 !important;
+      }
+
+      .first-review-sm {
+        display: table-cell !important;
+      }
+    }
+
+    .header {
+      text-align: center;
+
+      .logo {
+        background-position: center !important;
+      }
+    }
+
+    .project-details {
+      padding: 30px 80px !important;
+
+      .first-column,
+      .last-column {
+        display: none;
+      }
+    }
+
+    .testimonials {
+      td.first-review {
+        border-right: none !important;
+      }
+
+      td.last-review {
+        display: none;
+      }
+
+      .review {
+        font-size: 16px !important;
+      }
+
+      .author {
+        font-size: 11px !important;
+      }
+    }
+  }
+}

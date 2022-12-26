@@ -1,0 +1,29 @@
+<tr>
+  <td class='header'>
+    Congrats! <%= @project.creator.display_name %> from <%= @project.brand_name %> has given you a new <%= @project.product_name %> project!
+  </td>
+</tr>
+<tr>
+  <td class='text left'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+          Payment for project: $<%= @project.winner_prize %>
+          Not sure what to deliver for this project? Check <a href='<%= "#{host_url}/d/deliverables" %>' >deliverables guide</a>
+          Make sure you upload your first design within the next 48 hours so we don’t cancel your project.
+
+          Are you unavailable for this project? Please let us know through the chat urgently!
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td class='padding-bottom-25'>
+    <a href='<%= "#{host_url}/c/projects/#{@project.id}" %>' class='main-btn'>
+      Open Project
+
+      <%= image_tag 'arrow_white.png', class: 'arrow' %>
+    </a>
+  </td>
+</tr>

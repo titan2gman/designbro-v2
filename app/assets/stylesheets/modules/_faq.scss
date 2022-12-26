@@ -1,0 +1,30 @@
+.faq-content {
+  padding-top: 20px;
+  padding-bottom: 35px;
+}
+.faq-list {
+  margin-bottom: 50px;
+}
+.faq-list__title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.faq-list__item {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.faq-list__item--sm {
+  font-size: 14px;
+  line-height: 1.7;
+}
+.faq-list__item-link {
+  font-weight: bold;
+  letter-spacing: 0.2px;
+}
+.faq-feedback__text,
+.faq-feedback__text > li {
+  font-size: 14px;
+  line-height: 1.9;
+  letter-spacing: 0.2px;
+}

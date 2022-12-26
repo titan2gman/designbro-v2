@@ -1,0 +1,51 @@
+.brandExampleTileWrapper {
+  background: #fff;
+  width: 212px;
+  height: 212px;
+  margin: 12px;
+  cursor: pointer;
+}
+
+.brandExampleTile {
+  width: 212px;
+  height: 212px;
+  background-size: 115%;
+  box-shadow: 0 3px 5px 0 rgba(164, 175, 184, 0.7);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.selected {
+  box-shadow: 0 0 0 5px #18da8e;
+  color: #4B4B4B;
+  position: relative;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.tick {
+  position: absolute;
+  right: -12px;
+  top: -12px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #18da8e;
+  background-image: url("~new-project-builder/tick-icon-white.svg");
+  background-size: 2em;
+  background-position: center;
+  border: 3px solid #18da8e;
+}
+
+
+@media screen and (max-width: 600px) {
+  .brandExampleTileWrapper,
+  .brandExampleTile {
+    width: 160px;
+    height: 160px;
+  }
+}

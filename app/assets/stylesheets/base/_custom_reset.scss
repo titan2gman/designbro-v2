@@ -1,0 +1,209 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+ol, ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+a img {
+  border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+
+html {
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.2;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(black, 0);
+  -ms-overflow-style: scrollbar;
+}
+body {
+  height: 100%;
+  font-family: $default-font;
+  font-weight: normal;
+  background-color: white;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+}
+b, strong {
+  font-weight: bold;
+}
+i {
+  font-style: italic;
+}
+h1 {
+  font-size: 28px;
+}
+h2 {
+  font-size: 25px;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 12px;
+}
+p, li {
+  font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 10px;
+}
+p, ol, ul, dl, dd, blockquote, pre, figure {
+  margin-bottom: 15px;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="search"] {
+  -webkit-appearance: none;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+[hidden] {
+  display: none !important;
+}
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+[role="button"] {
+  cursor: pointer;
+}
+a,
+area,
+button,
+[role="button"],
+input,
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+}
+label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+button {
+  font-family: inherit;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  padding-left: 0;
+  padding-right: 0;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  line-height: inherit;
+  border-radius: 0;
+}
+textarea {
+  resize: vertical;
+}
+dt {
+  font-weight: bold;
+}
+@at-root {
+  @-ms-viewport { width: device-width; }
+}
+[tabindex="-1"]:focus {
+  outline: none !important;
+}
+abbr[title],
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted grey;
+}
+address {
+  margin-bottom: 15px;
+  font-style: normal;
+  line-height: inherit;
+}
+th {
+  text-align: left;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  -webkit-appearance: listbox;
+}
+legend {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  line-height: inherit;
+}
+input[type="search"] {
+  -webkit-appearance: none;
+}
+[hidden] {
+  display: none !important;
+}
+iframe {
+  max-width: 100%;
+}

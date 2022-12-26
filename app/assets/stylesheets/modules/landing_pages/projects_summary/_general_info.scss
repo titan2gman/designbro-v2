@@ -1,0 +1,103 @@
+.pjsumm-general-info__photo {
+  background-size: cover;
+  background-position: center top;
+  min-height: 300px;
+}
+.pjsumm-general-info__photo-logo {
+  @include background-image-retina('project_logo.jpg', 'project_logo_2x.jpg');
+}
+.pjsumm-general-info__photo-branding {
+  @include background-image-retina('project_branding.jpg', 'project_branding_2x.jpg');
+}
+.pjsumm-general-info__photo-packaging {
+  background-image: image-url('project_packag.jpg');
+}
+.pjsumm-general-info__photo-current-design {
+  background-image: url(/current_design.jpg);
+}
+.pjsumm-general-info__description {
+  padding-top: 65px;
+  padding-bottom: 30px;
+}
+.pjsumm-general-info__description-title {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+.pjsumm-general-info__description-price {
+  display: block;
+}
+.pjsumm-general-info__subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+  padding-left: 8px;
+}
+.pjsumm-general-info__list {
+  line-height: 1.6;
+  color: color(grey-200);
+  margin-bottom: 40px;
+  > li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    &:before {
+      content: '';
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      background-color: black;
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: 2px;
+    }
+  }
+}
+.pjsumm-general-info__list--sm > li {
+  font-size: 13px;
+  line-height: 2;
+  letter-spacing: 0.3px;
+}
+.pjsumm-general-info__btn {
+  margin-bottom: 30px;
+  margin-right: 20px;
+  letter-spacing: 0.8px;
+}
+.pjsumm-general-info__link {
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+@include media-breakpoint-up(lg) {
+  .pjsumm-general-info {
+    display: flex;
+  }
+  .pjsumm-general-info:nth-child(even) .pjsumm-general-info__photo {
+    order: 2;
+  }
+  .pjsumm-general-info--reverse:nth-child(even) .pjsumm-general-info__photo {
+    order: 0;
+  }
+  .pjsumm-general-info--reverse:nth-child(odd) .pjsumm-general-info__photo {
+    order: 2;
+  }
+  .pjsumm-general-info__description {
+    padding: 45px 40px 30px 70px;
+  }
+  .pjsumm-general-info__description-text {
+    padding-right: 10px;
+  }
+  .pjsumm-general-info__description-price {
+    display: inline-block;
+  }
+  .pjsumm-general-info__part-big {
+    width: calc((100% / 2) + 40px);
+  }
+  .pjsumm-general-info__part-small {
+    width: calc((100% / 2) - 40px);
+  }
+}

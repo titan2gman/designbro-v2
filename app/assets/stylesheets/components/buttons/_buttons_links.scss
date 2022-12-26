@@ -1,0 +1,76 @@
+.main-button-link {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  text-align: left;
+  font-family: inherit;
+  cursor: pointer;
+  transition: 0.1s all ease-in-out;
+  overflow: hidden;
+  color: #4B4B4B;
+  * {
+    vertical-align: middle;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.main-button-link--lg {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 6px 0;
+}
+.main-button-link--grey-black {
+  color: color(grey-400);
+  &:hover, &:focus {
+    color: black;
+  }
+}
+.main-button-link--grey-pink {
+  color: color(grey-400);
+  &:hover, &:focus {
+    color: color(green-500);
+  }
+  &[disabled] {
+    color: color(grey-400);
+  }
+}
+.main-button-link--light-grey-pink {
+  color: color(grey-200);
+  &:hover, &:focus {
+    color: color(green-500);
+  }
+}
+.main-button-link--black-pink {
+  color: black;
+  i {
+    color: color(green-500);
+  }
+  &:hover, &:focus {
+    color: color(green-500);
+  }
+}
+.main-button-link--black-grey {
+  color: black;
+  &:hover, &:focus {
+    color: color(grey-200);
+  }
+}
+.main-button-link--pink-black {
+  color: color(green-500);
+  .icon {
+    color: black;
+  }
+  &:hover, &:focus {
+    color: black;
+    .icon {
+      color: color(green-500);
+    }
+  }
+}
+.main-button-link--disabled,
+.main-button-link:disabled {
+  cursor: not-allowed;
+  color: color(grey-200);
+}

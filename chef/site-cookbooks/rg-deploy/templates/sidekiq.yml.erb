@@ -1,0 +1,10 @@
+---
+<%= @environment %>:
+  :verbose: true
+  :logfile: log/sidekiq.log
+  :concurrency:  10
+  :strict: false
+  :pidfile: tmp/pids/sidekiq.pid
+  :queues:
+    - default
+    - mailers

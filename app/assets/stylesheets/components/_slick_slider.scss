@@ -1,0 +1,24 @@
+.main-slider .slick-arrow {
+  $arrow-size: 10px;
+  $arrow-indent-y: 10px;
+  position: absolute;
+  top: 50%;
+  margin-top: -($arrow-size/2 + $arrow-indent-y);
+  font-size: 0;
+  z-index: 1;
+  color: color(green-500);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @include icon-base();
+  &:before {
+    font-size: $arrow-size;
+  }
+  &.slick-prev {
+    left: 0;
+    @extend .icon-arrow-left-long;
+  }
+  &.slick-next {
+    right: 0;
+    @extend .icon-arrow-right-long;
+  }
+}

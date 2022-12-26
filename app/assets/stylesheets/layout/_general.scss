@@ -1,0 +1,12 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.page-main {
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+#root {
+  height: 100%;
+}

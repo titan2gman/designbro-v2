@@ -1,0 +1,19 @@
+.discount {
+  border-top: 1px solid #C2C2C2;
+  padding-top: 5px;
+  display: flex;
+  align-items: baseline;
+}
+
+.label {
+  margin-right: 20px;
+}
+
+.input {
+  flex: 1;
+}
+
+.validation {
+  flex: 0 0 20px;
+  padding-left: 2px;
+}

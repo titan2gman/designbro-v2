@@ -1,0 +1,118 @@
+.modalFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.switchBtn {
+  font-size: 14px;
+  line-height: 1.56;
+  color: #a4afb8;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:before {
+    display: inline-block;
+    margin-right: 4px;
+    content: '\0025C2';
+    text-decoration: none;
+  }
+}
+
+.modal {
+  box-shadow: 0 2px 14px 0 rgba(164, 175, 184, 0.75) !important;
+}
+.modalContent {
+  padding: 1.5rem 3rem !important;
+}
+
+.closeIcon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 10px;
+  padding: 10px;
+  cursor: pointer;
+  color: #ccd2d7;
+}
+
+.brandsList{
+  margin: 25px -10px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.brandTileWrapper {
+  display: inline-block;
+  margin: 10px;
+}
+
+.brandTile {
+  width: 125px;
+  height: 125px;
+  box-shadow: 0px 3px 5px 0px rgba(black, 0.1);
+  border: 3px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.brandName {
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.newBrandTile {
+  background: #a4afb8;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.plusWrapper {
+  text-align: center;
+}
+.plus {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: normal;
+  border: 3px solid #fff;
+  border-radius: 100px;
+  margin-bottom: 8px;
+}
+.newBrandLabel {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.selected {
+  border: 3px solid #18da8e;
+  color: #4B4B4B;
+  box-shadow: 0px 5px 15px 0px rgba(black, 0.15);
+  position: relative;
+}
+
+.tick {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #18da8e;
+  background-image: url("~new-project-builder/tick-icon-white.svg");
+  background-size: 1.5em;
+  background-position: center;
+  border: 3px solid #18da8e;
+}

@@ -1,0 +1,58 @@
+.main-body__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.main-body__title--md {
+  font-size: 36px;
+  font-weight: 700;
+}
+.main-body__title--lg {
+  font-size: 44px;
+  line-height: 1.5;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.main-body__tab-title {
+  position: relative;
+  display: inline-block;
+  color: color(grey-400);
+  cursor: pointer;
+  &:hover {
+    color: black;
+  }
+}
+.main-body__tab-title--active {
+  color: black;
+  cursor: default;
+  .main-body__tab-line {
+    visibility: visible;
+  }
+}
+.main-body__tab-line {
+  position: relative;
+  visibility: hidden;
+  $width: 15px;
+  content: '';
+  display: inline-block;
+  width: $width;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - #{ $width / 2 });
+  background-color: color(green-500);
+}
+
+@include media-breakpoint-up(lg) {
+  .main-body__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .main-body__title--lg {
+    font-size: 66px;
+    line-height: 1.3;
+    margin-bottom: 55px;
+  }
+}

@@ -1,0 +1,111 @@
+DEPENDENCIES
+  chef_hostname
+  firewall
+  git
+  imagemagick
+  logrotate
+  monit
+  nginx
+  nodejs
+  openssh
+  postgresql_lwrp
+  redis
+    git: git://github.com/phlipper/chef-redis.git
+    revision: 7476279fc9c8727f082b8d77b5e1922dc2ef437b
+  ruby_build
+  sudo
+  swap_tuning
+  users
+  zsh
+
+GRAPH
+  7-zip (1.0.2)
+    windows (>= 1.2.2)
+  apt (2.9.2)
+  ark (3.0.0)
+    build-essential (>= 0.0.0)
+    seven_zip (>= 0.0.0)
+    windows (>= 0.0.0)
+  bluepill (2.4.3)
+    rsyslog (>= 2.0)
+  build-essential (2.4.0)
+    7-zip (>= 0.0.0)
+  chef-sugar (3.4.0)
+  chef_hostname (0.5.0)
+  compat_resource (12.19.0)
+  cron (4.1.1)
+    compat_resource (>= 0.0.0)
+  dmg (4.0.0)
+  firewall (2.6.1)
+    chef-sugar (>= 0.0.0)
+  git (6.0.0)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  homebrew (4.1.0)
+  imagemagick (0.2.3)
+  iptables (4.2.0)
+  logrotate (2.2.0)
+  monit (1.0.0)
+    poise (~> 2.0)
+    poise-monit (~> 1.0)
+  multipackage (3.0.30)
+    compat_resource (>= 0.0.0)
+  nginx (2.7.6)
+    apt (~> 2.2)
+    bluepill (~> 2.3)
+    build-essential (~> 2.0)
+    ohai (~> 2.0)
+    runit (~> 1.2)
+    yum-epel (~> 0.3)
+  nodejs (3.0.0)
+    apt (>= 2.9.1)
+    ark (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    homebrew (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  ohai (2.1.0)
+  openssh (2.3.1)
+    iptables (>= 1.0)
+  packagecloud (0.3.0)
+  poise (2.8.1)
+  poise-archive (1.5.0)
+    poise (~> 2.6)
+  poise-languages (2.1.1)
+    poise (~> 2.5)
+    poise-archive (~> 1.0)
+  poise-monit (1.6.0)
+    poise (~> 2.6)
+    poise-languages (~> 2.0)
+    poise-service (~> 1.1)
+  poise-service (1.5.0)
+    poise (~> 2.0)
+  postgresql_lwrp (1.2.1)
+    apt (>= 0.0.0)
+    cron (>= 0.0.0)
+    python (>= 0.0.0)
+  python (1.4.6)
+    build-essential (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  redis (0.5.6)
+    apt (>= 0.0.0)
+  rsyslog (6.0.1)
+  ruby_build (1.1.0)
+    git (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  runit (1.8.0)
+    packagecloud (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  seven_zip (2.0.2)
+    windows (>= 1.2.2)
+  sudo (3.4.0)
+  swap (0.3.8)
+  swap_tuning (0.2.0)
+    swap (~> 0.3)
+  users (5.0.0)
+  windows (2.0.2)
+  yum (5.0.1)
+  yum-epel (0.7.1)
+    yum (>= 3.6.3)
+  zsh (2.0.0)
+    multipackage (~> 3.0)

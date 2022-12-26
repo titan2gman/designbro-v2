@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "required": [
+    "errors"
+  ],
+  "properties": {
+    "errors": {
+      "type": "object",
+      "required": [
+        "project",
+        "compliment",
+        "letter_head",
+        "back_business_card_details",
+        "front_business_card_details"
+      ],
+      "properties": {
+        "project": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "compliment": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "letter_head": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "back_business_card_details": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "front_business_card_details": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

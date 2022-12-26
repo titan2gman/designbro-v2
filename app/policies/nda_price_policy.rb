@@ -1,0 +1,2 @@
+class NdaPricePolicy < ApplicationPolicy
+end

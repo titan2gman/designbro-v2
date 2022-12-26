@@ -1,0 +1,204 @@
+@mixin conv-actions__btn-common {
+  height: 29px;
+  margin-right: 13.1px;
+  padding: 0 12.9px;
+  border-radius: 14.4px;
+  font-family: Montserrat;
+  font-size: 11.7px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.21;
+  letter-spacing: -0.23px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  @include media-breakpoint-only(xs) {
+    font-size: 8.7px;
+    & i {
+      display: none;
+    }
+  }
+}
+
+@mixin conv-actions__btn {
+  @include conv-actions__btn-common;
+  border: solid 1.5px #c3c3c3;
+  color: #c3c3c3;
+}
+
+@mixin conv-actions__btn-darkgrey-common {
+  @include conv-actions__btn-common;
+  border: solid 1.5px #a3a3a3;
+  color: #a3a3a3;
+}
+
+@mixin emoji-icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15.5px;
+  height: 15.5px;
+}
+
+.emoji-icon__active {
+  @include emoji-icon;
+  background-image: url(/icon_emoji_active.png);
+}
+
+.emoji-icon__inactive {
+  @include emoji-icon;
+  background-image: url(/icon_emoji.png);
+
+  &:hover {
+    background-image: url(/icon_emoji_active.png);
+  }
+}
+
+// .icon-btn__active {
+//   @include emoji-icon;
+//   opacity: 0.8;
+
+//   &:hover {
+//       opacity: 0.8;
+//   }
+// }
+
+// .icon-btn__inactive {
+//   @include emoji-icon;
+//   opacity: 0.5;
+
+//   &:hover {
+//       opacity: 0.8;
+//   }
+// }
+
+.icon-btn {
+  @include emoji-icon;
+  margin-right: 5px;
+}
+
+
+
+.conv-actions__icon {
+  width: 10.6px;
+  height: 8.4px;
+  margin: 2px 6.9px 3.6px 0;
+}
+
+.conv-actions__positive-btn {
+  @include conv-actions__btn;
+
+  &:hover {
+      background-color: #18da8e;
+      color: #ffffff;
+      border-color: #18da8e;
+  }
+}
+
+.conv-actions__negative-btn {
+  @include conv-actions__btn;
+
+  &:hover {
+      color: #4b4d4f;
+      border-color: #4b4d4f;
+  }
+}
+
+.conv-actions__info-icon {
+  width: 17.6px;
+  height: 17.6px;
+  margin-top: 22px;
+  margin-bottom: 24px;
+  color: #a3a3a3;
+
+  &:hover {
+      color: #4b4d4f;
+      border-color: #4b4d4f;
+  }
+}
+
+.conv-actions__close-btn {
+  width: 13.4px;
+  height: 13.4px;
+  margin: 0px 10px 0px 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(/icon_close.png);
+  cursor: pointer;
+}
+
+
+.conv-rich-input__send-btn-inactive {
+  @include conv-actions__btn;
+  padding-right: 6px;
+  margin-right: 0;
+  border: solid 1px #c3c3c3;
+  color: #c3c3c3;
+}
+
+.conv-rich-input__send-btn-active {
+  @include conv-actions__btn;
+  padding-right: 6px;
+  margin-right: 0;
+  color: #ffffff;
+  background-color: #18da8e;
+  border-color: #18da8e;
+}
+
+.conv-rich-input__send-btn-icon {
+  margin-left: 3px;
+  width: 16px;
+  height: 12px;
+}
+
+.conv-actions__btn-darkgrey-negative {
+  @include conv-actions__btn-darkgrey-common;
+
+  &:hover {
+      color: #4b4d4f;
+      border-color: #4b4d4f;
+  }
+}
+
+.conv-actions__btn-darkgrey-positive {
+  @include conv-actions__btn-darkgrey-common;
+
+  &:hover {
+    background-color: #18da8e;
+    color: #ffffff;
+    border-color: #18da8e;
+  }
+}
+
+.conv-actions__btn-replace-design {
+  @include conv-actions__btn-common;
+  color: #fff;
+  background-color: #4b4d4f;
+}
+
+@include media-breakpoint-only(xs) {
+  .conv-rich-input__send-btn-inactive {
+    margin: 0;
+    padding: 0;
+    width: 29px;
+
+    & span {
+      display: none;
+    }
+  }
+  .conv-rich-input__send-btn-active {
+    margin: 0;
+    padding: 0;
+    width: 29px;
+
+    & span {
+      display: none;
+    }
+  }
+  .conv-rich-input__send-btn-icon {
+    margin-left: 0;
+    margin: auto;
+    display: block !important;
+  }
+}

@@ -1,0 +1,17 @@
+.priceWrapper {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  display: inline-block;
+  background: #A5AFB8;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 30px 10px 15px;
+  border-radius: 5px 0 0 5px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 20px;
+}

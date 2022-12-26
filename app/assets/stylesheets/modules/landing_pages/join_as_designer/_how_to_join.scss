@@ -1,0 +1,29 @@
+.jdsg-how-to-join {
+  padding-top: 75px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.jdsg-how-to-join__title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  letter-spacing: 0.2px;
+}
+.jdsg-how-to-join__text {
+  line-height: 2;
+}
+
+@include media-breakpoint-up(lg) {
+  .jdsg-how-to-join {
+    padding-top: 190px;
+    padding-bottom: 175px;
+  }
+  .jdsg-how-to-join__title {
+    font-size: 44px;
+    margin-bottom: 35px;
+  }
+  .jdsg-how-to-join__text {
+    max-width: 770px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

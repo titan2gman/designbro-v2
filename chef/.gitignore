@@ -1,0 +1,15 @@
+/cookbooks
+/tmp
+/vagrant/*
+.vagrant
+
+!/vagrant/Vagrantfile
+
+encrypted_data_bag_secret
+
+ubuntu-xenial-16.04-cloudimg-console.log
+
+nodes/192.168.33.10.json
+
+site-cookbooks/rg-deploy/files/*
+site-cookbooks/rg-nginx/files/*

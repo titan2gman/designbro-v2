@@ -1,0 +1,23 @@
+.image-modal__content {
+  background-color: white;
+  padding: 30px;
+  margin: auto;
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-modal__close {
+  font-size: 90px;
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  color: #c3c3c3;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+  }
+}

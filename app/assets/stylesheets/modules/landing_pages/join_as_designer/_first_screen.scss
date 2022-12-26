@@ -1,0 +1,29 @@
+.jdsg-first-screen__content {
+  padding-top: 75px;
+  padding-bottom: 80px;
+}
+.jdsg-first-screen__text {
+  line-height: 1.75;
+}
+
+@include media-breakpoint-up(lg) {
+  .jdsg-first-screen {
+    display: flex;
+    margin-top: -88px;
+  }
+  .jdsg-first-screen__content {
+    padding: 230px 130px 280px 70px;
+  }
+  .jdsg-first-screen__photo {
+    @include background-image-retina('photo.jpg', 'photo_2x.jpg');
+    background-size: cover;
+    position: relative;
+  }
+  .jdsg-first-screen__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+}

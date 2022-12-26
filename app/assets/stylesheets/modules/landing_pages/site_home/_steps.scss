@@ -1,0 +1,36 @@
+.home-steps {
+  text-align: center;
+  padding-top: 50px;
+}
+.home-steps__title {
+  font-size: 32px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.home-steps__list {
+  margin-bottom: 75px;
+}
+.home-steps__link {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-top: 1px solid rgba(color(grey-200), 0.25);
+}
+.home-steps__link-text {
+  letter-spacing: 0.4px;
+  display: inline-block;
+  color: black;
+  font-weight: bold;
+}
+
+@include media-breakpoint-up(lg) {
+  .home-steps {
+    padding-top: 185px;
+  }
+  .home-steps__title {
+    font-size: 36px;
+  }
+  .home-steps__link {
+    padding-top: 45px;
+    padding-bottom: 50px;
+  }
+}

@@ -1,0 +1,23 @@
+.progressBar {
+  position: relative;
+  background: #eff1f3;
+  height: 9px;
+  width: 240px;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: left;
+}
+
+.progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: #a4afb8;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.success {
+  background: #18da8e;
+}

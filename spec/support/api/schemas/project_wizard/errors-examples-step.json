@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "errors"
+  ],
+  "properties": {
+    "errors": {
+      "type": "object",
+      "required": [
+        "good_examples"
+      ],
+      "properties": {
+        "good_examples": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.modalBody {
+  padding: 3rem;
+  position: relative;
+}
+
+.modalContent {
+  padding: 1.5rem 0 0;
+}
+
+.modalHeader {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-dark-grey);
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    color: var(--color-active);
+  }
+}
+
+.summaryItem {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.summaryItemName {
+  flex: 1;
+}
+
+.summaryItemPrice {
+  text-align: right;
+}
+.total {
+  border-top: 1px solid #C2C2C2;
+  border-bottom: 1px solid #C2C2C2;
+  display: flex;
+  padding: 25px 0;
+
+  h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  .totalCaption {
+    flex: 1;
+  }
+
+  .totalPrice {
+    text-align: right;
+    color: var(--color-active);
+  }
+}
+
+.discount {
+  padding-top: 28px;
+  display: flex;
+  align-items: baseline;
+
+  .label {
+    flex: 0.5;
+  }
+  .input {
+    flex: 1.5;
+    border-bottom: 1px solid #C2C2C2;
+  }
+}
+
+.title {
+  color: var(--color-dark-grey);
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.closeIcon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 8px;
+  padding: 10px;
+  cursor: pointer;
+}

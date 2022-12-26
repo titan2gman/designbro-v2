@@ -1,0 +1,15 @@
+.formButton {
+  color: var(--color-light-grey);
+  font-size: 17px;
+  display: block;
+  margin: 0 auto;
+
+  &:global {
+    &.active {
+      color: var(--color-active);
+    }
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+}

@@ -1,0 +1,11 @@
+name             'rg-oh-my-zsh'
+maintainer       'Dmitriy Grechukha'
+maintainer_email 'dmitriy.grechukha@gmail.com'
+license          'All rights reserved'
+description      'oh-my-zsh configuration'
+long_description 'oh-my-zsh configuration'
+version          '0.1.0'
+
+depends 'git'
+depends 'rg-packages'
+depends 'users'

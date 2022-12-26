@@ -1,0 +1,64 @@
+.file-icon__item {
+  width: 100px;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 10px;
+  &:hover .file-icon__action {
+   opacity: 1;
+ }
+}
+.file-icon {
+  @include background-image-retina('uploaded_file_bg.png', 'uploaded_file_bg_2x.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 110px;
+  padding: 40px 5px 0;
+  margin-bottom: 14px;
+}
+.file-icon--loading {
+  @include background-image-retina('loading_file.png', 'loading_file_2x.png');
+  position: relative;
+  &:before {
+    content: '';
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    background-image: image-url("/spinner.svg");
+    background-size: contain;
+    animation: rotate-clockwise 1s linear infinite;
+  }
+}
+.file-icon__action {
+  opacity: 0;
+}
+.file-icon__action-icon {
+  color: color(grey-200);
+  &:focus,
+  &:hover {
+    color: black;
+  }
+}
+.file-icon__name {
+  font-size: 20px;
+  margin-bottom: 23px;
+  text-transform: uppercase;
+}
+.file-icon__text {
+  font-size: 11px;
+  margin-bottom: 0;
+}
+.file-icon__title {
+  line-height: 1.4;
+  font-size: 12px;
+  margin-bottom: 0;
+  word-wrap: break-word;
+}
+.file-icon__date {
+  font-weight: 700;
+  line-height: 1.6;
+  font-size: 12px;
+}

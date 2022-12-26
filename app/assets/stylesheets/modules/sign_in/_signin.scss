@@ -1,0 +1,105 @@
+.sign-in__page-container {
+  background-color: color(grey-100);
+  @include background-image-retina('sign_in_bg.jpg', 'sign_in_bg_2x.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.sign-in__container {
+  padding-top: 25px;
+}
+.sign-in__form {
+  text-align: center;
+  background-color: white;
+  padding: 60px 10px 35px;
+  margin-bottom: 80px;
+}
+.sign-in__form--greeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 430px;
+}
+.sign-in__form-nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.sign-in__form-nav-item {
+  display: inline-block;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  color: color(grey-400);
+  border-bottom: 2px solid transparent;
+  transition-duration: 0.2s;
+  transition-property: color, border-bottom-color;
+  transition-timing-function: ease-in-out;
+  margin: 0 10px 20px;
+  &:hover {
+    color: black;
+  }
+  &--active {
+    border-bottom-color: black;
+    color: black;
+  }
+}
+.sign-in__form-text {
+  font-size: 13px;
+  line-height: 1.8;
+  color: color(grey-500);
+  margin-bottom: 20px;
+}
+.sign-in__form-link {
+  color: inherit;
+  text-decoration: underline;
+  &:hover {
+    color: black;
+  }
+}
+.sign-in__form-action {
+  margin-bottom: 30px;
+}
+.sign-in__form-text-md {
+  font-size: 16px;
+}
+.sign-in__form-text-lg {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.sign-in__form-link-pink {
+  color: color(green-500);
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+}
+.sign-in__form-greeting-wrap {
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sign-in__form-userpic {
+  margin-bottom: 55px;
+}
+
+@include media-breakpoint-up(sm) {
+  .sign-in__form {
+    max-width: 640px;
+    border-radius: 8px;
+    padding-left: 85px;
+    padding-right: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 180px;
+  }
+  .sign-in__form-text-lg {
+    font-size: 24px;
+  }
+  .sign-in__form-greeting-wrap {
+    max-width: 320px;
+    margin-bottom: 50px;
+  }
+  .sign-in__form--greeting {
+    min-height: 640px;
+  }
+}

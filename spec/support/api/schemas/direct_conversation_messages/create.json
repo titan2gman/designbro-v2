@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": ["id", "type", "attributes"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "object",
+          "required": ["name", "text", "createdAt"],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "text": {
+              "type": "stirng"
+            },
+            "createdAt": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

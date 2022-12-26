@@ -1,0 +1,110 @@
+$upload-box-transition-duration: 0.2s;
+$upload-box-transition-timing: ease-in-out;
+
+.upload-box {
+  position: relative;
+  text-align: center;
+  padding-top: 100%;
+  margin-bottom: 5px;
+}
+.upload-box__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: color(grey-200);
+  background-color: color(grey-100);
+  transition-duration: $upload-box-transition-duration;
+  transition-property: background-color, z-index;
+  transition-timing-function: $upload-box-transition-timing;
+  overflow-y: auto;
+  padding: 10px 10px 0;
+  &:hover, &:focus {
+    z-index: 1;
+    background-color: color(green-500);
+    .upload-box__icon,
+    .upload-box__text-secondary {
+      transform: translateY(0);
+    }
+    .upload-box__icon,
+    .upload-box__text-primary {
+      color: white;
+    }
+    .upload-box__text-primary {
+      opacity: 1;
+      visibility: visible;
+    }
+    .upload-box__text-secondary {
+      color: rgba(black, 0.3);
+    }
+    .upload-box__remove-link {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+.upload-box__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
+}
+.upload-box__icon {
+  display: inline-block;
+  font-size: 40px;
+  transition-duration: $upload-box-transition-duration;
+  transition-property: transform, color;
+  transition-timing-function: $upload-box-transition-timing;
+  transform: translateY(28px);
+  margin-bottom: 25px;
+}
+.upload-box__text {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+.upload-box__text-primary {
+  opacity: 0;
+  visibility: hidden;
+  transition-duration: $upload-box-transition-duration;
+  transition-property: opacity, color;
+  transition-timing-function: $upload-box-transition-timing;
+  transition-delay: 0.1s;
+}
+.upload-box__text-secondary {
+  transition-duration: $upload-box-transition-duration;
+  transition-property: transform, color;
+  transition-timing-function: $upload-box-transition-timing;
+  transform: translateY(-28px);
+}
+.upload-box__description {
+  .main-input__label,
+  .main-input__input {
+    font-size: 13px;
+  }
+  .main-input__input {
+    line-height: 1.8;
+    color: color(grey-500);
+  }
+}
+.upload-box__remove-link {
+  opacity: 0;
+  visibility: hidden;
+  display: inline-block;
+  color: white;
+  padding-top: 15px;
+  cursor: pointer;
+}
+.upload-box__delete-btn:hover .upload-box__delete-btn-txt {
+  text-decoration: underline;
+}

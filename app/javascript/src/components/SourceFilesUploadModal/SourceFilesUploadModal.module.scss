@@ -1,0 +1,35 @@
+.modalContent {
+  padding: 25px;
+}
+.modalHeader {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-dark-grey);
+}
+.stepper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.stepItem {
+  font-size: 13px;
+  color: var(--color-light-grey);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: underline;
+
+  &.active {
+    color: var(--color-active);
+  }
+}
+.stepDivider {
+  color: var(--color-light-grey);
+  font-size: 8px;
+
+  &:last-child {
+    display: none;
+  }
+}

@@ -1,0 +1,33 @@
+<tr>
+  <td class='header'>
+    Sorry! You didn’t win.
+  </td>
+</tr>
+
+<tr>
+  <td class='text'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+
+          <%= I18n.t('designer_mailer.design_not_selected_as_finalist.message', project_name: @project.name) %>
+
+          <br />
+          <br />
+
+          You can enter another contest by clicking on the link below.
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td class='text'>
+    <a href='<%= "#{host_url}/d" %>' class='main-btn'>
+      Dashboard
+
+      <%= image_tag 'arrow_white.png', class: 'arrow' %>
+    </a>
+  </td>
+</tr>

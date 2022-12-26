@@ -1,0 +1,71 @@
+.join-designer__stepper {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+.join-profile-info {
+  padding-top: 15px;
+}
+.join-profile-info__form-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.join-profile-info__group {
+  margin-bottom: 40px;
+}
+.join-upload-portfolio {
+  padding-top: 35px;
+  padding-bottom: 60px;
+}
+.join-upload-portfolio__actions {
+  margin-bottom: 50px;
+}
+.join-upload-portfolio__action {
+  margin-right: 50px;
+}
+.join-complete {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 15px;
+}
+.join-complete__userpic {
+  margin-bottom: 35px;
+}
+.join-complete__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: color(green-500);
+  margin-bottom: 10px;
+}
+.join-complete__text {
+  font-size: 13px;
+  line-height: 1.8;
+  color: color(grey-400);
+  margin-bottom: 30px;
+}
+
+@include media-breakpoint-up(lg) {
+  .join-designer__stepper {
+    padding-top: 5px;
+    padding-bottom: 0;
+    margin-bottom: 45px;
+  }
+  .join-profile-info__form-title {
+    margin-bottom: 30px;
+  }
+  .join-profile-info__form-label {
+    display: block;
+    word-break: break-word;
+    overflow: hidden;
+    padding-top: 32px;
+  }
+  .join-upload-portfolio__actions {
+    padding-top: 50px;
+  }
+  .join-upload-portfolio {
+    padding-bottom: 120px;
+  }
+}

@@ -1,0 +1,36 @@
+<tr>
+  <td class='header'>
+    Do you have more work for <%= @project.winner.display_name %>?
+  </td>
+</tr>
+
+<tr>
+  <td class='text'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+          Hi <%= @project.creator.first_name %>,
+
+          <br />
+
+          Congrats on finishing your <%= @project.product_name %> for <%= @project.brand_name %>! Did you know you can now continue working with <strong><%= @project.winner.display_name %></strong>? For instance for your <strong><%= @product_options[0].name %></strong> design, <strong><%= @product_options[1].name %></strong> design or <strong><%= @product_options[2].name %></strong> design.
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td class='text'>
+    <a href='<%= "#{host_url}/projects/new?brand_id=#{@project.brand_id}" %>' class='main-btn'>
+      Just click here to get started.
+
+      <%= image_tag 'arrow_white.png', class: 'arrow' %>
+    </a>
+
+    <br />
+    <br />
+
+    Or contact us for something else!
+  </td>
+</tr>

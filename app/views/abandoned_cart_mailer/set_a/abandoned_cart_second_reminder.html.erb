@@ -1,0 +1,104 @@
+<table border="0" cellpadding="0" cellspacing="0" class="abandoned-cart-reminder outer-wrapper <%= @reminder_step %> set-<%= @project.email_template_set_name %>">
+  <tr class="bg-dark-blue">
+    <td class="header">
+      <div class="logo"></div>
+      <h1 class="font-26 in-white m-t-30 m-l-30 m-b-0"><%= @project.brand_name %> deserves<br/>an awesome design!</h1>
+      <h2 class="font-12 in-white m-t-20 m-l-30 m-b-0">
+        Complete your checkout and
+        <br/>
+        <strong>get <%= @discount_amount %> off</strong> on your project.
+      </h2>
+
+      <div class="m-t-20 m-l-30 m-b-0">
+        <%= link_to 'Activate your discount →', @continue_brief_url, class: "action-button font-14 bg-green in-dark-blue", target: '_blank' %>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="subheader font-10 in-dark-blue">
+      <p>
+        Good news! We’ve saved your progress.  Simply finish your checkout and get a great design.
+        <br/>
+        Hurry - it won’t be in your cart for much longer!
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="project-details bg-light-grey">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td width="33%" class='first-column'></td>
+          <td width="33%" class='details-column'>
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="in-dark-blue">
+              <tr class="brand-name">
+                <td class="font-16 p-b-10" colspan="2"><%= @project.brand_name %></td>
+              </tr>
+
+              <tr>
+                <td class="p-t-10 font-16"><%= "#{@project.product_name} design" %></td>
+                <td align="right" class="p-t-10 font-16 in-green">$<%= format_price(@project_price) %></td>
+              </tr>
+
+              <tr>
+                <td class="p-b-10 font-16"><%= @discount_amount %> discount</td>
+                <td align="right" class="p-b-10 font-16 in-green">- $<%= format_price(@discount_price) %></td>
+              </tr>
+
+              <tr class="total">
+                <td class="p-t-10 font-16">Total</td>
+                <td align="right" class="p-t-10 font-16">$<%= format_price(@total_price) %></td>
+              </tr>
+            </table>
+          </td>
+          <td width="33%" valign="bottom" align="center" class="last-column">
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="3" align="center" class="p-t-20">
+            <%= link_to 'Finish your checkout →', @continue_brief_url, class: "action-button font-14 bg-dark-blue in-white", target: '_blank' %>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="money-back-guarantee p-30">
+    </td>
+  </tr>
+
+  <tr>
+    <td class="testimonials p-40">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td width="50%" class="first-review">
+            <div class="rating"></div>
+            <p class="review">“Definitely consider using their services - whatever your design needs!”</p>
+            <p class="author"><strong>- Ronnie Farmer</strong>, Ronnie Farmer</p>
+          </td>
+          <td width="50%" class="last-review">
+            <div class="rating"></div>
+            <p class="review">“I will definitely use DesignBro in the future and recommend it to my friends”</p>
+            <p class="author"><strong>- Aidar Kussainov</strong>, Ademibar</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center" class='need-help font-8 p-15'>
+      <p class="in-darkest-grey">Need help? Contact us:</p>
+      <p><a class="in-dark-blue" href="mailto:chris@designbro.com">chris@designbro.com</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center" class='unsubscribe font-8 p-15'>
+      <%= link_to 'Unsubscribe', @unsubscribe_url, target: "_blank", class: "in-darkest-grey" %>
+    </td>
+  </tr>
+</table>

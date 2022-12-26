@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": ["id", "type", "attributes"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "object",
+          "required": [
+            "entityId",
+            "entityType",
+            "originalFilename",
+            "file"
+          ],
+          "properties": {
+            "entityId": {
+              "type": "integer | null"
+            },
+            "entityType": {
+              "type": "string | null"
+            },
+            "originalFilename": {
+              "type": "string"
+            },
+            "file": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.moneyBack {
+  display: inline-block;
+  vertical-align: bottom;
+  height: 35px;
+  width: 130px;
+  background-image: url("~new-project-builder/money-back-guarantee.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center left;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .moneyBack {
+    display: none;
+  }
+}

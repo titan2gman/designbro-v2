@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": ["id", "type", "attributes"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "object",
+          "required": ["header", "body", "rating", "credential", "company"],
+          "properties": {
+            "header": {
+              "type": "string"
+            },
+            "body": {
+              "type": "stirng"
+            },
+            "rating": {
+              "type": "stirng"
+            },
+            "credential": {
+              "type": "stirng"
+            },
+            "company": {
+              "type": "stirng"
+            }
+          }
+        }
+      }
+    }
+  }
+}

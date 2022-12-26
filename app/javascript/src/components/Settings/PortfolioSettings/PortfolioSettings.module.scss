@@ -1,0 +1,39 @@
+.tickWrapper {
+  display: flex;
+  cursor: pointer;
+}
+
+.tick {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--color-light-grey);
+  margin-right: 10px;
+
+  &.selected {
+    border: 1px solid var(--color-active);
+    background: var(--color-white) url("~new-project-product/tick-icon-green.svg") center;
+  }
+}
+
+.avatarWrapper {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.portfolioImageWrapper {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.languagesWrapper {
+  margin-top: 40px;
+  :global {
+    .main-input {
+      min-height: 0;
+    }
+  }
+}
+
+.descriptionWrapper {
+}

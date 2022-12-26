@@ -1,0 +1,213 @@
+@mixin message {
+  position: relative;
+  padding: 12.6px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.65;
+  letter-spacing: -0.22px;
+  text-align: left;
+  color: #5c5c5c;
+
+  & p {
+      margin-bottom: 0px;
+      font-size: 13px;
+  }
+}
+
+@mixin conv-message__after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.conv-message__sent {
+  @include message;
+  background-color: #e1faf1;
+
+  &:after {
+      @include conv-message__after;
+      right: -10px;
+      border-bottom: 10px solid #e1faf1;
+  }
+}
+
+.conv-message__received {
+  @include message;
+  background-color: #f4f4f4;
+
+  &::after {
+    @include conv-message__after;
+      left: -10px;
+      border-bottom: 10px solid #f4f4f4;
+  }
+}
+
+.conv-message__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8.8px;
+}
+
+.conv-message__sender-info {
+  display: flex;
+}
+
+.conv-message__user-pic {
+  width: 33.2px;
+  height: 33.2px;
+  background-color: #d7d7d7;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.68;
+  letter-spacing: -0.24px;
+  text-align: left;
+  color: #3e4042;
+  margin-right: 7.8px;
+}
+
+.conv-message__sender-name {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.51;
+  letter-spacing: -0.24px;
+  text-align: left;
+  color: #3e4042;
+  display: flex;
+  align-items: center;
+}
+
+.conv-message__date {
+  margin-right: 10.8px;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.62;
+  letter-spacing: -0.2px;
+  text-align: right;
+  color: #a5a5a5;
+}
+
+.conv-message__body {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  & span {
+      font-size: 15.9px;
+  }
+}
+
+.conv-message__thumbnail-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.conv-message__thumbnail {
+  display: inline-flex;
+  border-radius: 2px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  width: 130px;
+  height: 130px;
+  box-sizing: border-box;
+  position: relative;
+  font-size: 14.5px;
+  color: #ffffff;
+  overflow-wrap: break-word;
+  position: relative;
+
+  & .conv-message__non-media {
+      display: flex;
+      background-color: #18da8e;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+  }
+
+  & img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 3px;
+      object-fit: cover;
+  }
+
+  & > span {
+      width: 100%;
+      margin: auto;
+      font-weight: bold;
+      text-align: center;
+  }
+
+  & .conv-message__extension {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: -0.24px;
+      color: #ffffff;
+      text-transform: uppercase;
+  }
+
+  & .conv-message__thumbnail-download {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 18.3px;
+      height: 18.3px;
+      background-color: #18da8e;
+      border-radius: 50%;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+
+      & a {
+          color: #ffffff;
+      }
+  }
+
+  & > a {
+    width: 100%;
+    color: inherit;
+  }
+}
+
+@include media-breakpoint-only(xs) {
+  .conv-message__thumbnail > a {
+    pointer-events: none;
+  }
+}

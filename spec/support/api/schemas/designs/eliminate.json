@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "required": [
+    "data"
+  ],
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": [
+        "id",
+        "type",
+        "attributes"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "object",
+          "required": [
+            "image",
+            "imageId"
+          ],
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "imageId": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}

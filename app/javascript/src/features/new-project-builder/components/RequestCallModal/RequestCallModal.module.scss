@@ -1,0 +1,27 @@
+.modalFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headline {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.modal {
+  box-shadow: 0 2px 14px 0 rgba(164, 175, 184, 0.75) !important;
+}
+.modalContent {
+  padding: 5rem 8rem !important;
+}
+
+.closeIcon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 10px;
+  padding: 10px;
+  cursor: pointer;
+  color: #ccd2d7;
+}

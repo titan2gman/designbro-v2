@@ -1,0 +1,60 @@
+.paymentMethodBlock {
+  margin: 20px 0 40px;
+  display: flex;
+  align-items: center;
+}
+
+.paymentMethod {
+  display: inline-block;
+  height: 40px;
+  width: 60px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+
+  &.master-card {
+    background-image: url("~new-project-details/Logo-Mastercard.svg");
+  }
+
+  &.visa {
+    background-image: url("~new-project-details/Logo-Visa.svg");
+  }
+
+  &.american-express {
+    background-image: url("~new-project-details/Logo-AmericanExpress.svg");
+  }
+
+  &.paypal {
+    background-image: url("~new-project-details/Logo-PayPal.svg");
+  }
+}
+
+.cardNumber {
+  font-size: 0.75rem;
+  letter-spacing: 0.025em;
+  color: var(--color-dark-grey);
+  display: inline-block;
+  padding: 12px 16px;
+  box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px, rgba(0, 0, 0, 0.0196078) 0px 1px 0px;
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+}
+
+.paymentHint {
+  color: #CBCBCB;
+  margin-left: 10px;
+  font-size: 13px;
+  display: inline-block;
+
+  .switchPayment {
+    color: #CBCBCB;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+      color: #4B4B4B;
+    }
+  }
+}

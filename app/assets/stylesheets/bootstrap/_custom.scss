@@ -1,0 +1,16 @@
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 940px,
+  xl: 1170px
+);
+
+$grid-gutter-width-base:     20px;
+$grid-gutter-width-base-xl:  30px;
+$grid-gutter-widths: (
+  xs: $grid-gutter-width-base,
+  sm: $grid-gutter-width-base,
+  md: $grid-gutter-width-base,
+  lg: $grid-gutter-width-base,
+  xl: $grid-gutter-width-base
+);

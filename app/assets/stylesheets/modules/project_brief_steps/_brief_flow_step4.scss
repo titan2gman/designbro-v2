@@ -1,0 +1,86 @@
+.bfs-existing-design {
+  margin-bottom: 20px;
+}
+.bfs-project-block {
+  margin-bottom: 45px;
+}
+.bfs-content__upload-box {
+  margin-bottom: 20px;
+}
+.bfs-competitors-block {
+  margin-bottom: 20px;
+}
+.bfs-inspiration-block {
+  margin-bottom: 20px;
+}
+.bfs-colors-block {
+  margin-bottom: 30px;
+}
+.bfs-colorpicker {
+  position: relative;
+  text-align: center;
+  margin-bottom: 5px;
+  padding-top: 100%;
+}
+.bfs-colorpicker__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: color(grey-100);
+  padding: 15px;
+}
+.bfs-colorpicker__delete-color {
+  display: block;
+  position: absolute;
+  font-size: 12px;
+  padding: 5px;
+  cursor: pointer;
+  top: 5px;
+  right: 5px;
+  color: color(grey-100);
+  z-index: 1;
+  &:hover {
+    color: color(grey-200);
+  }
+}
+.bfs-colorpicker__icon {
+  font-size: 26px;
+}
+.bfs-colorpicker__dropdown {
+  position: absolute;
+  z-index: 2;
+}
+.bfs-add-document-block {
+  margin-bottom: 20px;
+}
+
+.stock-images-no-subitems {
+  margin-left: 34px;
+}
+
+@include media-breakpoint-up(md) {
+  .bfs-content__upload-box {
+    margin-bottom: 0;
+  }
+  .bfs-project-block {
+    margin-bottom: 65px;
+  }
+  .bfs-competitors-block {
+    margin-bottom: 30px;
+  }
+  .bfs-inspiration-block {
+    margin-bottom: 30px;
+  }
+  .bfs-colors-block {
+    margin-bottom: 40px;
+  }
+  .bfs-add-document-block {
+    margin-bottom: 60px;
+  }
+}

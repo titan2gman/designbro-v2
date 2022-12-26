@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "properties": {
+    "leftLabelText": { "type": "string" },
+    "rightLabelText": { "type": "string" }
+  },
+  "required": ["leftLabelText", "rightLabelText"]
+}

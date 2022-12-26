@@ -1,0 +1,3646 @@
+product_categories:
+  - name: Brand Identity
+    full_name: Brand Identity
+    products:
+      - name: Logo
+        key: logo
+        price: 199
+        one_to_one_price: 199
+        contest_design_stage_expire_days: 10
+        one_to_one_design_stage_expire_days: 10
+        contest_finalist_stage_expire_days: 5
+        one_to_one_finalist_stage_expire_days: 15
+        files_stage_expire_days: 3
+        review_files_stage_expire_days: 10
+        reservation_expire_days: 1
+        description: Get your logo designed by our professional designers.
+        short_name: logo
+        tip_and_tricks_url: https://designbro.com/how-to-get-your-logo
+        project_builder_steps:
+          - name: Let us know what visual style fits your brand
+            description: A visual style selection procedure is as old as the design industry itself - it really helps the designers
+            path: inspirations
+            form_name: ExamplesStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Examples
+                mandatory: true
+
+          - name: Describe your brand DNA
+            description: Tell us which of the following best fit the image / identity of the brand you are trying to create
+            path: style
+            form_name: StyleStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_traditional_or_modern
+                props:
+                  leftLabelText: Traditional
+                  rightLabelText: Modern
+
+              - component_name: Slider
+                attribute_name: brand_dna_value_or_premium
+                props:
+                  leftLabelText: Value
+                  rightLabelText: Premium
+
+              - component_name: Slider
+                attribute_name: brand_dna_bold_or_refined
+                props:
+                  leftLabelText: Bold
+                  rightLabelText: Refined
+
+              - component_name: Slider
+                attribute_name: brand_dna_detailed_or_clean
+                props:
+                  leftLabelText: Detailed
+                  rightLabelText: Clean
+
+              - component_name: Slider
+                attribute_name: brand_dna_handcrafted_or_minimalist
+                props:
+                  leftLabelText: Handcrafted
+                  rightLabelText: Minimalist
+
+              - component_name: Slider
+                attribute_name: brand_dna_serious_or_playful
+                props:
+                  leftLabelText: Serious
+                  rightLabelText: Playful
+
+              - component_name: Slider
+                attribute_name: brand_dna_stand_out_or_not_from_the_crowd
+                props:
+                  leftLabelText: Stand out from the crowd
+                  rightLabelText: Fit in, look as if it belongs in the category
+
+              - component_name: Slider
+                attribute_name: brand_dna_outmoded_actual
+                props:
+                  leftLabelText: Look as if it has been around for 100 years
+                  rightLabelText: Startup ready to take on the world
+
+          - name: Tell us about your target audience
+            description: Who is your customer?
+            path: audience
+            form_name: AudienceStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_youthful_or_mature
+                props:
+                  leftLabelText: Youthful
+                  rightLabelText: Mature
+
+              - component_name: Slider
+                attribute_name: brand_dna_masculine_or_premium
+                props:
+                  leftLabelText: Masculine
+                  rightLabelText: Feminine
+
+              - component_name: Slider
+                attribute_name: brand_dna_low_income_or_high_income
+                props:
+                  leftLabelText: Low income
+                  rightLabelText: High income
+
+              - component_name: CountriesSelect
+                attribute_name: brand_dna_target_country_codes
+
+          - name: Last Questions
+            description: Complete the questions and get started!
+            path: finish
+            form_name: FinishStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Authentication
+                mandatory: true
+
+              - component_name: ExistingDesigns
+                mandatory: true
+
+              - component_name: BrandSelector
+                mandatory: true
+                props:
+                  hint: Please write the name you'd like to be the main feature of your logo
+
+              - component_name: Input
+                attribute_name: brand_slogan
+                props:
+                  label: Tagline or slogan (optional)
+                  hint: Do you have a slogan or tagline that you would like to have on your logo?
+
+              - component_name: Textarea
+                attribute_name: brand_additional_text
+                props:
+                  label: Additional text (optional)
+                  hint: Any additional text you would like on the logo? For instance 'founded in 2016' or anything else that you want in your logo
+
+              - component_name: Textarea
+                attribute_name: brand_description
+                props:
+                  label: Description
+                  hint: Give us a bit of background, what is it that you do, what makes you special?
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: ideas_or_special_requirements
+                mandatory: true
+                props:
+                  label: Ideas or special requirements (optional)
+                  hint: Share any more ideas or information that will make your brief more clear
+
+              - component_name: Competitors
+
+              - component_name: Inspirations
+                mandatory: true
+
+              - component_name: AdditionalDocuments
+                mandatory: true
+
+              - component_name: ColorsPicker
+                mandatory: true
+
+          - name: Boost your project
+            description: Choose to upgrade and improve your project
+            path: details
+            mandatory_for_existing_brand: true
+            form_name: DetailsStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Details
+                mandatory: true
+
+          - name: Checkout
+            description: Fill in your details to complete the brief and payment
+            path: checkout
+            mandatory_for_existing_brand: true
+            form_name: CheckoutStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Checkout
+                mandatory: true
+
+      - name: Logo
+        key: logo2
+        price: 199
+        one_to_one_price: 199
+        description: Get your logo designed by our professional designers.
+        short_name: logo
+        tip_and_tricks_url: https://designbro.com/how-to-get-your-logo
+        layout_version: 2
+        active: false
+        contest_design_stage_expire_days: 10
+        one_to_one_design_stage_expire_days: 10
+        contest_finalist_stage_expire_days: 5
+        one_to_one_finalist_stage_expire_days: 15
+        files_stage_expire_days: 3
+        review_files_stage_expire_days: 10
+        reservation_expire_days: 1
+        project_builder_steps:
+          - path: brand-name
+            form_name: BrandNameStepForm
+            component_name: BrandNameStep
+            authentication_required: false
+
+          - path: examples
+            form_name: ExamplesStepForm
+            component_name: ExamplesStep
+            authentication_required: false
+
+          - path: brand-dna
+            form_name: BrandDnaStepForm
+            component_name: BrandDnaStep
+            authentication_required: false
+
+          - path: audience
+            form_name: AudienceStepForm
+            component_name: AudienceStep
+            authentication_required: false
+
+          - path: existing-design
+            form_name: ExistingDesignsStepForm
+            component_name: ExistingDesignStep
+            authentication_required: false
+
+          - path: additional-text
+            form_name: AdditionalTextStepForm
+            component_name: AdditionalTextStep
+            authentication_required: false
+
+          - path: brand-description
+            form_name: BrandDescriptionStepForm
+            component_name: BrandDescriptionStep
+            authentication_required: false
+
+          - path: competitors
+            form_name: CompetitorsStepForm
+            component_name: CompetitorsStep
+            authentication_required: false
+
+          - path: inspirations
+            form_name: InspirationsStepForm
+            component_name: InspirationsStep
+            authentication_required: false
+
+          - path: colors
+            form_name: ColorsStepForm
+            component_name: ColorsStep
+            authentication_required: false
+
+          - path: ideas-or-special-requirements
+            form_name: IdeasOrSpecialRequirementsStepForm
+            component_name: IdeasOrSpecialRequirementsStep
+            authentication_required: false
+
+          - path: additional-documents
+            form_name: AdditionalDocumentsStepForm
+            component_name: AdditionalDocumentsStep
+            authentication_required: false
+
+          - path: details
+            mandatory_for_existing_brand: true
+            form_name: DetailsStepForm
+            component_name: DetailsStep
+            authentication_required: false
+
+          - path: checkout
+            mandatory_for_existing_brand: true
+            form_name: CheckoutStepForm
+            authentication_required: true
+            component_name: CheckoutStep
+
+      - name: Brand Identity
+        key: brand-identity
+        price: 399
+        description: "Includes custom design for: logo, business card, letterhead, envelope, and compliment slip."
+        short_name: brand identity
+        contest_finalist_stage_expire_days: 7
+        one_to_one_finalist_stage_expire_days: 15
+        tip_and_tricks_url: https://designbro.com/how-to-get-your-brand-identity
+        project_builder_steps:
+          - name: Let us know what visual style fits your brand
+            description: A visual style selection procedure is as old as the design industry itself - it really helps the designers
+            path: inspirations
+            form_name: ExamplesStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Examples
+                mandatory: true
+
+          - name: Describe your brand DNA
+            description: Tell us which of the following best fit the image / identity of the brand you are trying to create
+            path: style
+            form_name: StyleStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_traditional_or_modern
+                props:
+                  leftLabelText: Traditional
+                  rightLabelText: Modern
+
+              - component_name: Slider
+                attribute_name: brand_dna_value_or_premium
+                props:
+                  leftLabelText: Value
+                  rightLabelText: Premium
+
+              - component_name: Slider
+                attribute_name: brand_dna_bold_or_refined
+                props:
+                  leftLabelText: Bold
+                  rightLabelText: Refined
+
+              - component_name: Slider
+                attribute_name: brand_dna_detailed_or_clean
+                props:
+                  leftLabelText: Detailed
+                  rightLabelText: Clean
+
+              - component_name: Slider
+                attribute_name: brand_dna_handcrafted_or_minimalist
+                props:
+                  leftLabelText: Handcrafted
+                  rightLabelText: Minimalist
+
+              - component_name: Slider
+                attribute_name: brand_dna_serious_or_playful
+                props:
+                  leftLabelText: Serious
+                  rightLabelText: Playful
+
+              - component_name: Slider
+                attribute_name: brand_dna_stand_out_or_not_from_the_crowd
+                props:
+                  leftLabelText: Stand out from the crowd
+                  rightLabelText: Fit in, look as if it belongs in the category
+
+              - component_name: Slider
+                attribute_name: brand_dna_outmoded_actual
+                props:
+                  leftLabelText: Look as if it has been around for 100 years
+                  rightLabelText: Startup ready to take on the world
+
+          - name: Tell us about your target audience
+            description: Who is your customer?
+            path: audience
+            form_name: AudienceStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_youthful_or_mature
+                props:
+                  leftLabelText: Youthful
+                  rightLabelText: Mature
+
+              - component_name: Slider
+                attribute_name: brand_dna_masculine_or_premium
+                props:
+                  leftLabelText: Masculine
+                  rightLabelText: Feminine
+
+              - component_name: Slider
+                attribute_name: brand_dna_low_income_or_high_income
+                props:
+                  leftLabelText: Low income
+                  rightLabelText: High income
+
+              - component_name: CountriesSelect
+                attribute_name: brand_dna_target_country_codes
+
+          - name: Last Questions
+            description: Complete the questions and get started!
+            path: finish
+            form_name: FinishStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Authentication
+                mandatory: true
+
+              - component_name: ExistingDesigns
+                mandatory: true
+
+              - component_name: BrandSelector
+                mandatory: true
+                props:
+                  hint: Please write the name you'd like to be the main feature of your logo
+
+              - component_name: Input
+                attribute_name: brand_slogan
+                props:
+                  label: Tagline or slogan (optional)
+                  hint: Do you have a slogan or tagline that you would like to have on your logo?
+
+              - component_name: Textarea
+                attribute_name: brand_additional_text
+                props:
+                  label: Additional text (optional)
+                  hint: Any additional text you would like on the logo? For instance 'founded in 2016' or anything else that you want in your logo
+
+              - component_name: Textarea
+                attribute_name: brand_description
+                props:
+                  label: Description
+                  hint: Give us a bit of background, what is it that you do, what makes you special?
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: ideas_or_special_requirements
+                mandatory: true
+                props:
+                  label: Ideas or special requirements (optional)
+                  hint: Share any more ideas or information that will make your brief more clear
+
+              - component_name: Competitors
+
+              - component_name: Inspirations
+                mandatory: true
+
+              - component_name: AdditionalDocuments
+                mandatory: true
+
+              - component_name: ColorsPicker
+                mandatory: true
+
+          - name: Boost your project
+            description: Choose to upgrade and improve your project
+            path: details
+            mandatory_for_existing_brand: true
+            form_name: DetailsStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Details
+                mandatory: true
+
+          - name: Checkout
+            description: Fill in your details to complete the brief and payment
+            path: checkout
+            mandatory_for_existing_brand: true
+            form_name: CheckoutStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Checkout
+                mandatory: true
+
+          - name: Brand Identity Design Brief
+            description: Complete the questions and get started!
+            path: stationery
+            form_name: StationeryStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Textarea
+                attribute_name: front_business_card_details
+                mandatory: true
+                props:
+                  label: Business card (front side)
+                  hint: Which details would you like on the front?
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: back_business_card_details
+                mandatory: true
+                props:
+                  label: Business card (back side)
+                  hint: Which details would you like on the back?
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: letter_head
+                mandatory: true
+                props:
+                  label: Letterhead
+                  hint: Which details would you like on the Letterhead (top and bottom)?
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: compliment
+                mandatory: true
+                props:
+                  label: Compliment/note slip
+                  hint: What details would you like on the compliment slip?
+                validations:
+                  - required
+
+      - key: business-card
+        name: Business Card
+        price: 150
+        one_to_one_price: 150
+        description: Get your perfect business cards designed by a professional designer and make sure you stand out.
+        short_name: business card
+        tip_and_tricks_url: https://designbro.com/how-to-get-your-business-card
+        contest_design_stage_expire_days: 10
+        one_to_one_design_stage_expire_days: 10
+        contest_finalist_stage_expire_days: 5
+        one_to_one_finalist_stage_expire_days: 15
+        files_stage_expire_days: 3
+        review_files_stage_expire_days: 10
+        reservation_expire_days: 1
+        product_size_label: What’s going to be the size of your business card?
+        what_is_it_for_label: What’s your business card for?
+        product_text_label: What text would you like to feature on your business card?
+
+        project_builder_steps:
+          - name: Describe your brand DNA
+            description: Tell us which of the following best fit the image / identity of the brand you are trying to create
+            path: style
+            form_name: StyleStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_traditional_or_modern
+                props:
+                  leftLabelText: Traditional
+                  rightLabelText: Modern
+
+              - component_name: Slider
+                attribute_name: brand_dna_value_or_premium
+                props:
+                  leftLabelText: Value
+                  rightLabelText: Premium
+
+              - component_name: Slider
+                attribute_name: brand_dna_bold_or_refined
+                props:
+                  leftLabelText: Bold
+                  rightLabelText: Refined
+
+              - component_name: Slider
+                attribute_name: brand_dna_detailed_or_clean
+                props:
+                  leftLabelText: Detailed
+                  rightLabelText: Clean
+
+              - component_name: Slider
+                attribute_name: brand_dna_handcrafted_or_minimalist
+                props:
+                  leftLabelText: Handcrafted
+                  rightLabelText: Minimalist
+
+              - component_name: Slider
+                attribute_name: brand_dna_serious_or_playful
+                props:
+                  leftLabelText: Serious
+                  rightLabelText: Playful
+
+              - component_name: Slider
+                attribute_name: brand_dna_stand_out_or_not_from_the_crowd
+                props:
+                  leftLabelText: Stand out from the crowd
+                  rightLabelText: Fit in, look as if it belongs in the category
+
+              - component_name: Slider
+                attribute_name: brand_dna_outmoded_actual
+                props:
+                  leftLabelText: Look as if it has been around for 100 years
+                  rightLabelText: Startup ready to take on the world
+
+          - name: Tell us about your target audience
+            description: Who is your customer?
+            path: audience
+            form_name: AudienceStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_youthful_or_mature
+                props:
+                  leftLabelText: Youthful
+                  rightLabelText: Mature
+
+              - component_name: Slider
+                attribute_name: brand_dna_masculine_or_premium
+                props:
+                  leftLabelText: Masculine
+                  rightLabelText: Feminine
+
+              - component_name: Slider
+                attribute_name: brand_dna_low_income_or_high_income
+                props:
+                  leftLabelText: Low income
+                  rightLabelText: High income
+
+              - component_name: CountriesSelect
+                attribute_name: brand_dna_target_country_codes
+
+          - name: Last Questions
+            description: Complete the questions and get started!
+            path: finish
+            form_name: FinishStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Authentication
+                mandatory: true
+
+              - component_name: ExistingLogos
+                mandatory: true
+
+              - component_name: BrandSelector
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: brand_background_story
+                props:
+                  label: Background story
+                  hint: Your background story
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: what_is_it_for
+                mandatory: true
+                props:
+                  label: What’s your business card for?
+                  hint: "For instance: I need new and awesome business cards"
+                validations:
+                  - required
+
+              - component_name: Input
+                attribute_name: product_size
+                mandatory: true
+                props:
+                  label: What’s going to be the size of your business card?
+                  hint: "For instance: 3.5 inches by 2 inches"
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: product_text
+                mandatory: true
+                props:
+                  label: What text would you like to feature on your business card?
+                  hint: You can specify what you want on the front and back of your business card
+                validations:
+                  - required
+
+              - component_name: StockImages
+                mandatory: true
+
+              - component_name: Inspirations
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: ideas_or_special_requirements
+                mandatory: true
+                props:
+                  label: Ideas or special requirements (optional)
+                  hint: Share any more ideas or information that will make your brief more clear
+
+              - component_name: AdditionalDocuments
+                mandatory: true
+
+              - component_name: ColorsPicker
+                mandatory: true
+
+          - name: Boost your project
+            description: Choose to upgrade and improve your project
+            path: details
+            mandatory_for_existing_brand: true
+            form_name: DetailsStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Details
+                mandatory: true
+
+          - name: Checkout
+            description: Fill in your details to complete the brief and payment
+            path: checkout
+            mandatory_for_existing_brand: true
+            form_name: CheckoutStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Checkout
+                mandatory: true
+
+  - name: Packaging
+    full_name: Packaging
+    products:
+      - name: Packaging
+        key: packaging
+        price: 499
+        description: Includes a flat graphic design for your packaging shape. Includes all sides and logo if needed.
+        short_name: packaging
+        tip_and_tricks_url: https://designbro.com/how-to-get-your-packaging-design/
+        contest_design_stage_expire_days: 12
+        one_to_one_design_stage_expire_days: 12
+        contest_finalist_stage_expire_days: 5
+        one_to_one_finalist_stage_expire_days: 15
+        files_stage_expire_days: 3
+        review_files_stage_expire_days: 10
+        reservation_expire_days: 2
+        project_builder_steps:
+          - name: Tell us which of the following you would like to design on
+            description:
+            path: packaging
+            form_name: PackagingStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: true
+            project_builder_questions:
+              - component_name: PackagingType
+                mandatory: true
+
+          - name: Describe your brand DNA
+            description: Tell us which of the following best fit the image / identity of the brand you are trying to create
+            path: style
+            form_name: StyleStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_traditional_or_modern
+                props:
+                  leftLabelText: Traditional
+                  rightLabelText: Modern
+
+              - component_name: Slider
+                attribute_name: brand_dna_value_or_premium
+                props:
+                  leftLabelText: Value
+                  rightLabelText: Premium
+
+              - component_name: Slider
+                attribute_name: brand_dna_bold_or_refined
+                props:
+                  leftLabelText: Bold
+                  rightLabelText: Refined
+
+              - component_name: Slider
+                attribute_name: brand_dna_detailed_or_clean
+                props:
+                  leftLabelText: Detailed
+                  rightLabelText: Clean
+
+              - component_name: Slider
+                attribute_name: brand_dna_handcrafted_or_minimalist
+                props:
+                  leftLabelText: Handcrafted
+                  rightLabelText: Minimalist
+
+              - component_name: Slider
+                attribute_name: brand_dna_serious_or_playful
+                props:
+                  leftLabelText: Serious
+                  rightLabelText: Playful
+
+              - component_name: Slider
+                attribute_name: brand_dna_stand_out_or_not_from_the_crowd
+                props:
+                  leftLabelText: Stand out from the crowd
+                  rightLabelText: Fit in, look as if it belongs in the category
+
+              - component_name: Slider
+                attribute_name: brand_dna_outmoded_actual
+                props:
+                  leftLabelText: Look as if it has been around for 100 years
+                  rightLabelText: Startup ready to take on the world
+
+          - name: Tell us about your target audience
+            description: Who is your customer?
+            path: audience
+            form_name: AudienceStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_youthful_or_mature
+                props:
+                  leftLabelText: Youthful
+                  rightLabelText: Mature
+
+              - component_name: Slider
+                attribute_name: brand_dna_masculine_or_premium
+                props:
+                  leftLabelText: Masculine
+                  rightLabelText: Feminine
+
+              - component_name: Slider
+                attribute_name: brand_dna_low_income_or_high_income
+                props:
+                  leftLabelText: Low income
+                  rightLabelText: High income
+
+              - component_name: CountriesSelect
+                attribute_name: brand_dna_target_country_codes
+
+          - name: Last Questions
+            description: Complete the questions and get started!
+            path: finish
+            form_name: FinishStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Authentication
+                mandatory: true
+
+              - component_name: ExistingDesigns
+                mandatory: true
+
+              - component_name: Competitors
+
+              - component_name: BrandSelector
+                mandatory: true
+                props:
+                  hint: What is the name of your brand
+
+              - component_name: Textarea
+                attribute_name: brand_additional_text
+                props:
+                  label: Additional text (optional)
+                  hint: For instance 'the best drink in the world' or 'founded in 2016' or 'made with passion'
+
+              - component_name: Textarea
+                attribute_name: brand_background_story
+                props:
+                  label: Background Story
+                  hint: I.e. where does the product come from, how did you start, etc, all details can help!
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: brand_what_is_special
+                props:
+                  label: "What's special"
+                  hint: "'hand-baked by my grandmother' or 'only quality gluten-free ingredients'"
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: brand_where_it_is_used
+                props:
+                  label: Where it is used
+                  hint: For instance 'they like to drink our craft beer mainly in bars at night'
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: ideas_or_special_requirements
+                mandatory: true
+                props:
+                  label: Ideas or special requirements (optional)
+                  hint: Share any more ideas or information that will make your brief more clear
+
+              - component_name: ColorsPicker
+                mandatory: true
+
+              - component_name: Inspirations
+                mandatory: true
+
+              - component_name: AdditionalDocuments
+                mandatory: true
+
+          - name: Boost your project
+            description: Choose to upgrade and improve your project
+            path: details
+            mandatory_for_existing_brand: true
+            form_name: DetailsStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Details
+                mandatory: true
+
+          - name: Checkout
+            description: Fill in your details to complete the brief and payment
+            path: checkout
+            mandatory_for_existing_brand: true
+            form_name: CheckoutStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Checkout
+                mandatory: true
+
+  - name: Online Media
+    full_name: Online Media (website, banners and others)
+    products:
+      - key: website
+        name: Website
+        price: 499
+        description: Includes a 'non functional' design for 3 sections on your homepage
+        short_name: website
+        tip_and_tricks_url: https://designbro.com/how-to-get-your-website-design/
+        contest_design_stage_expire_days: 12
+        one_to_one_design_stage_expire_days: 12
+        contest_finalist_stage_expire_days: 7
+        one_to_one_finalist_stage_expire_days: 15
+        files_stage_expire_days: 3
+        review_files_stage_expire_days: 10
+        reservation_expire_days: 2
+        project_builder_steps:
+          - name: Describe your brand DNA
+            description: Tell us which of the following best fit the image / identity of the brand you are trying to create
+            path: style
+            form_name: StyleStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_traditional_or_modern
+                props:
+                  leftLabelText: Traditional
+                  rightLabelText: Modern
+
+              - component_name: Slider
+                attribute_name: brand_dna_value_or_premium
+                props:
+                  leftLabelText: Value
+                  rightLabelText: Premium
+
+              - component_name: Slider
+                attribute_name: brand_dna_bold_or_refined
+                props:
+                  leftLabelText: Bold
+                  rightLabelText: Refined
+
+              - component_name: Slider
+                attribute_name: brand_dna_detailed_or_clean
+                props:
+                  leftLabelText: Detailed
+                  rightLabelText: Clean
+
+              - component_name: Slider
+                attribute_name: brand_dna_handcrafted_or_minimalist
+                props:
+                  leftLabelText: Handcrafted
+                  rightLabelText: Minimalist
+
+              - component_name: Slider
+                attribute_name: brand_dna_serious_or_playful
+                props:
+                  leftLabelText: Serious
+                  rightLabelText: Playful
+
+              - component_name: Slider
+                attribute_name: brand_dna_stand_out_or_not_from_the_crowd
+                props:
+                  leftLabelText: Stand out from the crowd
+                  rightLabelText: Fit in, look as if it belongs in the category
+
+              - component_name: Slider
+                attribute_name: brand_dna_outmoded_actual
+                props:
+                  leftLabelText: Look as if it has been around for 100 years
+                  rightLabelText: Startup ready to take on the world
+
+          - name: Tell us about your target audience
+            description: Who is your customer?
+            path: audience
+            form_name: AudienceStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_youthful_or_mature
+                props:
+                  leftLabelText: Youthful
+                  rightLabelText: Mature
+
+              - component_name: Slider
+                attribute_name: brand_dna_masculine_or_premium
+                props:
+                  leftLabelText: Masculine
+                  rightLabelText: Feminine
+
+              - component_name: Slider
+                attribute_name: brand_dna_low_income_or_high_income
+                props:
+                  leftLabelText: Low income
+                  rightLabelText: High income
+
+              - component_name: CountriesSelect
+                attribute_name: brand_dna_target_country_codes
+
+          - name: Last Questions
+            description: Complete the questions and get started!
+            path: finish
+            form_name: FinishStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Authentication
+                mandatory: true
+
+              - component_name: ExistingLogos
+                mandatory: true
+
+              - component_name: BrandSelector
+                mandatory: true
+                props:
+                  hint: Please write the name you'd like to be the main feature of your logo
+
+              - component_name: Textarea
+                attribute_name: brand_background_story
+                props:
+                  label: Background story
+                  hint: Your background story
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: product_text
+                mandatory: true
+                props:
+                  label: What text would you like to feature on your website?
+                  hint: If you don’t have any final text yet, don’t worry, just ask the designer to use sample text!
+                validations:
+                  - required
+
+              - component_name: StockImages
+                mandatory: true
+
+              - component_name: Inspirations
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: ideas_or_special_requirements
+                mandatory: true
+                props:
+                  label: Ideas or special requirements (optional)
+                  hint: Share any more ideas or information that will make your brief more clear
+
+              - component_name: AdditionalDocuments
+                mandatory: true
+
+              - component_name: ColorsPicker
+                mandatory: true
+
+          - name: Boost your project
+            description: Choose to upgrade and improve your project
+            path: details
+            mandatory_for_existing_brand: true
+            form_name: DetailsStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Details
+                mandatory: true
+
+          - name: Checkout
+            description: Fill in your details to complete the brief and payment
+            path: checkout
+            mandatory_for_existing_brand: true
+            form_name: CheckoutStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Checkout
+                mandatory: true
+
+      - key: website-banner
+        name: Website Banner
+        price: 199
+        one_to_one_price: 199
+        description: Get your online banners designed. Includes a selection of the most common sizes for advertising on websites.
+        short_name: website banner
+        tip_and_tricks_url: https://designbro.com/how-to-get-your-website-banners
+        contest_design_stage_expire_days: 10
+        one_to_one_design_stage_expire_days: 10
+        contest_finalist_stage_expire_days: 5
+        one_to_one_finalist_stage_expire_days: 15
+        files_stage_expire_days: 3
+        review_files_stage_expire_days: 10
+        reservation_expire_days: 1
+        project_builder_steps:
+          - name: Describe your brand DNA
+            description: Tell us which of the following best fit the image / identity of the brand you are trying to create
+            path: style
+            form_name: StyleStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_traditional_or_modern
+                props:
+                  leftLabelText: Traditional
+                  rightLabelText: Modern
+
+              - component_name: Slider
+                attribute_name: brand_dna_value_or_premium
+                props:
+                  leftLabelText: Value
+                  rightLabelText: Premium
+
+              - component_name: Slider
+                attribute_name: brand_dna_bold_or_refined
+                props:
+                  leftLabelText: Bold
+                  rightLabelText: Refined
+
+              - component_name: Slider
+                attribute_name: brand_dna_detailed_or_clean
+                props:
+                  leftLabelText: Detailed
+                  rightLabelText: Clean
+
+              - component_name: Slider
+                attribute_name: brand_dna_handcrafted_or_minimalist
+                props:
+                  leftLabelText: Handcrafted
+                  rightLabelText: Minimalist
+
+              - component_name: Slider
+                attribute_name: brand_dna_serious_or_playful
+                props:
+                  leftLabelText: Serious
+                  rightLabelText: Playful
+
+              - component_name: Slider
+                attribute_name: brand_dna_stand_out_or_not_from_the_crowd
+                props:
+                  leftLabelText: Stand out from the crowd
+                  rightLabelText: Fit in, look as if it belongs in the category
+
+              - component_name: Slider
+                attribute_name: brand_dna_outmoded_actual
+                props:
+                  leftLabelText: Look as if it has been around for 100 years
+                  rightLabelText: Startup ready to take on the world
+
+          - name: Tell us about your target audience
+            description: Who is your customer?
+            path: audience
+            form_name: AudienceStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_youthful_or_mature
+                props:
+                  leftLabelText: Youthful
+                  rightLabelText: Mature
+
+              - component_name: Slider
+                attribute_name: brand_dna_masculine_or_premium
+                props:
+                  leftLabelText: Masculine
+                  rightLabelText: Feminine
+
+              - component_name: Slider
+                attribute_name: brand_dna_low_income_or_high_income
+                props:
+                  leftLabelText: Low income
+                  rightLabelText: High income
+
+              - component_name: CountriesSelect
+                attribute_name: brand_dna_target_country_codes
+
+          - name: Last Questions
+            description: Complete the questions and get started!
+            path: finish
+            form_name: FinishStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Authentication
+                mandatory: true
+
+              - component_name: ExistingLogos
+                mandatory: true
+
+              - component_name: BrandSelector
+                mandatory: true
+                props:
+                  hint: Please write the name you'd like to be the main feature of your banners
+
+              - component_name: Textarea
+                attribute_name: brand_background_story
+                props:
+                  label: Background story
+                  hint: Your background story
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: what_is_it_for
+                mandatory: true
+                props:
+                  label: What’s your banner for?
+                  hint: "For instance: I would like to create a banner that tells customers about the special deal they get when they register through our website."
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: product_text
+                mandatory: true
+                props:
+                  label: What text would you like to feature on your banner?
+                  hint: You can also copy and paste your text here, that way line breaks are preserved
+                validations:
+                  - required
+
+              - component_name: StockImages
+                mandatory: true
+
+              - component_name: Inspirations
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: ideas_or_special_requirements
+                mandatory: true
+                props:
+                  label: Ideas or special requirements (optional)
+                  hint: Share any more ideas or information that will make your brief more clear
+
+              - component_name: AdditionalDocuments
+                mandatory: true
+
+              - component_name: ColorsPicker
+                mandatory: true
+
+          - name: Boost your project
+            description: Choose to upgrade and improve your project
+            path: details
+            mandatory_for_existing_brand: true
+            form_name: DetailsStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Details
+                mandatory: true
+
+          - name: Checkout
+            description: Fill in your details to complete the brief and payment
+            path: checkout
+            mandatory_for_existing_brand: true
+            form_name: CheckoutStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Checkout
+                mandatory: true
+
+  - name: Print Media
+    full_name: Print Media
+    products:
+      - key: flyer
+        name: Flyer
+        price: 199
+        one_to_one_price: 199
+        description: Need to get noticed? Our designers will create the perfect flyer for your company.
+        short_name: flyer
+        tip_and_tricks_url: https://designbro.com/how-to-get-your-flyer
+        contest_design_stage_expire_days: 10
+        one_to_one_design_stage_expire_days: 10
+        contest_finalist_stage_expire_days: 5
+        one_to_one_finalist_stage_expire_days: 15
+        files_stage_expire_days: 3
+        review_files_stage_expire_days: 10
+        reservation_expire_days: 1
+        project_builder_steps:
+          - name: Describe your brand DNA
+            description: Tell us which of the following best fit the image / identity of the brand you are trying to create
+            path: style
+            form_name: StyleStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_traditional_or_modern
+                props:
+                  leftLabelText: Traditional
+                  rightLabelText: Modern
+
+              - component_name: Slider
+                attribute_name: brand_dna_value_or_premium
+                props:
+                  leftLabelText: Value
+                  rightLabelText: Premium
+
+              - component_name: Slider
+                attribute_name: brand_dna_bold_or_refined
+                props:
+                  leftLabelText: Bold
+                  rightLabelText: Refined
+
+              - component_name: Slider
+                attribute_name: brand_dna_detailed_or_clean
+                props:
+                  leftLabelText: Detailed
+                  rightLabelText: Clean
+
+              - component_name: Slider
+                attribute_name: brand_dna_handcrafted_or_minimalist
+                props:
+                  leftLabelText: Handcrafted
+                  rightLabelText: Minimalist
+
+              - component_name: Slider
+                attribute_name: brand_dna_serious_or_playful
+                props:
+                  leftLabelText: Serious
+                  rightLabelText: Playful
+
+              - component_name: Slider
+                attribute_name: brand_dna_stand_out_or_not_from_the_crowd
+                props:
+                  leftLabelText: Stand out from the crowd
+                  rightLabelText: Fit in, look as if it belongs in the category
+
+              - component_name: Slider
+                attribute_name: brand_dna_outmoded_actual
+                props:
+                  leftLabelText: Look as if it has been around for 100 years
+                  rightLabelText: Startup ready to take on the world
+
+          - name: Tell us about your target audience
+            description: Who is your customer?
+            path: audience
+            form_name: AudienceStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_youthful_or_mature
+                props:
+                  leftLabelText: Youthful
+                  rightLabelText: Mature
+
+              - component_name: Slider
+                attribute_name: brand_dna_masculine_or_premium
+                props:
+                  leftLabelText: Masculine
+                  rightLabelText: Feminine
+
+              - component_name: Slider
+                attribute_name: brand_dna_low_income_or_high_income
+                props:
+                  leftLabelText: Low income
+                  rightLabelText: High income
+
+              - component_name: CountriesSelect
+                attribute_name: brand_dna_target_country_codes
+
+          - name: Last Questions
+            description: Complete the questions and get started!
+            path: finish
+            form_name: FinishStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Authentication
+                mandatory: true
+
+              - component_name: ExistingLogos
+                mandatory: true
+
+              - component_name: BrandSelector
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: brand_background_story
+                props:
+                  label: Background story
+                  hint: Your background story
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: what_is_it_for
+                mandatory: true
+                props:
+                  label: What’s your flyer for?
+                  hint: "For instance: I need a flyer for next week’s live music event at our coffee bar"
+                validations:
+                  - required
+
+              - component_name: Input
+                attribute_name: product_size
+                mandatory: true
+                props:
+                  label: What’s going to be the size of your flyer?
+                  hint: "For instance: 5 inches by 3 inches"
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: product_text
+                mandatory: true
+                props:
+                  label: What text would you like to feature on your flyer?
+                  hint: You can also copy and paste your text here, that way line breaks are preserved.
+                validations:
+                  - required
+
+              - component_name: StockImages
+                mandatory: true
+
+              - component_name: Inspirations
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: ideas_or_special_requirements
+                mandatory: true
+                props:
+                  label: Ideas or special requirements (optional)
+                  hint: Share any more ideas or information that will make your brief more clear
+
+              - component_name: AdditionalDocuments
+                mandatory: true
+
+              - component_name: ColorsPicker
+                mandatory: true
+
+          - name: Boost your project
+            description: Choose to upgrade and improve your project
+            path: details
+            mandatory_for_existing_brand: true
+            form_name: DetailsStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Details
+                mandatory: true
+
+          - name: Checkout
+            description: Fill in your details to complete the brief and payment
+            path: checkout
+            mandatory_for_existing_brand: true
+            form_name: CheckoutStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Checkout
+                mandatory: true
+
+      - key: poster
+        name: Poster
+        price: 199
+        one_to_one_price: 199
+        description: Get professional designers to create your awesome poster design.
+        short_name: poster
+        tip_and_tricks_url: https://designbro.com/how-to-get-your-poster
+        contest_design_stage_expire_days: 10
+        one_to_one_design_stage_expire_days: 10
+        contest_finalist_stage_expire_days: 5
+        one_to_one_finalist_stage_expire_days: 15
+        files_stage_expire_days: 3
+        review_files_stage_expire_days: 10
+        reservation_expire_days: 1
+        project_builder_steps:
+          - name: Describe your brand DNA
+            description: Tell us which of the following best fit the image / identity of the brand you are trying to create
+            path: style
+            form_name: StyleStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_traditional_or_modern
+                props:
+                  leftLabelText: Traditional
+                  rightLabelText: Modern
+
+              - component_name: Slider
+                attribute_name: brand_dna_value_or_premium
+                props:
+                  leftLabelText: Value
+                  rightLabelText: Premium
+
+              - component_name: Slider
+                attribute_name: brand_dna_bold_or_refined
+                props:
+                  leftLabelText: Bold
+                  rightLabelText: Refined
+
+              - component_name: Slider
+                attribute_name: brand_dna_detailed_or_clean
+                props:
+                  leftLabelText: Detailed
+                  rightLabelText: Clean
+
+              - component_name: Slider
+                attribute_name: brand_dna_handcrafted_or_minimalist
+                props:
+                  leftLabelText: Handcrafted
+                  rightLabelText: Minimalist
+
+              - component_name: Slider
+                attribute_name: brand_dna_serious_or_playful
+                props:
+                  leftLabelText: Serious
+                  rightLabelText: Playful
+
+              - component_name: Slider
+                attribute_name: brand_dna_stand_out_or_not_from_the_crowd
+                props:
+                  leftLabelText: Stand out from the crowd
+                  rightLabelText: Fit in, look as if it belongs in the category
+
+              - component_name: Slider
+                attribute_name: brand_dna_outmoded_actual
+                props:
+                  leftLabelText: Look as if it has been around for 100 years
+                  rightLabelText: Startup ready to take on the world
+
+          - name: Tell us about your target audience
+            description: Who is your customer?
+            path: audience
+            form_name: AudienceStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_youthful_or_mature
+                props:
+                  leftLabelText: Youthful
+                  rightLabelText: Mature
+
+              - component_name: Slider
+                attribute_name: brand_dna_masculine_or_premium
+                props:
+                  leftLabelText: Masculine
+                  rightLabelText: Feminine
+
+              - component_name: Slider
+                attribute_name: brand_dna_low_income_or_high_income
+                props:
+                  leftLabelText: Low income
+                  rightLabelText: High income
+
+              - component_name: CountriesSelect
+                attribute_name: brand_dna_target_country_codes
+
+          - name: Last Questions
+            description: Complete the questions and get started!
+            path: finish
+            form_name: FinishStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Authentication
+                mandatory: true
+
+              - component_name: ExistingLogos
+                mandatory: true
+
+              - component_name: BrandSelector
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: brand_background_story
+                props:
+                  label: Background story
+                  hint: Your background story
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: what_is_it_for
+                mandatory: true
+                props:
+                  label: What’s your poster for?
+                  hint: "For instance: I need a poster for next week’s live music event at our coffee bar"
+                validations:
+                  - required
+
+              - component_name: Input
+                attribute_name: product_size
+                mandatory: true
+                props:
+                  label: What’s going to be the size of your poster?
+                  hint: "For instance: 18 inches by 24 inches"
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: product_text
+                mandatory: true
+                props:
+                  label: What text would you like to feature on your poster?
+                  hint: You can also copy and paste your text here, that way line breaks are preserved.
+                validations:
+                  - required
+
+              - component_name: StockImages
+                mandatory: true
+
+              - component_name: Inspirations
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: ideas_or_special_requirements
+                mandatory: true
+                props:
+                  label: Ideas or special requirements (optional)
+                  hint: Share any more ideas or information that will make your brief more clear
+
+              - component_name: AdditionalDocuments
+                mandatory: true
+
+              - component_name: ColorsPicker
+                mandatory: true
+
+          - name: Boost your project
+            description: Choose to upgrade and improve your project
+            path: details
+            mandatory_for_existing_brand: true
+            form_name: DetailsStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Details
+                mandatory: true
+
+          - name: Checkout
+            description: Fill in your details to complete the brief and payment
+            path: checkout
+            mandatory_for_existing_brand: true
+            form_name: CheckoutStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Checkout
+                mandatory: true
+
+      - key: billboard
+        name: Billboard
+        price: 199
+        one_to_one_price: 199
+        description: Make an impact with your very own unique billboard design. Our designers will make sure you get noticed!
+        short_name: billboard
+        tip_and_tricks_url: https://designbro.com/how-to-get-your-billboard
+        contest_design_stage_expire_days: 10
+        one_to_one_design_stage_expire_days: 10
+        contest_finalist_stage_expire_days: 5
+        one_to_one_finalist_stage_expire_days: 15
+        files_stage_expire_days: 3
+        review_files_stage_expire_days: 10
+        reservation_expire_days: 1
+        product_size_label: What’s going to be the size of your billboard?
+        what_is_it_for_label: What’s your billboard for?
+        product_text_label: What text would you like to feature on your billboard?
+
+        project_builder_steps:
+          - name: Describe your brand DNA
+            description: Tell us which of the following best fit the image / identity of the brand you are trying to create
+            path: style
+            form_name: StyleStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_traditional_or_modern
+                props:
+                  leftLabelText: Traditional
+                  rightLabelText: Modern
+
+              - component_name: Slider
+                attribute_name: brand_dna_value_or_premium
+                props:
+                  leftLabelText: Value
+                  rightLabelText: Premium
+
+              - component_name: Slider
+                attribute_name: brand_dna_bold_or_refined
+                props:
+                  leftLabelText: Bold
+                  rightLabelText: Refined
+
+              - component_name: Slider
+                attribute_name: brand_dna_detailed_or_clean
+                props:
+                  leftLabelText: Detailed
+                  rightLabelText: Clean
+
+              - component_name: Slider
+                attribute_name: brand_dna_handcrafted_or_minimalist
+                props:
+                  leftLabelText: Handcrafted
+                  rightLabelText: Minimalist
+
+              - component_name: Slider
+                attribute_name: brand_dna_serious_or_playful
+                props:
+                  leftLabelText: Serious
+                  rightLabelText: Playful
+
+              - component_name: Slider
+                attribute_name: brand_dna_stand_out_or_not_from_the_crowd
+                props:
+                  leftLabelText: Stand out from the crowd
+                  rightLabelText: Fit in, look as if it belongs in the category
+
+              - component_name: Slider
+                attribute_name: brand_dna_outmoded_actual
+                props:
+                  leftLabelText: Look as if it has been around for 100 years
+                  rightLabelText: Startup ready to take on the world
+
+          - name: Tell us about your target audience
+            description: Who is your customer?
+            path: audience
+            form_name: AudienceStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_youthful_or_mature
+                props:
+                  leftLabelText: Youthful
+                  rightLabelText: Mature
+
+              - component_name: Slider
+                attribute_name: brand_dna_masculine_or_premium
+                props:
+                  leftLabelText: Masculine
+                  rightLabelText: Feminine
+
+              - component_name: Slider
+                attribute_name: brand_dna_low_income_or_high_income
+                props:
+                  leftLabelText: Low income
+                  rightLabelText: High income
+
+              - component_name: CountriesSelect
+                attribute_name: brand_dna_target_country_codes
+
+          - name: Last Questions
+            description: Complete the questions and get started!
+            path: finish
+            form_name: FinishStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Authentication
+                mandatory: true
+
+              - component_name: ExistingLogos
+                mandatory: true
+
+              - component_name: BrandSelector
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: brand_background_story
+                props:
+                  label: Background story
+                  hint: Your background story
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: what_is_it_for
+                mandatory: true
+                props:
+                  label: What’s your billboard for?
+                  hint: "For instance: I need a billboard for next week’s live music event at our coffee bar"
+                validations:
+                  - required
+
+              - component_name: Input
+                attribute_name: product_size
+                mandatory: true
+                props:
+                  label: What’s going to be the size of your billboard?
+                  hint: "For instance: 10 feet by 6.6 feet"
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: product_text
+                mandatory: true
+                props:
+                  label: What text would you like to feature on your billboard?
+                  hint: You can also copy and paste your text here, that way line breaks are preserved.
+                validations:
+                  - required
+
+              - component_name: StockImages
+                mandatory: true
+
+              - component_name: Inspirations
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: ideas_or_special_requirements
+                mandatory: true
+                props:
+                  label: Ideas or special requirements (optional)
+                  hint: Share any more ideas or information that will make your brief more clear
+
+              - component_name: AdditionalDocuments
+                mandatory: true
+
+              - component_name: ColorsPicker
+                mandatory: true
+
+          - name: Boost your project
+            description: Choose to upgrade and improve your project
+            path: details
+            mandatory_for_existing_brand: true
+            form_name: DetailsStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Details
+                mandatory: true
+
+          - name: Checkout
+            description: Fill in your details to complete the brief and payment
+            path: checkout
+            mandatory_for_existing_brand: true
+            form_name: CheckoutStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Checkout
+                mandatory: true
+
+      - key: book-cover
+        name: Book cover
+        price: 199
+        one_to_one_price: 199
+        description: Just in case people do judge your book by it’s cover, our professional designers will make it look the part.
+        short_name: book cover
+        tip_and_tricks_url: https://designbro.com/how-to-get-your-book-cover
+        contest_design_stage_expire_days: 10
+        one_to_one_design_stage_expire_days: 10
+        contest_finalist_stage_expire_days: 5
+        one_to_one_finalist_stage_expire_days: 15
+        files_stage_expire_days: 3
+        review_files_stage_expire_days: 10
+        reservation_expire_days: 1
+        product_size_label: What’s going to be the size of your book cover?
+        what_is_it_for_label: What’s your book cover for?
+        product_text_label: What text would you like to feature on your book cover?
+
+        project_builder_steps:
+          - name: Describe your brand DNA
+            description: Tell us which of the following best fit the image / identity of the brand you are trying to create
+            path: style
+            form_name: StyleStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_traditional_or_modern
+                props:
+                  leftLabelText: Traditional
+                  rightLabelText: Modern
+
+              - component_name: Slider
+                attribute_name: brand_dna_value_or_premium
+                props:
+                  leftLabelText: Value
+                  rightLabelText: Premium
+
+              - component_name: Slider
+                attribute_name: brand_dna_bold_or_refined
+                props:
+                  leftLabelText: Bold
+                  rightLabelText: Refined
+
+              - component_name: Slider
+                attribute_name: brand_dna_detailed_or_clean
+                props:
+                  leftLabelText: Detailed
+                  rightLabelText: Clean
+
+              - component_name: Slider
+                attribute_name: brand_dna_handcrafted_or_minimalist
+                props:
+                  leftLabelText: Handcrafted
+                  rightLabelText: Minimalist
+
+              - component_name: Slider
+                attribute_name: brand_dna_serious_or_playful
+                props:
+                  leftLabelText: Serious
+                  rightLabelText: Playful
+
+              - component_name: Slider
+                attribute_name: brand_dna_stand_out_or_not_from_the_crowd
+                props:
+                  leftLabelText: Stand out from the crowd
+                  rightLabelText: Fit in, look as if it belongs in the category
+
+              - component_name: Slider
+                attribute_name: brand_dna_outmoded_actual
+                props:
+                  leftLabelText: Look as if it has been around for 100 years
+                  rightLabelText: Startup ready to take on the world
+
+          - name: Tell us about your target audience
+            description: Who is your customer?
+            path: audience
+            form_name: AudienceStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_youthful_or_mature
+                props:
+                  leftLabelText: Youthful
+                  rightLabelText: Mature
+
+              - component_name: Slider
+                attribute_name: brand_dna_masculine_or_premium
+                props:
+                  leftLabelText: Masculine
+                  rightLabelText: Feminine
+
+              - component_name: Slider
+                attribute_name: brand_dna_low_income_or_high_income
+                props:
+                  leftLabelText: Low income
+                  rightLabelText: High income
+
+              - component_name: CountriesSelect
+                attribute_name: brand_dna_target_country_codes
+
+          - name: Last Questions
+            description: Complete the questions and get started!
+            path: finish
+            form_name: FinishStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Authentication
+                mandatory: true
+
+              - component_name: ExistingLogos
+                mandatory: true
+
+              - component_name: BrandSelector
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: brand_background_story
+                props:
+                  label: Background story
+                  hint: Your background story
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: what_is_it_for
+                mandatory: true
+                props:
+                  label: What’s your book cover for?
+                  hint: "For instance: I am publishing a novel"
+                validations:
+                  - required
+
+              - component_name: Input
+                attribute_name: product_size
+                mandatory: true
+                props:
+                  label: What’s going to be the size of your book cover?
+                  hint: "For instance: 10 by 12 inches"
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: product_text
+                mandatory: true
+                props:
+                  label: What text would you like to feature on your book cover?
+                  hint: You can specify what you want on the front, spine and back of your book cover
+                validations:
+                  - required
+
+              - component_name: StockImages
+                mandatory: true
+
+              - component_name: Inspirations
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: ideas_or_special_requirements
+                mandatory: true
+                props:
+                  label: Ideas or special requirements (optional)
+                  hint: Share any more ideas or information that will make your brief more clear
+
+              - component_name: AdditionalDocuments
+                mandatory: true
+
+              - component_name: ColorsPicker
+                mandatory: true
+
+          - name: Boost your project
+            description: Choose to upgrade and improve your project
+            path: details
+            mandatory_for_existing_brand: true
+            form_name: DetailsStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Details
+                mandatory: true
+
+          - name: Checkout
+            description: Fill in your details to complete the brief and payment
+            path: checkout
+            mandatory_for_existing_brand: true
+            form_name: CheckoutStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Checkout
+                mandatory: true
+
+      - key: album-cover
+        name: Album cover
+        price: 199
+        one_to_one_price: 199
+        description: Need a great album artwork for your album or playlist? Our experienced designers will make sure yours stands out.
+        short_name: album cover
+        tip_and_tricks_url: https://designbro.com/how-to-get-your-album-cover
+        contest_design_stage_expire_days: 10
+        one_to_one_design_stage_expire_days: 10
+        contest_finalist_stage_expire_days: 5
+        one_to_one_finalist_stage_expire_days: 15
+        files_stage_expire_days: 3
+        review_files_stage_expire_days: 10
+        reservation_expire_days: 1
+        product_size_label: What’s going to be the size of your album cover?
+        what_is_it_for_label: What’s your album cover for?
+        product_text_label: What text would you like to feature on your album cover?
+
+        project_builder_steps:
+          - name: Describe your brand DNA
+            description: Tell us which of the following best fit the image / identity of the brand you are trying to create
+            path: style
+            form_name: StyleStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_traditional_or_modern
+                props:
+                  leftLabelText: Traditional
+                  rightLabelText: Modern
+
+              - component_name: Slider
+                attribute_name: brand_dna_value_or_premium
+                props:
+                  leftLabelText: Value
+                  rightLabelText: Premium
+
+              - component_name: Slider
+                attribute_name: brand_dna_bold_or_refined
+                props:
+                  leftLabelText: Bold
+                  rightLabelText: Refined
+
+              - component_name: Slider
+                attribute_name: brand_dna_detailed_or_clean
+                props:
+                  leftLabelText: Detailed
+                  rightLabelText: Clean
+
+              - component_name: Slider
+                attribute_name: brand_dna_handcrafted_or_minimalist
+                props:
+                  leftLabelText: Handcrafted
+                  rightLabelText: Minimalist
+
+              - component_name: Slider
+                attribute_name: brand_dna_serious_or_playful
+                props:
+                  leftLabelText: Serious
+                  rightLabelText: Playful
+
+              - component_name: Slider
+                attribute_name: brand_dna_stand_out_or_not_from_the_crowd
+                props:
+                  leftLabelText: Stand out from the crowd
+                  rightLabelText: Fit in, look as if it belongs in the category
+
+              - component_name: Slider
+                attribute_name: brand_dna_outmoded_actual
+                props:
+                  leftLabelText: Look as if it has been around for 100 years
+                  rightLabelText: Startup ready to take on the world
+
+          - name: Tell us about your target audience
+            description: Who is your customer?
+            path: audience
+            form_name: AudienceStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_youthful_or_mature
+                props:
+                  leftLabelText: Youthful
+                  rightLabelText: Mature
+
+              - component_name: Slider
+                attribute_name: brand_dna_masculine_or_premium
+                props:
+                  leftLabelText: Masculine
+                  rightLabelText: Feminine
+
+              - component_name: Slider
+                attribute_name: brand_dna_low_income_or_high_income
+                props:
+                  leftLabelText: Low income
+                  rightLabelText: High income
+
+              - component_name: CountriesSelect
+                attribute_name: brand_dna_target_country_codes
+
+          - name: Last Questions
+            description: Complete the questions and get started!
+            path: finish
+            form_name: FinishStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Authentication
+                mandatory: true
+
+              - component_name: ExistingLogos
+                mandatory: true
+
+              - component_name: BrandSelector
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: brand_background_story
+                props:
+                  label: Background story
+                  hint: Your background story
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: what_is_it_for
+                mandatory: true
+                props:
+                  label: What’s your album cover for?
+                  hint: "For instance: I am launching a new EDM album"
+                validations:
+                  - required
+
+              - component_name: Input
+                attribute_name: product_size
+                mandatory: true
+                props:
+                  label: What’s going to be the size of your album cover?
+                  hint: "For instance: 3000 by 3000 pixels"
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: product_text
+                mandatory: true
+                props:
+                  label: What text would you like to feature on your album cover?
+                  hint: Let us know what text you would like to feature on your album cover
+                validations:
+                  - required
+
+              - component_name: StockImages
+                mandatory: true
+
+              - component_name: Inspirations
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: ideas_or_special_requirements
+                mandatory: true
+                props:
+                  label: Ideas or special requirements (optional)
+                  hint: Share any more ideas or information that will make your brief more clear
+
+              - component_name: AdditionalDocuments
+                mandatory: true
+
+              - component_name: ColorsPicker
+                mandatory: true
+
+          - name: Boost your project
+            description: Choose to upgrade and improve your project
+            path: details
+            mandatory_for_existing_brand: true
+            form_name: DetailsStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Details
+                mandatory: true
+
+          - name: Checkout
+            description: Fill in your details to complete the brief and payment
+            path: checkout
+            mandatory_for_existing_brand: true
+            form_name: CheckoutStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Checkout
+                mandatory: true
+
+      - key: magazine-cover
+        name: Magazine cover
+        price: 199
+        one_to_one_price: 199
+        description: Make you Magazine stand out by getting our designers to create a unique and appealing cover.
+        short_name: magazine cover
+        tip_and_tricks_url: https://designbro.com/how-to-get-your-magazine-cover
+        contest_design_stage_expire_days: 10
+        one_to_one_design_stage_expire_days: 10
+        contest_finalist_stage_expire_days: 5
+        one_to_one_finalist_stage_expire_days: 15
+        files_stage_expire_days: 3
+        review_files_stage_expire_days: 10
+        reservation_expire_days: 1
+        product_size_label: What’s going to be the size of your magazine cover?
+        what_is_it_for_label: What’s your magazine cover for?
+        product_text_label: What text would you like to feature on your magazine cover?
+
+        project_builder_steps:
+          - name: Describe your brand DNA
+            description: Tell us which of the following best fit the image / identity of the brand you are trying to create
+            path: style
+            form_name: StyleStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_traditional_or_modern
+                props:
+                  leftLabelText: Traditional
+                  rightLabelText: Modern
+
+              - component_name: Slider
+                attribute_name: brand_dna_value_or_premium
+                props:
+                  leftLabelText: Value
+                  rightLabelText: Premium
+
+              - component_name: Slider
+                attribute_name: brand_dna_bold_or_refined
+                props:
+                  leftLabelText: Bold
+                  rightLabelText: Refined
+
+              - component_name: Slider
+                attribute_name: brand_dna_detailed_or_clean
+                props:
+                  leftLabelText: Detailed
+                  rightLabelText: Clean
+
+              - component_name: Slider
+                attribute_name: brand_dna_handcrafted_or_minimalist
+                props:
+                  leftLabelText: Handcrafted
+                  rightLabelText: Minimalist
+
+              - component_name: Slider
+                attribute_name: brand_dna_serious_or_playful
+                props:
+                  leftLabelText: Serious
+                  rightLabelText: Playful
+
+              - component_name: Slider
+                attribute_name: brand_dna_stand_out_or_not_from_the_crowd
+                props:
+                  leftLabelText: Stand out from the crowd
+                  rightLabelText: Fit in, look as if it belongs in the category
+
+              - component_name: Slider
+                attribute_name: brand_dna_outmoded_actual
+                props:
+                  leftLabelText: Look as if it has been around for 100 years
+                  rightLabelText: Startup ready to take on the world
+
+          - name: Tell us about your target audience
+            description: Who is your customer?
+            path: audience
+            form_name: AudienceStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_youthful_or_mature
+                props:
+                  leftLabelText: Youthful
+                  rightLabelText: Mature
+
+              - component_name: Slider
+                attribute_name: brand_dna_masculine_or_premium
+                props:
+                  leftLabelText: Masculine
+                  rightLabelText: Feminine
+
+              - component_name: Slider
+                attribute_name: brand_dna_low_income_or_high_income
+                props:
+                  leftLabelText: Low income
+                  rightLabelText: High income
+
+              - component_name: CountriesSelect
+                attribute_name: brand_dna_target_country_codes
+
+          - name: Last Questions
+            description: Complete the questions and get started!
+            path: finish
+            form_name: FinishStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Authentication
+                mandatory: true
+
+              - component_name: ExistingLogos
+                mandatory: true
+
+              - component_name: BrandSelector
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: brand_background_story
+                props:
+                  label: Background story
+                  hint: Your background story
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: what_is_it_for
+                mandatory: true
+                props:
+                  label: What’s your magazine cover for?
+                  hint: "For instance: I am publishing a new gardening magazine"
+                validations:
+                  - required
+
+              - component_name: Input
+                attribute_name: product_size
+                mandatory: true
+                props:
+                  label: What’s going to be the size of your magazine cover?
+                  hint: "For instance: 8.5 by 11 inches"
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: product_text
+                mandatory: true
+                props:
+                  label: What text would you like to feature on your magazine cover?
+                  hint: Let us know what text you would like to feature on the front cover of your magazine
+                validations:
+                  - required
+
+              - component_name: StockImages
+                mandatory: true
+
+              - component_name: Inspirations
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: ideas_or_special_requirements
+                mandatory: true
+                props:
+                  label: Ideas or special requirements (optional)
+                  hint: Share any more ideas or information that will make your brief more clear
+
+              - component_name: AdditionalDocuments
+                mandatory: true
+
+              - component_name: ColorsPicker
+                mandatory: true
+
+          - name: Boost your project
+            description: Choose to upgrade and improve your project
+            path: details
+            mandatory_for_existing_brand: true
+            form_name: DetailsStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Details
+                mandatory: true
+
+          - name: Checkout
+            description: Fill in your details to complete the brief and payment
+            path: checkout
+            mandatory_for_existing_brand: true
+            form_name: CheckoutStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Checkout
+                mandatory: true
+
+      - key: t-shirt
+        name: T-Shirt
+        price: 199
+        one_to_one_price: 199
+        description: Get your professional T-Shirt designed by our professional creatives.
+        short_name: t-shirt
+        tip_and_tricks_url: https://designbro.com/how-to-get-your-t-shirt
+        contest_design_stage_expire_days: 10
+        one_to_one_design_stage_expire_days: 10
+        contest_finalist_stage_expire_days: 5
+        one_to_one_finalist_stage_expire_days: 15
+        files_stage_expire_days: 3
+        review_files_stage_expire_days: 10
+        reservation_expire_days: 1
+        product_size_label: What’s going to be the size of your t-shirt?
+        what_is_it_for_label: What’s your t-shirt for?
+        product_text_label: What text would you like to feature on your t-shirt?
+        project_builder_steps:
+          - name: Describe your brand DNA
+            description: Tell us which of the following best fit the image / identity of the brand you are trying to create
+            path: style
+            form_name: StyleStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_traditional_or_modern
+                props:
+                  leftLabelText: Traditional
+                  rightLabelText: Modern
+
+              - component_name: Slider
+                attribute_name: brand_dna_value_or_premium
+                props:
+                  leftLabelText: Value
+                  rightLabelText: Premium
+
+              - component_name: Slider
+                attribute_name: brand_dna_bold_or_refined
+                props:
+                  leftLabelText: Bold
+                  rightLabelText: Refined
+
+              - component_name: Slider
+                attribute_name: brand_dna_detailed_or_clean
+                props:
+                  leftLabelText: Detailed
+                  rightLabelText: Clean
+
+              - component_name: Slider
+                attribute_name: brand_dna_handcrafted_or_minimalist
+                props:
+                  leftLabelText: Handcrafted
+                  rightLabelText: Minimalist
+
+              - component_name: Slider
+                attribute_name: brand_dna_serious_or_playful
+                props:
+                  leftLabelText: Serious
+                  rightLabelText: Playful
+
+              - component_name: Slider
+                attribute_name: brand_dna_stand_out_or_not_from_the_crowd
+                props:
+                  leftLabelText: Stand out from the crowd
+                  rightLabelText: Fit in, look as if it belongs in the category
+
+              - component_name: Slider
+                attribute_name: brand_dna_outmoded_actual
+                props:
+                  leftLabelText: Look as if it has been around for 100 years
+                  rightLabelText: Startup ready to take on the world
+
+          - name: Tell us about your target audience
+            description: Who is your customer?
+            path: audience
+            form_name: AudienceStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_youthful_or_mature
+                props:
+                  leftLabelText: Youthful
+                  rightLabelText: Mature
+
+              - component_name: Slider
+                attribute_name: brand_dna_masculine_or_premium
+                props:
+                  leftLabelText: Masculine
+                  rightLabelText: Feminine
+
+              - component_name: Slider
+                attribute_name: brand_dna_low_income_or_high_income
+                props:
+                  leftLabelText: Low income
+                  rightLabelText: High income
+
+              - component_name: CountriesSelect
+                attribute_name: brand_dna_target_country_codes
+
+          - name: Last Questions
+            description: Complete the questions and get started!
+            path: finish
+            form_name: FinishStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Authentication
+                mandatory: true
+
+              - component_name: ExistingLogos
+                mandatory: true
+
+              - component_name: BrandSelector
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: brand_background_story
+                props:
+                  label: Background story
+                  hint: Your background story
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: what_is_it_for
+                mandatory: true
+                props:
+                  label: What’s your t-shirt for?
+                  hint: "For instance: I am starting my apparel products"
+                validations:
+                  - required
+
+              - component_name: Input
+                attribute_name: product_size
+                mandatory: true
+                props:
+                  label: What’s going to be the size of your t-shirt?
+                  hint: "For instance: 10 by 12 inches"
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: product_text
+                mandatory: true
+                props:
+                  label: What text would you like to feature on your t-shirt?
+                  hint: You can specify what text and logo you want to want to print on your t-shirt
+                validations:
+                  - required
+
+              - component_name: StockImages
+                mandatory: true
+
+              - component_name: Inspirations
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: ideas_or_special_requirements
+                mandatory: true
+                props:
+                  label: Ideas or special requirements (optional)
+                  hint: Share any more ideas or information that will make your brief more clear
+
+              - component_name: AdditionalDocuments
+                mandatory: true
+
+              - component_name: ColorsPicker
+                mandatory: true
+
+          - name: Boost your project
+            description: Choose to upgrade and improve your project
+            path: details
+            mandatory_for_existing_brand: true
+            form_name: DetailsStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Details
+                mandatory: true
+
+          - name: Checkout
+            description: Fill in your details to complete the brief and payment
+            path: checkout
+            mandatory_for_existing_brand: true
+            form_name: CheckoutStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Checkout
+                mandatory: true
+
+      - key: menu
+        name: Menu
+        price: 199
+        one_to_one_price: 199
+        description: Get your professional menu design for your restaurant or café.
+        short_name: menu
+        tip_and_tricks_url: https://designbro.com/how-to-get-your-menu
+        contest_design_stage_expire_days: 10
+        one_to_one_design_stage_expire_days: 10
+        contest_finalist_stage_expire_days: 5
+        one_to_one_finalist_stage_expire_days: 15
+        files_stage_expire_days: 3
+        review_files_stage_expire_days: 10
+        reservation_expire_days: 1
+        product_size_label: What’s going to be the size of your menu?
+        what_is_it_for_label: What’s your menu for?
+        product_text_label: What text would you like to feature on your menu?
+        project_builder_steps:
+          - name: Describe your brand DNA
+            description: Tell us which of the following best fit the image / identity of the brand you are trying to create
+            path: style
+            form_name: StyleStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_traditional_or_modern
+                props:
+                  leftLabelText: Traditional
+                  rightLabelText: Modern
+
+              - component_name: Slider
+                attribute_name: brand_dna_value_or_premium
+                props:
+                  leftLabelText: Value
+                  rightLabelText: Premium
+
+              - component_name: Slider
+                attribute_name: brand_dna_bold_or_refined
+                props:
+                  leftLabelText: Bold
+                  rightLabelText: Refined
+
+              - component_name: Slider
+                attribute_name: brand_dna_detailed_or_clean
+                props:
+                  leftLabelText: Detailed
+                  rightLabelText: Clean
+
+              - component_name: Slider
+                attribute_name: brand_dna_handcrafted_or_minimalist
+                props:
+                  leftLabelText: Handcrafted
+                  rightLabelText: Minimalist
+
+              - component_name: Slider
+                attribute_name: brand_dna_serious_or_playful
+                props:
+                  leftLabelText: Serious
+                  rightLabelText: Playful
+
+              - component_name: Slider
+                attribute_name: brand_dna_stand_out_or_not_from_the_crowd
+                props:
+                  leftLabelText: Stand out from the crowd
+                  rightLabelText: Fit in, look as if it belongs in the category
+
+              - component_name: Slider
+                attribute_name: brand_dna_outmoded_actual
+                props:
+                  leftLabelText: Look as if it has been around for 100 years
+                  rightLabelText: Startup ready to take on the world
+
+          - name: Tell us about your target audience
+            description: Who is your customer?
+            path: audience
+            form_name: AudienceStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_youthful_or_mature
+                props:
+                  leftLabelText: Youthful
+                  rightLabelText: Mature
+
+              - component_name: Slider
+                attribute_name: brand_dna_masculine_or_premium
+                props:
+                  leftLabelText: Masculine
+                  rightLabelText: Feminine
+
+              - component_name: Slider
+                attribute_name: brand_dna_low_income_or_high_income
+                props:
+                  leftLabelText: Low income
+                  rightLabelText: High income
+
+              - component_name: CountriesSelect
+                attribute_name: brand_dna_target_country_codes
+
+          - name: Last Questions
+            description: Complete the questions and get started!
+            path: finish
+            form_name: FinishStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Authentication
+                mandatory: true
+
+              - component_name: ExistingLogos
+                mandatory: true
+
+              - component_name: BrandSelector
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: brand_background_story
+                props:
+                  label: Background story
+                  hint: Your background story
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: what_is_it_for
+                mandatory: true
+                props:
+                  label: What’s your menu for?
+                  hint: "For instance: I want a menu for my restaurant"
+                validations:
+                  - required
+
+              - component_name: Input
+                attribute_name: product_size
+                mandatory: true
+                props:
+                  label: What’s going to be the size of your menu?
+                  hint: "For instance: 9 by 12 inches"
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: product_text
+                mandatory: true
+                props:
+                  label: What text would you like to feature on your menu?
+                  hint: You can specify what you want on each page/side of the menu
+                validations:
+                  - required
+
+              - component_name: StockImages
+                mandatory: true
+
+              - component_name: Inspirations
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: ideas_or_special_requirements
+                mandatory: true
+                props:
+                  label: Ideas or special requirements (optional)
+                  hint: Share any more ideas or information that will make your brief more clear
+
+              - component_name: AdditionalDocuments
+                mandatory: true
+
+              - component_name: ColorsPicker
+                mandatory: true
+
+          - name: Boost your project
+            description: Choose to upgrade and improve your project
+            path: details
+            mandatory_for_existing_brand: true
+            form_name: DetailsStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Details
+                mandatory: true
+
+          - name: Checkout
+            description: Fill in your details to complete the brief and payment
+            path: checkout
+            mandatory_for_existing_brand: true
+            form_name: CheckoutStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Checkout
+                mandatory: true
+
+  - name: Social
+    full_name: Social
+    products:
+      - key: instagram-post
+        name: Instagram post
+        price: 79
+        short_name: Instagram post
+        description: "Get an original post for your instagram account, or get a professional designer to determine what your #instastyle should be!"
+        tip_and_tricks_url: https://designbro.com/how-to-get-your-instagram-post
+        project_builder_steps:
+          - name: Describe your brand DNA
+            description: Tell us which of the following best fit the image / identity of the brand you are trying to create
+            path: style
+            form_name: StyleStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_traditional_or_modern
+                props:
+                  leftLabelText: Traditional
+                  rightLabelText: Modern
+
+              - component_name: Slider
+                attribute_name: brand_dna_value_or_premium
+                props:
+                  leftLabelText: Value
+                  rightLabelText: Premium
+
+              - component_name: Slider
+                attribute_name: brand_dna_bold_or_refined
+                props:
+                  leftLabelText: Bold
+                  rightLabelText: Refined
+
+              - component_name: Slider
+                attribute_name: brand_dna_detailed_or_clean
+                props:
+                  leftLabelText: Detailed
+                  rightLabelText: Clean
+
+              - component_name: Slider
+                attribute_name: brand_dna_handcrafted_or_minimalist
+                props:
+                  leftLabelText: Handcrafted
+                  rightLabelText: Minimalist
+
+              - component_name: Slider
+                attribute_name: brand_dna_serious_or_playful
+                props:
+                  leftLabelText: Serious
+                  rightLabelText: Playful
+
+              - component_name: Slider
+                attribute_name: brand_dna_stand_out_or_not_from_the_crowd
+                props:
+                  leftLabelText: Stand out from the crowd
+                  rightLabelText: Fit in, look as if it belongs in the category
+
+              - component_name: Slider
+                attribute_name: brand_dna_outmoded_actual
+                props:
+                  leftLabelText: Look as if it has been around for 100 years
+                  rightLabelText: Startup ready to take on the world
+
+          - name: Tell us about your target audience
+            description: Who is your customer?
+            path: audience
+            form_name: AudienceStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_youthful_or_mature
+                props:
+                  leftLabelText: Youthful
+                  rightLabelText: Mature
+
+              - component_name: Slider
+                attribute_name: brand_dna_masculine_or_premium
+                props:
+                  leftLabelText: Masculine
+                  rightLabelText: Feminine
+
+              - component_name: Slider
+                attribute_name: brand_dna_low_income_or_high_income
+                props:
+                  leftLabelText: Low income
+                  rightLabelText: High income
+
+              - component_name: CountriesSelect
+                attribute_name: brand_dna_target_country_codes
+
+          - name: Last Questions
+            description: Complete the questions and get started!
+            path: finish
+            form_name: FinishStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Authentication
+                mandatory: true
+
+              - component_name: ExistingLogos
+                mandatory: true
+
+              - component_name: BrandSelector
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: brand_background_story
+                props:
+                  label: Background story
+                  hint: Your background story
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: what_is_it_for
+                mandatory: true
+                props:
+                  label: What’s your Instagram post for?
+                  hint: I need an Instagram post for next week’s live music event at our coffee bar
+                validations:
+                  - required
+
+              - component_name: Textarea
+                attribute_name: product_text
+                mandatory: true
+                props:
+                  label: What text would you like to feature on your Instagram post?
+                  hint: You can also copy and paste your text here, that way line breaks are preserved.
+                validations:
+                  - required
+
+              - component_name: StockImages
+                mandatory: true
+
+              - component_name: Inspirations
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: ideas_or_special_requirements
+                mandatory: true
+                props:
+                  label: Ideas or special requirements (optional)
+                  hint: Share any more ideas or information that will make your brief more clear
+
+              - component_name: AdditionalDocuments
+                mandatory: true
+
+              - component_name: ColorsPicker
+                mandatory: true
+
+          - name: Boost your project
+            description: Choose to upgrade and improve your project
+            path: details
+            mandatory_for_existing_brand: true
+            form_name: DetailsStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Details
+                mandatory: true
+
+          - name: Checkout
+            description: Fill in your details to complete the brief and payment
+            path: checkout
+            mandatory_for_existing_brand: true
+            form_name: CheckoutStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Checkout
+                mandatory: true
+
+      - key: facebook
+        name: Facebook brand page
+        price: 79
+        short_name: Facebook brand page
+        description: Our expert designers will create an original Facebook business page design for you.
+        tip_and_tricks_url: https://designbro.com/how-to-get-your-facebook-brand-page-design
+        project_builder_steps:
+          - name: Describe your brand DNA
+            description: Tell us which of the following best fit the image / identity of the brand you are trying to create
+            path: style
+            form_name: StyleStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_traditional_or_modern
+                props:
+                  leftLabelText: Traditional
+                  rightLabelText: Modern
+
+              - component_name: Slider
+                attribute_name: brand_dna_value_or_premium
+                props:
+                  leftLabelText: Value
+                  rightLabelText: Premium
+
+              - component_name: Slider
+                attribute_name: brand_dna_bold_or_refined
+                props:
+                  leftLabelText: Bold
+                  rightLabelText: Refined
+
+              - component_name: Slider
+                attribute_name: brand_dna_detailed_or_clean
+                props:
+                  leftLabelText: Detailed
+                  rightLabelText: Clean
+
+              - component_name: Slider
+                attribute_name: brand_dna_handcrafted_or_minimalist
+                props:
+                  leftLabelText: Handcrafted
+                  rightLabelText: Minimalist
+
+              - component_name: Slider
+                attribute_name: brand_dna_serious_or_playful
+                props:
+                  leftLabelText: Serious
+                  rightLabelText: Playful
+
+              - component_name: Slider
+                attribute_name: brand_dna_stand_out_or_not_from_the_crowd
+                props:
+                  leftLabelText: Stand out from the crowd
+                  rightLabelText: Fit in, look as if it belongs in the category
+
+              - component_name: Slider
+                attribute_name: brand_dna_outmoded_actual
+                props:
+                  leftLabelText: Look as if it has been around for 100 years
+                  rightLabelText: Startup ready to take on the world
+
+          - name: Tell us about your target audience
+            description: Who is your customer?
+            path: audience
+            form_name: AudienceStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_youthful_or_mature
+                props:
+                  leftLabelText: Youthful
+                  rightLabelText: Mature
+
+              - component_name: Slider
+                attribute_name: brand_dna_masculine_or_premium
+                props:
+                  leftLabelText: Masculine
+                  rightLabelText: Feminine
+
+              - component_name: Slider
+                attribute_name: brand_dna_low_income_or_high_income
+                props:
+                  leftLabelText: Low income
+                  rightLabelText: High income
+
+              - component_name: CountriesSelect
+                attribute_name: brand_dna_target_country_codes
+
+          - name: Last Questions
+            description: Complete the questions and get started!
+            path: finish
+            form_name: FinishStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Authentication
+                mandatory: true
+
+              - component_name: ExistingLogos
+                mandatory: true
+
+              - component_name: BrandSelector
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: brand_background_story
+                props:
+                  label: Background story
+                  hint: Your background story
+                validations:
+                  - required
+
+              - component_name: StockImages
+                mandatory: true
+
+              - component_name: Inspirations
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: ideas_or_special_requirements
+                mandatory: true
+                props:
+                  label: Ideas or special requirements (optional)
+                  hint: Share any more ideas or information that will make your brief more clear
+
+              - component_name: AdditionalDocuments
+                mandatory: true
+
+              - component_name: ColorsPicker
+                mandatory: true
+
+          - name: Boost your project
+            description: Choose to upgrade and improve your project
+            path: details
+            mandatory_for_existing_brand: true
+            form_name: DetailsStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Details
+                mandatory: true
+
+          - name: Checkout
+            description: Fill in your details to complete the brief and payment
+            path: checkout
+            mandatory_for_existing_brand: true
+            form_name: CheckoutStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Checkout
+                mandatory: true
+
+      - key: twitter
+        name: Twitter profile
+        price: 79
+        short_name: Twitter profile
+        description: Get that 'professional look' on your twitter profile. Our experienced designers will design your Twitter profile page.
+        brand_name_hint:
+        tip_and_tricks_url: https://designbro.com/how-to-get-your-twitter-profile
+        project_builder_steps:
+          - name: Describe your brand DNA
+            description: Tell us which of the following best fit the image / identity of the brand you are trying to create
+            path: style
+            form_name: StyleStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_traditional_or_modern
+                props:
+                  leftLabelText: Traditional
+                  rightLabelText: Modern
+
+              - component_name: Slider
+                attribute_name: brand_dna_value_or_premium
+                props:
+                  leftLabelText: Value
+                  rightLabelText: Premium
+
+              - component_name: Slider
+                attribute_name: brand_dna_bold_or_refined
+                props:
+                  leftLabelText: Bold
+                  rightLabelText: Refined
+
+              - component_name: Slider
+                attribute_name: brand_dna_detailed_or_clean
+                props:
+                  leftLabelText: Detailed
+                  rightLabelText: Clean
+
+              - component_name: Slider
+                attribute_name: brand_dna_handcrafted_or_minimalist
+                props:
+                  leftLabelText: Handcrafted
+                  rightLabelText: Minimalist
+
+              - component_name: Slider
+                attribute_name: brand_dna_serious_or_playful
+                props:
+                  leftLabelText: Serious
+                  rightLabelText: Playful
+
+              - component_name: Slider
+                attribute_name: brand_dna_stand_out_or_not_from_the_crowd
+                props:
+                  leftLabelText: Stand out from the crowd
+                  rightLabelText: Fit in, look as if it belongs in the category
+
+              - component_name: Slider
+                attribute_name: brand_dna_outmoded_actual
+                props:
+                  leftLabelText: Look as if it has been around for 100 years
+                  rightLabelText: Startup ready to take on the world
+
+          - name: Tell us about your target audience
+            description: Who is your customer?
+            path: audience
+            form_name: AudienceStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_youthful_or_mature
+                props:
+                  leftLabelText: Youthful
+                  rightLabelText: Mature
+
+              - component_name: Slider
+                attribute_name: brand_dna_masculine_or_premium
+                props:
+                  leftLabelText: Masculine
+                  rightLabelText: Feminine
+
+              - component_name: Slider
+                attribute_name: brand_dna_low_income_or_high_income
+                props:
+                  leftLabelText: Low income
+                  rightLabelText: High income
+
+              - component_name: CountriesSelect
+                attribute_name: brand_dna_target_country_codes
+
+          - name: Last Questions
+            description: Complete the questions and get started!
+            path: finish
+            form_name: FinishStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Authentication
+                mandatory: true
+
+              - component_name: ExistingLogos
+                mandatory: true
+
+              - component_name: BrandSelector
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: brand_background_story
+                props:
+                  label: Background story
+                  hint: Your background story
+                validations:
+                  - required
+
+              - component_name: StockImages
+                mandatory: true
+
+              - component_name: Inspirations
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: ideas_or_special_requirements
+                mandatory: true
+                props:
+                  label: Ideas or special requirements (optional)
+                  hint: Share any more ideas or information that will make your brief more clear
+
+              - component_name: AdditionalDocuments
+                mandatory: true
+
+              - component_name: ColorsPicker
+                mandatory: true
+
+          - name: Boost your project
+            description: Choose to upgrade and improve your project
+            path: details
+            mandatory_for_existing_brand: true
+            form_name: DetailsStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Details
+                mandatory: true
+
+          - name: Checkout
+            description: Fill in your details to complete the brief and payment
+            path: checkout
+            mandatory_for_existing_brand: true
+            form_name: CheckoutStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Checkout
+                mandatory: true
+
+      - key: linkedin
+        name: LinkedIn company page
+        price: 79
+        short_name: LinkedIn company page
+        description: Get a professional designer to create your LinkedIn business page. Get it done right & get noticed.
+        brand_name_hint:
+        tip_and_tricks_url: https://designbro.com/how-to-get-your-linkedin-company-page-design
+        project_builder_steps:
+          - name: Describe your brand DNA
+            description: Tell us which of the following best fit the image / identity of the brand you are trying to create
+            path: style
+            form_name: StyleStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_traditional_or_modern
+                props:
+                  leftLabelText: Traditional
+                  rightLabelText: Modern
+
+              - component_name: Slider
+                attribute_name: brand_dna_value_or_premium
+                props:
+                  leftLabelText: Value
+                  rightLabelText: Premium
+
+              - component_name: Slider
+                attribute_name: brand_dna_bold_or_refined
+                props:
+                  leftLabelText: Bold
+                  rightLabelText: Refined
+
+              - component_name: Slider
+                attribute_name: brand_dna_detailed_or_clean
+                props:
+                  leftLabelText: Detailed
+                  rightLabelText: Clean
+
+              - component_name: Slider
+                attribute_name: brand_dna_handcrafted_or_minimalist
+                props:
+                  leftLabelText: Handcrafted
+                  rightLabelText: Minimalist
+
+              - component_name: Slider
+                attribute_name: brand_dna_serious_or_playful
+                props:
+                  leftLabelText: Serious
+                  rightLabelText: Playful
+
+              - component_name: Slider
+                attribute_name: brand_dna_stand_out_or_not_from_the_crowd
+                props:
+                  leftLabelText: Stand out from the crowd
+                  rightLabelText: Fit in, look as if it belongs in the category
+
+              - component_name: Slider
+                attribute_name: brand_dna_outmoded_actual
+                props:
+                  leftLabelText: Look as if it has been around for 100 years
+                  rightLabelText: Startup ready to take on the world
+
+          - name: Tell us about your target audience
+            description: Who is your customer?
+            path: audience
+            form_name: AudienceStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_youthful_or_mature
+                props:
+                  leftLabelText: Youthful
+                  rightLabelText: Mature
+
+              - component_name: Slider
+                attribute_name: brand_dna_masculine_or_premium
+                props:
+                  leftLabelText: Masculine
+                  rightLabelText: Feminine
+
+              - component_name: Slider
+                attribute_name: brand_dna_low_income_or_high_income
+                props:
+                  leftLabelText: Low income
+                  rightLabelText: High income
+
+              - component_name: CountriesSelect
+                attribute_name: brand_dna_target_country_codes
+
+          - name: Last Questions
+            description: Complete the questions and get started!
+            path: finish
+            form_name: FinishStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Authentication
+                mandatory: true
+
+              - component_name: ExistingLogos
+                mandatory: true
+
+              - component_name: BrandSelector
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: brand_background_story
+                props:
+                  label: Background story
+                  hint: Your background story
+                validations:
+                  - required
+
+              - component_name: StockImages
+                mandatory: true
+
+              - component_name: Inspirations
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: ideas_or_special_requirements
+                mandatory: true
+                props:
+                  label: Ideas or special requirements (optional)
+                  hint: Share any more ideas or information that will make your brief more clear
+
+              - component_name: AdditionalDocuments
+                mandatory: true
+
+              - component_name: ColorsPicker
+                mandatory: true
+
+          - name: Boost your project
+            description: Choose to upgrade and improve your project
+            path: details
+            mandatory_for_existing_brand: true
+            form_name: DetailsStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Details
+                mandatory: true
+
+          - name: Checkout
+            description: Fill in your details to complete the brief and payment
+            path: checkout
+            mandatory_for_existing_brand: true
+            form_name: CheckoutStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Checkout
+                mandatory: true
+
+      - key: youtube
+        name: YouTube channel
+        price: 79
+        short_name: YouTube channel
+        description: Get your YouTube channel designed by our professional designers. Make sure you get noticed.
+        brand_name_hint:
+        tip_and_tricks_url: https://designbro.com/how-to-get-your-youtube-channel
+        project_builder_steps:
+          - name: Describe your brand DNA
+            description: Tell us which of the following best fit the image / identity of the brand you are trying to create
+            path: style
+            form_name: StyleStepForm
+            mandatory_for_one_to_one_project: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_traditional_or_modern
+                props:
+                  leftLabelText: Traditional
+                  rightLabelText: Modern
+
+              - component_name: Slider
+                attribute_name: brand_dna_value_or_premium
+                props:
+                  leftLabelText: Value
+                  rightLabelText: Premium
+
+              - component_name: Slider
+                attribute_name: brand_dna_bold_or_refined
+                props:
+                  leftLabelText: Bold
+                  rightLabelText: Refined
+
+              - component_name: Slider
+                attribute_name: brand_dna_detailed_or_clean
+                props:
+                  leftLabelText: Detailed
+                  rightLabelText: Clean
+
+              - component_name: Slider
+                attribute_name: brand_dna_handcrafted_or_minimalist
+                props:
+                  leftLabelText: Handcrafted
+                  rightLabelText: Minimalist
+
+              - component_name: Slider
+                attribute_name: brand_dna_serious_or_playful
+                props:
+                  leftLabelText: Serious
+                  rightLabelText: Playful
+
+              - component_name: Slider
+                attribute_name: brand_dna_stand_out_or_not_from_the_crowd
+                props:
+                  leftLabelText: Stand out from the crowd
+                  rightLabelText: Fit in, look as if it belongs in the category
+
+              - component_name: Slider
+                attribute_name: brand_dna_outmoded_actual
+                props:
+                  leftLabelText: Look as if it has been around for 100 years
+                  rightLabelText: Startup ready to take on the world
+
+          - name: Tell us about your target audience
+            description: Who is your customer?
+            path: audience
+            form_name: AudienceStepForm
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Slider
+                attribute_name: brand_dna_youthful_or_mature
+                props:
+                  leftLabelText: Youthful
+                  rightLabelText: Mature
+
+              - component_name: Slider
+                attribute_name: brand_dna_masculine_or_premium
+                props:
+                  leftLabelText: Masculine
+                  rightLabelText: Feminine
+
+              - component_name: Slider
+                attribute_name: brand_dna_low_income_or_high_income
+                props:
+                  leftLabelText: Low income
+                  rightLabelText: High income
+
+              - component_name: CountriesSelect
+                attribute_name: brand_dna_target_country_codes
+
+          - name: Last Questions
+            description: Complete the questions and get started!
+            path: finish
+            form_name: FinishStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Authentication
+                mandatory: true
+
+              - component_name: ExistingLogos
+                mandatory: true
+
+              - component_name: BrandSelector
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: brand_background_story
+                props:
+                  label: Background story
+                  hint: Your background story
+                validations:
+                  - required
+
+              - component_name: StockImages
+                mandatory: true
+
+              - component_name: Inspirations
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: ideas_or_special_requirements
+                mandatory: true
+                props:
+                  label: Ideas or special requirements (optional)
+                  hint: Share any more ideas or information that will make your brief more clear
+
+              - component_name: AdditionalDocuments
+                mandatory: true
+
+              - component_name: ColorsPicker
+                mandatory: true
+
+          - name: Boost your project
+            description: Choose to upgrade and improve your project
+            path: details
+            mandatory_for_existing_brand: true
+            form_name: DetailsStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Details
+                mandatory: true
+
+          - name: Checkout
+            description: Fill in your details to complete the brief and payment
+            path: checkout
+            mandatory_for_existing_brand: true
+            form_name: CheckoutStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Checkout
+                mandatory: true
+
+      - key: zoom-background
+        name: Zoom Background
+        price: 49
+        one_to_one_price: 49
+        description: Professionalize your conference calls with a Zoom background design
+        short_name: Zoom background
+        tip_and_tricks_url: https://designbro.com/how-to-get-your-zoom-background
+        contest_design_stage_expire_days: 10
+        one_to_one_design_stage_expire_days: 10
+        contest_finalist_stage_expire_days: 5
+        one_to_one_finalist_stage_expire_days: 15
+        files_stage_expire_days: 3
+        review_files_stage_expire_days: 10
+        reservation_expire_days: 1
+        product_size_label: What’s going to be the size of your Zoom background?
+        what_is_it_for_label: What’s your Zoom background for?
+        product_text_label: What text would you like to feature on your Zoom background?
+        project_builder_steps:
+          - name: Last Questions
+            description: Complete the questions and get started!
+            path: finish
+            form_name: FinishStepForm
+            mandatory_for_one_to_one_project: true
+            mandatory_for_existing_brand: true
+            authentication_required: false
+            project_builder_questions:
+              - component_name: Authentication
+                mandatory: true
+
+              - component_name: Textarea
+                attribute_name: ideas_or_special_requirements
+                mandatory: true
+                props:
+                  label: What would you like us to create?
+                  hint: Share what you have in mind. Any colors, links to inspiration can be helpful
+                validations:
+                  - required
+
+              - component_name: ExistingLogos
+                mandatory: true
+
+              - component_name: OptionalBrandSelector
+
+              - component_name: StockImages
+                mandatory: true
+
+          - name: Boost your project
+            description: Choose to upgrade and improve your project
+            path: details
+            mandatory_for_existing_brand: true
+            form_name: DetailsStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Details
+                mandatory: true
+
+          - name: Checkout
+            description: Fill in your details to complete the brief and payment
+            path: checkout
+            mandatory_for_existing_brand: true
+            form_name: CheckoutStepForm
+            authentication_required: true
+            project_builder_questions:
+              - component_name: Checkout
+                mandatory: true

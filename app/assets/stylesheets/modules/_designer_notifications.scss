@@ -1,0 +1,30 @@
+.dn-row-item__cell-time {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.6;
+  min-width: 50px;
+}
+.dn-unread-indicator {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background: color(green-500);
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .dn-row-item__cell-time {
+    min-width: 80px;
+  }
+  .dn-unread-indicator {
+    &:before {
+      left: -15px;
+    }
+  }
+}

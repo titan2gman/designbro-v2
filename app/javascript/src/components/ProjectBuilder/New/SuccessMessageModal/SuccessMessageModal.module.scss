@@ -1,0 +1,27 @@
+.modalBody {
+  padding: 3.5rem 0;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-dark-grey);
+    margin: 4.5rem 0;
+    line-height: 1.3;
+  }
+}
+
+.isGreen {
+  color: var(--color-active);
+  display: block;
+  text-align: center;
+}
+.btn {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  font-size: 9px;
+  padding-left: 8px;
+  padding-top: 2px;
+}

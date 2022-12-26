@@ -1,0 +1,27 @@
+<tr>
+  <td class='header'>
+    Don’t wait, only 24 hours left. Make sure you upload your first <%= @project.product_name %> for <%= @project.brand_name %>
+  </td>
+</tr>
+<tr>
+  <td class='text left'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+          We all know that feeling when you’re staring at a screen & don’t know where to start. That being said, just starting anywhere seems to do the trick, with all the pieces falling into place afterwards.
+          Make sure you upload your first design within the next 24 hours to avoid losing the project.
+          Not sure what to deliver for this project? Check <a href='<%= "#{host_url}/d/deliverables" %>' >the deliverables guide</a>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td class='padding-bottom-25'>
+    <a href='<%= "#{host_url}/c/projects/#{@project.id}" %>' class='main-btn'>
+      Open Project
+
+      <%= image_tag 'arrow_white.png', class: 'arrow' %>
+    </a>
+  </td>
+</tr>

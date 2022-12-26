@@ -1,0 +1,116 @@
+.slider-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.slider-row__cell {
+  width: 100%;
+  cursor: pointer;
+}
+.slider-line,
+.slider-line--right,
+.slider-line--center {
+  .rc-slider-rail {
+    background-color: color(grey-100);
+    border-radius: 2px;
+    margin-bottom: 15px;
+  }
+  .rc-slider-track {
+    border-radius: inherit;
+    background-color: color(green-500);
+    &:after {
+      content: '';
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background-color: color(green-500);
+      position: absolute;
+      right: 0;
+      margin-top: -3px;
+    }
+  }
+  .rc-slider-handle {
+    display: none;
+  }
+}
+.slider-line--right {
+  .rc-slider-rail {
+    background-color: color(green-500);
+  }
+  .rc-slider-track {
+    background-color: color(grey-100);
+  }
+}
+.slider-line--center {
+  .rc-slider-rail {
+    background-color: color(grey-100);
+  }
+  .rc-slider-track {
+    background-color: color(grey-100);
+    &:after {
+      background-color: color(grey-200);
+    }
+  }
+}
+.slider-row__text {
+  font-size: 13px;
+  color: color(grey-500);
+  max-width: 50%;
+}
+
+.slider-row__line {
+  background-color: color(grey-100);
+  border-radius: 2px;
+  height: 4px;
+}
+.slider-row__value {
+  border-radius: inherit;
+  background-color: color(green-500);
+  height: 100%;
+  position: relative;
+  &:after {
+    content: '';
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: color(green-500);
+    position: absolute;
+    right: 0;
+    margin-top: -3px;
+  }
+}
+.slider-row__value--right {
+  float: right;
+  &:after {
+    left: 0;
+  }
+}
+.slider-row__value--center {
+  background-color: color(grey-100);
+}
+
+@include media-breakpoint-up(md) {
+  .slider-row {
+    align-items: center;
+    margin-bottom: 45px;
+  }
+  .slider-row__cell {
+    width: auto;
+    flex-grow: 1;
+    order: 1;
+  }
+  .slider-line {
+    margin-bottom: 0;
+  }
+  .slider-row__text {
+    width: 160px;
+    &:last-of-type {
+      padding-left: 20px;
+      order: 2;
+    }
+  }
+  .slider-row__text--first {
+    padding-right: 20px;
+  }
+}

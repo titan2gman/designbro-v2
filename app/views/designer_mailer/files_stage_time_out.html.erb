@@ -1,0 +1,25 @@
+<tr>
+  <td class='header'>
+    Hey! You forgot to upload the files for the project: <%= cut_on_word(@project.name) %> :-(
+  </td>
+</tr>
+<tr>
+  <td class='text left'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+          You lost your project, and your $<%= @project.winner_prize %> prize! If this happened by accident, we urgently ask you to contact our <a href='mailto:support@designbro.com' class='link'>support</a> team within the next 24 hours. Otherwise, as per our terms & conditions, someone else will finish your design and you won’t be entitled to your prize.
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td class='padding-bottom-25'>
+    <a href='mailto:support@designbro.com' class='main-btn'>
+      Support
+
+      <%= image_tag 'arrow_white.png', class: 'arrow' %>
+    </a>
+  </td>
+</tr>

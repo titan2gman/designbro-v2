@@ -1,0 +1,70 @@
+.finish-step {
+  padding-top: 20px;
+  display: flex;
+
+  .left-panel {
+    flex: 50%;
+    background-image: image-url("SuccessPage.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .right-panel {
+    flex: 50%;
+
+    h1 {
+      font-size: 48px;
+      font-weight: 800;
+      margin-top: 80px;
+      color: #4B4B4B;
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #96979C;
+    }
+  }
+
+  .links {
+    margin-top: 50px;
+
+    a {
+      display: inline-block;
+      text-align: center;
+      border-radius: 25px;
+      padding: 8px;
+      color: #fff;
+      background: #4B4B4B;
+      font-size: 14px;
+      width: 200px;
+      margin-right: 30px;
+    }
+  }
+}
+
+.logo-suggestion-modal {
+  padding: 40px 40px 0;
+  font-size: 18px;
+
+  p {
+    text-align: center;
+    margin: 25px 0;
+  }
+
+  .start-logo-project {
+    background: color(green-500);
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px 30px;
+    border: 2px solid color(green-500);
+    font-size: 14px;
+  }
+
+  .back {
+    border: none;
+    color: #868686;
+    padding: 8px 30px;
+    border: 2px solid none;
+    font-size: 14px;
+  }
+}

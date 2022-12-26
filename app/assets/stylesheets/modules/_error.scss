@@ -1,0 +1,28 @@
+.error-page {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+.error-page__img {
+  max-width: 100%;
+  margin-bottom: 60px;
+}
+.error-page__text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: color(grey-200);
+  letter-spacing: 0.3px;
+  margin-bottom: 40px;
+}
+.error-page__link {
+  color: black;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+.error-page__icon {
+  font-size: 42px;
+  color: color(grey-200);
+}
+.error-page__btn-link {
+  font-size: 13px;
+  color: black;
+}

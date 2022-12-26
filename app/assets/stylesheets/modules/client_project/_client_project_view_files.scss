@@ -1,0 +1,32 @@
+.dpj-file__modal-header-title {
+  color: rgba(color(grey-400), 0.5);
+}
+.dpj-file__modal-info:last-of-type {
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+.dpj-file__modal-info-photo {
+  min-height: 270px;
+  min-width: 270px;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+.dpj-file__modal-description {
+  padding: 60px 30px 30px;
+}
+.dpj-file__modal-description-title {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+@include media-breakpoint-up(lg) {
+  .dpj-file__modal-part-big {
+    width: calc((100% / 2) + 15px);
+  }
+  .dpj-file__modal-part-small {
+    width: calc((100% / 2) - 15px);
+  }
+}

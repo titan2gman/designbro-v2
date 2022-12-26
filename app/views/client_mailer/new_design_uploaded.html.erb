@@ -1,0 +1,30 @@
+<tr>
+  <td class='header'>
+    A new design has been uploaded to your project: <%= @project.name %>.
+  </td>
+</tr>
+
+<tr>
+  <td class='text'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+          <br />
+
+          Click the link below to see the new design!
+          Don’t forget to write feedback to the designers to make sure that they can improve it!
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td class='text'>
+    <a href='<%= "#{host_url}/c/projects/#{@project.id}?design_id=#{@design.id}" %>' class='main-btn'>
+      See design
+
+      <%= image_tag 'arrow_white.png', class: 'arrow' %>
+    </a>
+  </td>
+</tr>

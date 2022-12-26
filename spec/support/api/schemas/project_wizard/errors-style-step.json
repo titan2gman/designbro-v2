@@ -1,0 +1,71 @@
+{
+  "type": "object",
+  "required": [
+    "errors"
+  ],
+  "properties": {
+    "errors": {
+      "type": "object",
+      "required": [
+        "outmoded_actual",
+        "bold_or_refined",
+        "value_or_premium",
+        "detailed_or_clean",
+        "serious_or_playful",
+        "traditional_or_modern",
+        "handcrafted_or_minimalist",
+        "stand_out_or_not_from_the_crowd"
+      ],
+      "properties": {
+        "outmoded_actual": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "bold_or_refined": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "value_or_premium": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "detailed_or_clean": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "serious_or_playful": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "traditional_or_modern": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "handcrafted_or_minimalist": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "stand_out_or_not_from_the_crowd": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": [
+        "id",
+        "type",
+        "attributes"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "object",
+          "required": [
+            "availableForPayout",
+
+            "logoInProgressCount",
+            "brandIdentityInProgressCount",
+            "packagingInProgressCount",
+
+            "inProgressCount",
+            "finalistsCount",
+            "winnersCount"
+          ],
+          "properties": {
+            "availableForPayout": {
+              "type": "number"
+            },
+            "logoInProgressCount": {
+              "type": "number"
+            },
+            "brandIdentityInProgressCount": {
+              "type": "number"
+            },
+            "packagingInProgressCount": {
+              "type": "number"
+            },
+            "inProgressCount": {
+              "type": "number"
+            },
+            "finalistsCount": {
+              "type": "number"
+            },
+            "winnersCount": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}

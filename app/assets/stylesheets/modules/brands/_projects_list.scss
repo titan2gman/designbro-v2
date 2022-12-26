@@ -1,0 +1,102 @@
+.projects-list {
+  h1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    .private {
+      font-size: 18px;
+      color: #CBCBCB;
+      margin-right: 10px;
+    }
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    .navigation {
+      a {
+        border-radius: 25px;
+        padding: 8px 20px;
+        background: #fff;
+        font-size: 14px;
+        color: #000;
+        margin-right: 10px;
+        transition: 0.1s all ease-in-out;
+
+        &.active, &:hover {
+          color: #fff;
+          background-color: #000;
+        }
+
+        &.active {
+          cursor: default;
+        }
+      }
+    }
+
+    .new-project {
+      a {
+        display: flex;
+        align-items: center;
+        color: #CBCBCB;
+        font-size: 14px;
+
+        .new-project-icon {
+          display: inline-block;
+          margin-left: 5px;
+          border-radius: 50%;
+          background: #CBCBCB;
+          width: 20px;
+          height: 20px;
+          color: #fff;
+          font-size: 20px;
+          line-height: 20px;
+          font-weight: bold;
+          text-align: center;
+        }
+
+        &:hover {
+          color: #4B4B4B;
+
+          .new-project-icon {
+            background: #4B4B4B;
+          }
+        }
+      }
+
+    }
+  }
+
+  .ui.horizontal.divider {
+    color: #CBCBCB;
+    font-size: 14px;
+  }
+
+  .project-card.new-project {
+    background: #ECECEC;
+    color: #A3A3A3;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 0px rgba(black, 0.25);
+    margin-bottom: 60px;
+
+    &:hover {
+      box-shadow: 0px 0px 15px 0px rgba(black, 0.3);
+    }
+
+    .plus {
+      text-align: center;
+      font-size: 120px;
+      font-weight: bold;
+      margin-right: 40px;
+    }
+    .start {
+      font-size: 25px;
+      text-align: center;
+    }
+  }
+}

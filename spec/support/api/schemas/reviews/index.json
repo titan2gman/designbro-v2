@@ -1,0 +1,70 @@
+{
+  "type": "object",
+  "required": [
+    "data"
+  ],
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "attributes",
+          "relationships"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "attributes": {
+            "type": "object",
+            "required": [
+              "designerRating",
+              "designerComment",
+              "overallRating",
+              "overallComment"
+            ],
+            "properties": {
+              "designerRating": {
+                "type": "number"
+              },
+              "designerComment": {
+                "type": "string"
+              },
+              "overallRating": {
+                "type": "number"
+              },
+              "overallComment": {
+                "type": "string"
+              }
+            }
+          },
+          "relationships": {
+            "type": "object",
+            "required": [
+              "design",
+              "client",
+              "designer"
+            ],
+            "properties": {
+              "design": {
+                "type": "object"
+              },
+              "client": {
+                "type": "object"
+              },
+              "designer": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.headline {
+  font-family: Montserrat;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #0c293f;
+}
+
+@media screen and (max-width: 600px) {
+  .headline {
+    font-size: 22px;
+  }
+}

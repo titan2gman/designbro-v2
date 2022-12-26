@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": ["id", "type", "attributes"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "object",
+          "required": [
+            "informOnEmail",
+            "notifyMessagesReceived",
+            "notifyNews",
+            "notifyProjectsUpdates"
+          ],
+          "properties": {
+            "informOnEmail": {
+              "type": "string"
+            },
+            "notifyMessagesReceived": {
+              "type": "boolean"
+            },
+            "notifyNews": {
+              "type": "boolean"
+            },
+            "notifyProjectsUpdates": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    }
+  }
+}

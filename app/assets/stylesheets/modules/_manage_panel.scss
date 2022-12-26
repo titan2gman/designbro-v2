@@ -1,0 +1,117 @@
+.manage-panel {
+  flex-shrink: 0;
+  background-color: white;
+  box-shadow: 0 8px 24px 0 rgba(17, 17, 42, 0.2);
+}
+.manage-panel__section {
+  border-bottom: 1px solid rgba(123, 123, 123, 0.25);
+  padding: 25px 12px 13px;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.manage-panel__balance-title {
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: color(grey-200);
+  margin-bottom: 10px;
+}
+.manage-panel__balance-count {
+  display: inline-block;
+  font-size: 18px;
+  color: black;
+  margin-bottom: 10px;
+  &:hover, &:focus {
+    color: currentColor;
+  }
+}
+.manage-panel__caret {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 6px;
+  color: rgba(123, 123, 123, 0.5);
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+.manage-panel__cats-title {
+  font-size: 13px;
+  color: rgba(color(grey-200), 0.5);
+  margin-bottom: 22px;
+}
+.manage-panel__cat-title {
+  font-size: 14px;
+  color: black;
+  margin-bottom: 20px;
+}
+.manage-panel__cat-text {
+  font-size: 13px;
+  color: color(grey-200);
+  text-align: left;
+}
+.manage-panel__cats-packaging {
+  color: color(grey-200);
+  margin-bottom: 8px;
+}
+.manage-panel__stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 15px;
+  margin-bottom: 0;
+}
+.manage-panel__stat {
+  padding-right: 10px;
+}
+.manage-panel__stat-title {
+  font-size: 16px;
+  margin-bottom: 5px;
+
+  &.manage-panel__stat-title__red {
+    color: #ed1943;
+  }
+
+  &.manage-panel__stat-title__orange {
+    color: #efbf88;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .manage-panel {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  .manage-panel__section {
+    border-bottom: none;
+    border-right: 1px solid rgba(123, 123, 123, 0.25);
+    &:last-child {
+      border-right: none;
+    }
+  }
+  .manage-panel__section--balance {
+    width: 150px;
+  }
+  .manage-panel__section--cats {
+    flex-grow: 1;
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+  .manage-panel__section--stats {
+    padding-left: 18px;
+  }
+  .manage-panel__cats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+  .manage-panel__cat-title {
+    margin-bottom: 8px;
+  }
+  .manage-panel__stat {
+    max-width: 50%;
+  }
+}

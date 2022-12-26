@@ -1,0 +1,28 @@
+<tr>
+  <td class='header'>
+    The files for your project: <%= cut_on_word(@project.name) %> are now uploaded
+  </td>
+</tr>
+<tr>
+  <td class='text left'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+          You can check them out & download them to make sure all is in order. If you have any feedback, or need them in a different format, please ask the designer through your chat.
+          <br />
+          <br />
+          You have <strong><%= @time_left %></strong> days to approve the files. After that, as per our terms & conditions, the files will be considered approved.
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td class='padding-bottom-25'>
+    <a href='<%= "#{host_url}/c/projects/#{@project.id}/files" %>' class='main-btn'>
+      Open Project
+
+      <%= image_tag 'arrow_white.png', class: 'arrow' %>
+    </a>
+  </td>
+</tr>

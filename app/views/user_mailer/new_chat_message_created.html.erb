@@ -1,0 +1,29 @@
+<style type='text/css'>
+  .text {
+    color: #9e9e9e;
+    font-size: 18px;
+    padding-bottom: 25px;
+  }
+</style>
+
+<tr>
+  <td class='header'>
+    You’ve got a new message for your project <%= @project.name %> from <%= @sender.display_name %>
+  </td>
+</tr>
+
+<tr>
+  <td class='text'>
+    Click on the link below to see the message!
+  </td>
+</tr>
+
+<tr>
+  <td style='padding-bottom: 25px;'>
+    <a href='<%= "#{host_url}/#{user_link(@addressee)}/projects/#{@project.id}#{@addressee.client? ? "" : "/designs"}?design_id=#{@design.id}" %>' class='main-btn'>
+      Open Conversation
+
+      <%= image_tag 'arrow_white.png', class: 'arrow' %>
+    </a>
+  </td>
+</tr>

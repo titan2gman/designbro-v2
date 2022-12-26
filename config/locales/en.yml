@@ -1,0 +1,252 @@
+en:
+  site_name: 'DesignBro'
+  errors:
+    messages:
+      blank: 'Required.'
+      be_finalist: 'Should be finalist'
+      have_items: 'Should have %{min}..%{max} items'
+      not_email: 'Please enter a valid email address.'
+      have_exactly_n_items: 'Should have %{count} items'
+      have_n_or_more_items: 'Should have %{count} or more items'
+      select_n_more_items: 'Select %{count} more good examples to continue'
+      select_1_more_item: 'Select 1 more good example to continue'
+      discount_not_valid: "Sorry, you can't use this discount code..."
+      can_upgrade_only_logo_project: 'Only logo project can be upgraded'
+      only_brand_identity_project: 'Only brand identity project is allowed'
+      discount_not_found: "Sorry, discount code can't be approved by the system..."
+      stationery_form_invalid_project_state: 'Only project with state `waiting_for_stationery_details` is allowed'
+      invalid_minutes_to_remind_steps_previous: Minutes to remind should be greater than in previous reminder
+      invalid_minutes_to_remind_steps_next: Minutes to remind should be less than in next reminder
+
+  paid_with:
+    pay_pal: 'Paid with PayPal'
+    credit_card: 'Paid with Card'
+    bank_transfer: 'Bank Transfer'
+
+  active_admin:
+    approve: 'Approve'
+    payment_type: 'Payment type'
+    approve_bank_transfer: 'Approve bank transfer payment'
+    approved_bank_transfer: 'Approved bank transfer payment'
+
+    filters:
+      predicates:
+        not_cont: 'Not contains'
+
+    designer:
+      import:
+        failure:
+          file: 'Please, specify file with designers!'
+
+        success: 'Designers were imported successfully!'
+
+    discount:
+      used_num: 'Used times actual'
+      max_num: 'Used times max'
+
+    payout:
+      payout_state:
+        in_progress: 'In progress'
+        paid: 'Paid'
+        canceled: 'Canceled'
+        error: 'Error'
+
+  project_status:
+    error: 'Error'
+    client:
+      draft: 'Draft'
+      waiting_for_payment: 'Waiting for payment'
+      design_stage: 'Waiting for designers'
+      finalist_stage: 'Finalist stage'
+      winner_selected: 'Winner selected. Waiting for files'
+      review_files: 'Review Files'
+      completed: 'Contest Completed'
+      canceled: 'Canceled'
+    designer:
+      design_stage: 'Waiting for design'
+      finalist_stage: 'Finalist stage'
+      winner_selected: 'Winner selected'
+      review_files: 'Review Files'
+      completed: 'Contest Completed'
+      canceled: 'Canceled'
+
+  admin_mailer:
+    database_dump:
+      done: Database dumping successfully completed
+      failed: Database dumping was failed
+
+  user_mailer:
+    new_chat_message_created:
+      subject: "You’ve got a new message for your project %{project} from %{sender}"
+    google_plus_functionality_removed:
+      subject: 'New DesignBro password'
+
+  designer_mailer:
+    contest_completed:
+      subject: 'Signed, Sealed Delivered!'
+    one_to_one_project_started:
+      subject: 'Great news - You got a new direct project!'
+    one_to_one_project_reminder:
+      subject: '24 hours left to upload your first %{product_name} for %{brand_name}'
+    desing_approved:
+      subject: 'Whoop whoop, your design just got approved on the %{product_name} for %{brand_name} project'
+    designer_blocked:
+      subject: 'You got blocked'
+      message: "Hi %{display_name}, You got blocked from %{project_name}, the client indicated that %{reason}"
+      reasons:
+        disappointing: "they felt the design didn't match their expectations and prefer to work with other designers."
+        not_communicate: 'they felt there was a disconnect in the communication, and prefer to work with other designers.'
+        was_rude: 'they felt your communication was below the standard they expected.'
+        plagiarism: 'they feel they saw your design already somewhere else.'
+        other: "they felt the design didn't match what they are looking for and prefer to work with other designers."
+    design_eliminated:
+      subject: 'Better luck next time'
+      message: "Hi %{display_name}, We're sorry to say you got eliminated from %{project_name}, the client indicated that %{reason}"
+      reasons:
+        not_in_line: "they felt the design didn't match their needs / briefing."
+        not_communicate: 'they felt they were waiting quite some time on your response & want to give another designer the opportunity instead.'
+        not_understand: 'they felt difficulty in communicating with you, and prefer to give another designer the chance.'
+        looking_for_something_else: "there was nothing wrong with your design, but they're just looking for something different."
+        other: 'they wanted to give another designer the chance to work on the project.'
+    design_not_selected_as_finalist:
+      subject: 'Better luck next time'
+      message: "The client didn't select your design as a finalist for project %{project_name}"
+    design_not_selected_as_winner:
+      subject: 'Better luck next time'
+      message: "The client didn't select your design as a winner for project %{project_name}"
+    design_stage_time_out:
+      subject: 'Ok... We have some bad news...'
+    files_stage_one_day_left:
+      subject: 'Warning: You are about to lose your project.'
+    files_stage_two_days_left:
+      subject: 'Only 2 days left - Time to upload your files'
+    files_stage_time_out:
+      subject: 'URGENT: What happened???'
+    finalist_stage_time_out:
+      subject: 'Ok... We have some bad news...'
+    portfolio_approved:
+      subject: 'Guess what..you’re in!'
+    portfolio_disapproved:
+      subject: "Sorry..."
+    reservation_12_hours_left:
+      subject: 'Don’t lose your reserved spot'
+      header: "12 hours left! %{project_name} - time to finish your design & upload it!"
+      body: 'Go to your project by clicking the below link'
+      footer_btn: 'Open Project'
+    selected_as_finalist:
+      subject: 'Congratulations - You have been selected as a finalist!'
+    selected_as_finalist_for_brand_identity:
+      subject: 'Big steps! Moving on to the Finalists stage.'
+    selected_as_winner:
+      subject: 'Whoop Whoop! You Won!!'
+
+  client_mailer:
+    one_to_one_payment_received:
+      subject: 'Almost there! Payment received - just answer some questions to get your project started'
+    one_to_one_project_started:
+      subject: 'Awesome! Your %{product_name} for %{brand_name} has started'
+    time_to_approve_project:
+      subject: 'Time to approve your %{product_name} for %{brand_name}'
+    time_to_approve_project_reminder:
+      subject: 'Only 24 hours left on your %{product_name} for %{brand_name} - approve now'
+    desing_approved:
+      subject: 'Congrats! You approved your %{product_name} for %{brand_name}'
+    all_done:
+      subject: '🎉 Thank you for approving the files!'
+    more_work:
+      subject: 'Do you have more work for %{designer_name}?'
+    bank_transfer_payment_received:
+      subject: 'Payment Received - Your project has started!'
+    payment_received:
+      subject: 'Congratulations with your new design project'
+    not_paid_project:
+      subject: "We can make a great design for %{brand_name}!"
+    design_stage_three_days_left:
+      subject: 'Only 3 days left - Time to pick your finalists now'
+    design_stage_one_day_left:
+      subject: 'Don’t lose your project: Only 1 day left!'
+    finalist_stage_two_days_left:
+      subject: 'Only 2 days left - Time to pick your winner now'
+    finalist_stage_one_day_left:
+      subject: 'Don’t lose your project: Only 1 day left!'
+    review_files_stage_three_days_left:
+      subject: 'Time to check your files! - Only 3 days to go.'
+    design_stage_time_out:
+      subject: 'Wow. Something went wrong...'
+    finalist_stage_time_out:
+      subject: 'What happened???'
+    files_stage_time_out:
+      subject: 'Houston. We have a problem...'
+    finalist_stage_started:
+      subject: 'Big steps! Moving on to the Finalists stage.'
+    brand_identity_finalist_stage_started:
+      subject: 'Big steps! Moving on to the Finalists stage.'
+    review_files_stage_started:
+      subject: 'Great News! Your designer uploaded the files for you.'
+    new_source_file_uploaded:
+      subject: 'Files have been updated'
+    new_design_uploaded:
+      subject: 'A new design has been uploaded'
+    file_auto_approve:
+      subject: 'Great! You’re done!'
+
+  support_mailer:
+    design_stage_time_out:
+      subject: 'Client Timed Out in the Design stage'
+    finalist_stage_time_out:
+      subject: 'Client Timed Out in the Final stage'
+    files_stage_time_out:
+      subject: 'Designer Timed Out in the File stage'
+
+  payout_mailer:
+    payout_request:
+      subject: "Designer payout $%{amount} requested by %{designer_displayname}"
+
+  invoice_receipt:
+    title: "Invoice for %{project_type_name} Project"
+    info:
+      address:
+        title: 'Address:'
+        value: 'Unit 3D, North Point House, North Point Business Park, New Mallow Rd, Old Mallow Road, Co. Cork, Ireland'
+      company_name:
+        title: 'Company Name:'
+      country:
+        title: 'Country:'
+      date:
+        title: 'Date:'
+      iban:
+        title: 'IBAN:'
+        value: 'IE71 CPAY 9911 9921 9281 07'
+      invoice_number:
+        title: 'Invoice number:'
+      paid_to:
+        title: 'Paid to:'
+        value: 'DESIGNBRO LIMITED'
+      payer:
+        title: 'Payer:'
+      payment_method:
+        title: 'Payment Method:'
+      swift:
+        title: 'BIC/SWIFT:'
+        value: 'CPAYIE2D'
+      vat:
+        title: 'VAT:'
+        value: 'IE-3426407LH'
+    table:
+      discount: 'Discount'
+      dollar_plus: "$ %{amount}"
+      dollar_minus: "- $ %{amount}"
+      nda: "NDA (%{nda_type})"
+      project: "%{project_type_name} Project"
+      additional_spots: Extra spot(s)
+      additional_time: Extra day(s)
+      total: 'Total'
+      upgrade_pack: 'Upgrade pack'
+      vat: "VAT (%{vat_percent}% due to Export)"
+    footer: "Please use your invoice number %{payment_id} as a
+      reference number if you have chosen to pay by bank transfer. Your
+      project will not commence until full payment has been received. If
+      you have already fulfilled payment by credit card or other, your project
+      will start immediately. If you have any questions, please contact support@designbro.com"
+
+  standard_nda: "PARTIES\n\n(1)Client\n\n(2)Designer\n\nWHEREAS, Designer will receive certain electronic information (briefing) regarding the other, including but not limited to: information relating to business records and plans, financials, marketing, research, trade secrets and technical information, inventions, designs, product requirements, pricing structure, costs, and other information, which information is proprietary and confidential to the Client and not generally ascertainable to the public (\"Confidential Information\"), for the purpose of work by Designer on DesignBro.com;\n\nWHEREAS, both parties acknowledge that the information from the client is secret to derive and not generally known to other persons. Designer also acknowledges that each component of the information constitutes a valuable and protectable trade secret of Client;\n\nUse in Portfolio. Designer does not retain the right to use the design(s) submitted to this project in Designer's design portfolio.\n\nNOW, THEREFORE, Designer will occupy a position of trust and confidence with the Client, and in consideration of the recitals and other good and valuable consideration, the receipt and sufficiency of which hereby are acknowledged, Client and Designer agree as follows:\n\n1. Confidential Information. Designer agrees that it shall not (except as required to carry out its duties and responsibilities) at any time, directly or indirectly, disclose to any person or entity, use for its own benefit or for the benefit of any third Designer, any Confidential Information or material provided to it by the Client or third-parties engaged by Client. The term \"Confidential Information\" shall not include information which, by clear and convincing written evidence: (i) was part of the public record at the time of execution of this Agreement; (ii) hereafter becomes part of the public record by publication or otherwise through no action of Designer; (iii) was already known to Designer, as evidenced by written records; (iv) was independently developed without the use of Client's Confidential Information.\n\n2. Additional Covenants. Designer agrees that, following the receipt of Confidential Information, it shall: (i) undertake all reasonable and appropriate steps to ensure that the secrecy and confidentiality of Confidential Information is maintained; and (ii) if requested pursuant to, or required by, applicable law or regulation or by legal process to disclose any Confidential Information, provide Client with prompt notice of such request(s) to enable Client to seek an appropriate protective order.\n\n3. No Liability. Designer agrees that no covenants, warranties or representations are made by Client or any of Client's representatives with respect to the accuracy or completeness of any Confidential Information, and none of them shall have any liability to Designer arising out of the use of Confidential Information.\n\n4. Successors. This Agreement shall be binding upon and enure to the benefit of the parties hereto and their respective heirs, administrators, executors, successors and assigns.\n\nSeperate to this;\n\nBoth parties (Designer) and (Client) agree to the general terms and conditions of DesignBro Limited, and understand that this NDA does not alter any of these terms and conditions. It is also expressly understood that DesignBro is not a party in this NDA, and is not responsible for the upholding of this agreement, nor can it be held responsible for the quality of this agreement. DesignBro can also not be expected to mediate any conflicts caused by this agreement. However if it comes to the attention of DesignBro that either party has broken any agreements or any of the terms & conditions, it reserves the right to cancel any accounts and exclude either party from any future projects."

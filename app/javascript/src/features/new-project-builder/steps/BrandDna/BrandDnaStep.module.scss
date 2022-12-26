@@ -1,0 +1,28 @@
+.form {
+  padding: 50px 0 100px;
+  color: #0c293f;
+}
+
+.content {
+  padding: 0 10px;
+  text-align: center;
+}
+
+.popup {
+  text-align: center !important;
+  color: #a4afb8 !important;
+  font-size: 13px !important;
+  font-weight: bold !important;
+  border: 0 !important;
+  box-shadow: 0 3px 10px 0 rgba(164, 175, 184, 0.75) !important;
+
+  &:before {
+    box-shadow: none !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    padding: 50px 25px;
+  }
+}

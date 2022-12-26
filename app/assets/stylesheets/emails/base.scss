@@ -1,0 +1,52 @@
+$email-colors: (
+  'white': #fff,
+  'black': #000,
+  'dark-blue': #0c293f,
+  'green': #18da8e,
+  'light-grey': #eff1f3,
+  'border-grey': #ccd2d7,
+  'dark-grey': #a4afb8,
+  'darkest-grey': #8896a1,
+);
+
+@each $color in $email-colors {
+  .in-#{nth($color, 1)} {
+    color: nth($color, 2) !important;
+  }
+  .bg-#{nth($color, 1)} {
+    background-color: nth($color, 2) !important;
+  }
+}
+
+@each $font in (8, 9, 10, 12, 14, 16, 26, 30) {
+  .font-#{$font} {
+    font-size: #{$font}px !important;
+  }
+}
+
+@each $size in (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55) {
+  @each $prop in (t: top, b: bottom, l: left, r: right) {
+    .m-#{nth($prop, 1)}-#{$size} {
+      margin-#{nth($prop, 2)}: #{$size}px !important;
+    }
+  }
+
+  .m-#{$size} {
+    margin: #{$size}px !important;
+  }
+}
+@each $size in (5, 10, 15, 20, 25, 30, 40) {
+  @each $prop in (t: top, b: bottom, l: left, r: right) {
+    .p-#{nth($prop, 1)}-#{$size} {
+      padding-#{nth($prop, 2)}: #{$size}px !important;
+    }
+  }
+
+  .p-#{$size} {
+    padding: #{$size}px !important;
+  }
+}
+
+@function color($color) {
+  @return map-get($email-colors, $color)
+}

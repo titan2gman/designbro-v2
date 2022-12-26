@@ -1,0 +1,77 @@
+{
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": ["id", "type", "attributes"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "object",
+          "required": [
+            "displayName",
+            "firstName",
+            "lastName",
+            "countryCode",
+            "age",
+            "gender",
+            "experienceBrand",
+            "experiencePackaging",
+            "experienceEnglish",
+            "state",
+            "portfolioUploaded",
+            "brandIdentityState",
+            "packagingState"
+          ],
+          "properties": {
+            "displayName": {
+              "type": "string"
+            },
+            "firstName": {
+              "type": "string"
+            },
+            "lastName": {
+              "type": "string"
+            },
+            "countryCode": {
+              "type": "string"
+            },
+            "age": {
+              "type": "integer"
+            },
+            "gender": {
+              "type": "string"
+            },
+            "experienceBrand": {
+              "type": "string"
+            },
+            "experiencePackaging": {
+              "type": "string"
+            },
+            "experienceEnglish": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "portfolioUploaded": {
+              "type": "boolean"
+            },
+            "brandIdentityState": {
+              "type": "string"
+            },
+            "packagingState": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

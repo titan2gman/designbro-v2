@@ -1,0 +1,39 @@
+machine:
+  ruby:
+    version:
+      2.3.1
+  node:
+    version: 7.10.0
+  services:
+    - redis
+  environment:
+    PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+    CONTINUOUS_INTEGRATION: true
+    RAILS_ENV: 'test'
+    RACK_ENV: 'test'
+    CI: true
+
+    ROOT_URL: http://some-root-url
+
+    BUGSNAG_RAILS_API_KEY: test
+    BUGSNAG_JAVASCRIPT_API_KEY: test
+
+    PAYOUT_EMAIL: staging-payout@yopmail.com
+
+dependencies:
+  cache_directories:
+    - .bundle/
+    - ~/.cache/yarn
+
+  override:
+    - yarn
+    - bundle --path=vendor/bundle --jobs=4 --retry=3 --without=production
+
+test:
+  pre:
+    - bundle exec rake webpack:compile
+  override:
+    - yarn run standard
+    - yarn run ci
+    - bundle exec rspec --exclude-pattern "**/features/**/*_spec.rb" -r rspec_junit_formatter --format Fuubar --format RspecJunitFormatter -o $CIRCLE_TEST_REPORTS/units/junit.xml
+    - bundle exec rspec spec/features -r rspec_junit_formatter --format Fuubar --format RspecJunitFormatter -o $CIRCLE_TEST_REPORTS/features/junit.xml

@@ -1,0 +1,33 @@
+.pjsumm-first-screen {
+  text-align: center;
+  @include background-image-retina('photo2.jpg', 'photo2_2x.jpg');
+  background-size: cover;
+  margin-top: -88px;
+  padding-top: 150px;
+  padding-bottom: 65px;
+}
+.pjsumm-first-screen__title {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  line-height: 1.4;
+}
+
+@include media-breakpoint-up(sm) {
+  .pjsumm-first-screen {
+    padding-top: 160px;
+    padding-bottom: 70px;
+  }
+  .pjsumm-first-screen__title {
+    font-size: 52px;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .pjsumm-first-screen {
+    padding-top: 195px;
+    padding-bottom: 105px;
+  }
+}

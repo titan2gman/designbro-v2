@@ -1,0 +1,54 @@
+{
+  "type": "object",
+  "required": [
+    "data"
+  ],
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "attributes"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "attributes": {
+            "type": "object",
+            "required": [
+              "createdAt",
+              "extension",
+              "fileSize",
+              "filename",
+              "url"
+            ],
+            "properties": {
+              "createdAt": {
+                "type": "string"
+              },
+              "extension": {
+                "type": "string"
+              },
+              "fileSize": {
+                "type": "number"
+              },
+              "filename": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

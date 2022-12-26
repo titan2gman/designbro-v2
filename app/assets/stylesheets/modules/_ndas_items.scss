@@ -1,0 +1,20 @@
+.my-ndas__content {
+  padding-bottom: 80px;
+}
+
+.my-ndas-items {
+  margin-bottom: 80px;
+}
+.my-ndas__order-last {
+  padding-right: 0;
+}
+
+@include media-breakpoint-up(lg) {
+  .my-ndas-items {
+    margin-bottom: 70px;
+  }
+  .my-ndas__order-last {
+    order: 4;
+    padding-left: 15px;
+  }
+}

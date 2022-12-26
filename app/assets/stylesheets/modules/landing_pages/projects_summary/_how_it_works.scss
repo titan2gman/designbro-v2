@@ -1,0 +1,22 @@
+.pjsumm-how-it-works {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  .numbered-list > li {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+}
+.pjsumm-how-it-works__title {
+  letter-spacing: 0.5px;
+}
+
+@include media-breakpoint-up(lg) {
+  .pjsumm-how-it-works {
+    padding-top: 145px;
+    padding-bottom: 120px;
+    .numbered-list > li {
+      margin-left: 35px;
+      margin-right: 35px;
+    }
+  }
+}

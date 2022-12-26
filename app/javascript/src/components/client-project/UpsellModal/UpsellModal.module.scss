@@ -1,0 +1,60 @@
+.modalBody {
+  padding: 3rem;
+  position: relative;
+}
+
+.modalHeader {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-dark-grey);
+  text-align: center;
+  line-height: 30px;
+}
+
+.modalContent {
+  padding: 3rem 0 0;
+  text-align: center;
+}
+
+.totalCost {
+  color: var(--color-light-grey);
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.totalCostValue {
+  color: var(--color-active);
+}
+
+.continueBtn {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.buttonUp {
+  width: 30px;
+  height: 30px;
+  background-image: url("~new-project-details/Icon-ArrowUp.svg");
+}
+
+.buttonDown {
+  width: 30px;
+  height: 30px;
+  background-image: url("~new-project-details/Icon-ArrowDown.svg");
+}
+
+.count {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.closeIcon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 8px;
+  padding: 10px;
+  cursor: pointer;
+}

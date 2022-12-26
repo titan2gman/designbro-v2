@@ -1,0 +1,10 @@
+.contacts-content {
+  padding-top: 80px;
+  padding-bottom: 65px;
+}
+
+@include media-breakpoint-up(lg) {
+  .contacts-content {
+    padding-bottom: 85px;
+  }
+}

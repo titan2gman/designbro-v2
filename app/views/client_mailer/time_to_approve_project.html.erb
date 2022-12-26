@@ -1,0 +1,26 @@
+<tr>
+  <td class='header'>
+    Your <%= project_type_name(@project) %> for <%= @project.brand_name %> is coming to an end, with only 2 days to go. Time to approve the design works
+  </td>
+</tr>
+<tr>
+  <td class='text left'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+          The fixed time for your project is now close to ending, so don’t risk losing your project, wrap it up!
+          Need just a little more time? Reach out to our support team to purchase additional days.
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td class='padding-bottom-25'>
+    <a href='<%= "#{host_url}/c/projects/#{@project.id}" %>' class='main-btn'>
+      Open Project
+
+      <%= image_tag 'arrow_white.png', class: 'arrow' %>
+    </a>
+  </td>
+</tr>

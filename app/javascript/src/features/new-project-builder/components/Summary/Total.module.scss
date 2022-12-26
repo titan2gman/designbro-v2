@@ -1,0 +1,22 @@
+.total {
+  border-top: 1px solid #ccd2d7;
+  border-bottom: 1px solid #ccd2d7;
+  display: flex;
+  padding: 25px 0;
+  margin: 25px 0;
+  color: #0c293f;
+
+  h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  .totalCaption {
+    flex: 1;
+  }
+
+  .totalPrice {
+    text-align: right;
+  }
+}

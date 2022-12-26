@@ -1,0 +1,40 @@
+.moneyBackGuarantee {
+  display: flex;
+  padding: 10px 0 40px;
+  border-bottom: 1px solid #ccd2d7;
+  color: #8c9aa6;
+
+  .icon {
+    min-width: 40px;
+    height: 50px;
+    background-image: url("~new-project-builder/money-back-guarantee-big.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .content {
+    margin-left: 15px;
+
+    .title {
+      margin-top: 3px;
+      margin-bottom: 17px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .text {
+      margin: 0;
+
+      .link {
+        text-decoration: underline;
+        font-weight: 700;
+        cursor: pointer;
+
+        &:visited {
+          color: #8c9aa6;
+        }
+      }
+    }
+  }
+}

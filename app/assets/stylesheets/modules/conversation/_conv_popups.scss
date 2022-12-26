@@ -1,0 +1,83 @@
+.conv-popup__upload-box {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  &:hover i {
+    color: black;
+  }
+}
+.conv-popup__upload-box--text {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.8;
+}
+.conv-popup-file-icon__list {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.conv-popup-file-icon__item {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.conv-modal-primary-header {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.conv-modal-primary-actions {
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.conv-confirmation-primary-actions {
+  padding-bottom: 0;
+}
+.conv-confirmation-modal-primary-body-block {
+  padding-top: 35px;
+  padding-bottom: 0;
+}
+.conv-review-modal-primary-body-block {
+  padding-top: 60px;
+  padding-bottom: 0;
+}
+.conv-review-primary-actions {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.conv-review-modal-rating {
+  font-size: 27px;
+  > i {
+    margin-right: 6px;
+  }
+}
+
+
+@include media-breakpoint-up(sm) {
+  .conv-modal-primary-actions {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .conv-confirmation-primary-actions {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .conv-confirmation-modal-primary-body-block {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+@include media-breakpoint-up(md) {
+  .conv-review-modal-primary-body-block {
+    padding-bottom: 40px;
+  }
+  .conv-review-primary-actions {
+    padding-top: 40px;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .upload-file-popup__connector {
+    max-width: 105px;
+  }
+  .conv-review-modal-main-textarea {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}

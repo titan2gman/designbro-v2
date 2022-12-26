@@ -1,0 +1,29 @@
+<tr>
+  <td class='text left'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+          This client timed out in the files stage:
+          <br />
+          <br />
+          Client name: <%= @client.name %>
+          <br />
+          Phone: <%= @client.company.phone %>
+          <br />
+          Email: <%= @client.email %>
+          <br />
+          <br />
+          of designs entered into the competition
+          <br />
+          <br />
+          Designer name: <%= @winner.name %>
+          <br />
+          Email: <%= @winner.email %>
+          <br />
+          <br />
+          Last time logged in: <%= @client.last_seen_at %>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

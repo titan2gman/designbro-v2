@@ -1,0 +1,33 @@
+.button {
+  margin-top: 20px;
+  padding: 0.25rem 1.75rem;
+}
+
+.subheaderWrapper {
+  // display: flex;
+  // align-items: center;
+  padding: 40px 0;
+}
+
+.manualTile {
+  color: var(--color-active);
+  border: 3px solid var(--color-active);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  padding: 25px;
+  margin: 20px 10px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: -15px;
+    border-bottom: 3px solid var(--color-active);
+    width: 40px;
+    height: 25px;
+    background-color: var(--color-white);
+    transform: rotate(45deg);
+  }
+}

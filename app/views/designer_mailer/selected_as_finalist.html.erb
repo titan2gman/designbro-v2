@@ -1,0 +1,25 @@
+<tr>
+  <td class='header'>
+    BOOM! The client selected you as a finalist for the project: <%= cut_on_word(@project.name) %>
+  </td>
+</tr>
+<tr>
+  <td class='text left'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+          Entering the home stretch! Please check if the client asked for any changes, and... Hang in there, we’re keeping our fingers crossed.. Good luck!
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td class='padding-bottom-25'>
+    <a href='<%= "#{host_url}/d/projects/#{@project.id}" %>' class='main-btn'>
+      Open Project
+
+      <%= image_tag 'arrow_white.png', class: 'arrow' %>
+    </a>
+  </td>
+</tr>

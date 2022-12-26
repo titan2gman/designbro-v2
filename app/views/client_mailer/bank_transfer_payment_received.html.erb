@@ -1,0 +1,40 @@
+<tr>
+  <td class='header'>
+    Your project: <%= cut_on_word(@project.name) %> has officially started
+  </td>
+</tr>
+<tr>
+  <td class='text left'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+          We received your payment, so your project has now officially started.
+          <br />
+          <br />
+          Over the next few days you will start to see designs appear on your project page. You can give feedback by chatting with the designers, you can eliminate designs to give other designers a chance, or if you think you never want to see a design from this individual designer again, you can block the designer altogether. Keep in mind that once you eliminate designs, or block designers, this is final- there is no way back!
+          <br />
+          <br />
+          Once you feel happy with a design, you can select it as one of your finalists. You can select a maximum of 3 finalists.
+          <br />
+          <br />
+          You have <%= humanize_expire_duration(@project.design_stage_expire_duration) %> to select your finalists, make sure you do so on time; you don’t want to risk losing your project!
+          <br />
+          <br />
+          Happy Hunting!
+          <br />
+          <br />
+          PS. you can download your invoice <a href='<%= "#{host_url}/c/transactions" %>' class='link'>here</a>.
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td class='padding-bottom-25'>
+    <a href='<%= "#{host_url}/c/projects/#{@project.id}" %>' class='main-btn'>
+      Open Project
+
+      <%= image_tag 'arrow_white.png', class: 'arrow' %>
+    </a>
+  </td>
+</tr>

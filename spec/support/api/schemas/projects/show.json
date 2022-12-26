@@ -1,0 +1,130 @@
+{
+  "type": "object",
+  "required": [
+    "data"
+  ],
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": [
+        "id",
+        "type",
+        "attributes"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "object",
+          "required": [
+            "name",
+            "state",
+            "price",
+            "ndaId",
+            "winner",
+            "designs",
+            "ndaType",
+            "finishAt",
+            "designers",
+            "finalists",
+            "ndaAccepted",
+            "projectType",
+            "description",
+            "upgradePackage",
+            "businessCustomer"
+          ],
+          "properties": {
+            "brandName": {
+              "type": "string"
+            },
+            "companyDescription": {
+              "type": "string"
+            },
+            "logoAdditionalText": {
+              "type": "string"
+            },
+            "slogan": {
+              "type": "string"
+            },
+            "boldOrRafinde": {
+              "type": "number"
+            },
+            "detailedOrClean": {
+              "type": "number"
+            },
+            "handcraftedOrMinimalist": {
+              "type": "number"
+            },
+            "outmodedActual": {
+              "type": "number"
+            },
+            "seriousOrPlayful": {
+              "type": "number"
+            },
+            "standOutOrNotFromTheCrowd": {
+              "type": "number"
+            },
+            "traditionalOrModern": {
+              "type": "number"
+            },
+            "valueOrPremium": {
+              "type": "number"
+            },
+            "name": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "projectType": {
+              "type": "string"
+            },
+            "price": {
+              "type": "number"
+            },
+            "finishAt": {
+              "type": "string"
+            },
+            "designers": {
+              "type": "number"
+            },
+            "designs": {
+              "type": "Array"
+            },
+            "finalists": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            "winner": {
+              "type": "number | null"
+            },
+            "ndaAccepted": {
+              "type": "boolean | null"
+            },
+            "ndaId": {
+              "type": "number | null"
+            },
+            "ndaType": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "upgradePackage": {
+              "type": "boolean"
+            },
+            "businessCustomer": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    }
+  }
+}

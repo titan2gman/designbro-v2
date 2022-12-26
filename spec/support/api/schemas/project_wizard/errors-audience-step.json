@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "required": [
+    "errors"
+  ],
+  "properties": {
+    "errors": {
+      "type": "object",
+      "required": [
+        "youthful_or_mature",
+        "masculine_or_premium",
+        "low_income_or_high_income"
+      ],
+      "properties": {
+        "youthful_or_mature": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "masculine_or_premium": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "low_income_or_high_income": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

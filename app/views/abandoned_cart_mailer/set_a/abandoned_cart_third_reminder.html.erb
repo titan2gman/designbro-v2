@@ -1,0 +1,66 @@
+<table border="0" cellpadding="0" cellspacing="0" class="abandoned-cart-reminder outer-wrapper <%= @reminder_step %> set-<%= @project.email_template_set_name %>">
+  <tr class="bg-dark-blue">
+    <td class="header">
+      <div class="logo"></div>
+      <h1 class="font-30 in-white m-t-30 m-l-30 m-b-0">
+        Work with<br/>
+        <span class="in-green">the best 5%</span><br/>
+        of designers
+      </h1>
+
+      <div class="m-t-20 m-l-30 m-b-0">
+        <%= link_to 'Finish your checkout →', @continue_brief_url, class: "action-button font-14 bg-green in-dark-blue", target: '_blank' %>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="subheader font-10 in-dark-blue">
+      <p>
+        We review designer’s portfolios and accept only <strong>the best 5%</strong> of all designers that apply. This way we can guarantee professional designs and creative quality for your next design project.
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="project-details bg-light-grey p-t-30 p-b-30" align="center">
+      <h2 class="font-16">Finish your checkout for <%= @project.brand_name %> here</h2>
+
+      <div>
+        <%= link_to 'Finish your checkout →', @continue_brief_url, class: "action-button font-14 bg-dark-blue in-white", target: '_blank' %>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="testimonials p-40">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td width="50%" class="first-review">
+            <div class="rating"></div>
+            <p class="review">“I will definitely use DesignBro in the future and recommend it to my friends”</p>
+            <p class="author"><strong>- Aidar Kussainov</strong>, Ademibar</p>
+          </td>
+          <td width="50%" class="last-review">
+            <div class="rating"></div>
+            <p class="review">“DesignBro is definitely the way to go for a high quality and professional design”</p>
+            <p class="author"><strong>- Jef Sierra</strong>, ShowcaseHub</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center" class='need-help font-8 p-15'>
+      <p class="in-darkest-grey">Need help? Contact us:</p>
+      <p><a class="in-dark-blue" href="mailto:chris@designbro.com">chris@designbro.com</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center" class='unsubscribe font-8 p-15'>
+      <%= link_to 'Unsubscribe', @unsubscribe_url, target: "_blank", class: "in-darkest-grey" %>
+    </td>
+  </tr>
+</table>

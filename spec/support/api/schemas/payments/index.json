@@ -1,0 +1,71 @@
+{
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "attributes"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "attributes": {
+            "type": "object",
+            "required": [
+              "createdAt",
+              "projectId",
+              "projectName",
+              "paymentId"
+            ],
+            "properties": {
+              "createdAt": {
+                "type": "string"
+              },
+              "projectId": {
+                "type": "number"
+              },
+              "projectName": {
+                "type": "string"
+              },
+              "paymentId": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "links": {
+      "type": "object"
+    },
+    "meta": {
+      "type": "object | null",
+      "properties": {
+        "currentPage": {
+          "type": "number"
+        },
+        "nextPage": {
+          "type": "number | null"
+        },
+        "prevPage": {
+          "type": "number | null"
+        },
+        "totalPages": {
+          "type": "number"
+        },
+        "totalCount": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

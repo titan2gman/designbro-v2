@@ -1,0 +1,12 @@
+.modal.secondary-modal {
+  border-radius: 0;
+  box-shadow: 0 12px 20px rgba(color(blue-700), 0.16);
+  padding: 10px 12px 36px;
+  color: color(grey-200);
+}
+
+@include media-breakpoint-up(md) {
+  .modal.secondary-modal {
+    padding: 0 62px 34px;
+  }
+}

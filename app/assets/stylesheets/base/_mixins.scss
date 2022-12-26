@@ -1,0 +1,18 @@
+@mixin input-placeholder-text {
+ &::-webkit-input-placeholder {
+   @content;
+ }
+ &:-moz-placeholder {
+   @content;
+ }
+ &::-moz-placeholder {
+   @content;
+ }
+ &:-ms-input-placeholder {
+   @content;
+ }
+}
+@mixin background-image-retina($back-img-src, $back-img-retina-src) {
+  background-image: image-url(#{$back-img-src});
+  background-image: -webkit-image-set(image-url(#{$back-img-src}) 1x, image-url(#{$back-img-retina-src}) 2x);
+}

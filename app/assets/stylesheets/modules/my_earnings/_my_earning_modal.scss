@@ -1,0 +1,24 @@
+.earn-modal-primary__subtitle {
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+.earn-radio {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  display: inline-table;
+}
+.earn-radio__hint {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.earn-text-like-label {
+  color: #b2b2b2;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+@include media-breakpoint-up(md) {
+  .earn-radio {
+    margin-right: 60px;
+  }
+}

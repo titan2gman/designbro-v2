@@ -1,0 +1,29 @@
+.popup {
+  text-align: center !important;
+  color: #a4afb8 !important;
+  font-size: 13px !important;
+  border: 0 !important;
+  box-shadow: 0 3px 10px 0 rgba(164, 175, 184, 0.75) !important;
+
+  &:before {
+    box-shadow: none !important;
+  }
+}
+
+.continueBtn {
+  background-color: #18DA8E;
+  border: 2px solid #18DA8E;
+
+  &:hover {
+    background-color: #60f5b5;
+    border: 2px solid #60f5b5;
+    color: #fff;
+  }
+
+  &:global {
+    &.active {
+      background-color: #60f5b5;
+      color: #fff;
+    }
+  }
+}

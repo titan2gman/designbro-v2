@@ -1,0 +1,54 @@
+@import "../../../../mixins.scss";
+
+$checkbox-size: 20px;
+$checkbox-size-border: 2px;
+
+.root {
+  cursor: pointer;
+}
+
+.input {
+  display: none;
+}
+
+.label {
+  vertical-align: bottom;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: $checkbox-size;
+  height: $checkbox-size;
+  text-align: center;
+  border: $checkbox-size-border solid var(--color-light-grey);
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+.text {
+  color: var(--color-dark-grey);
+}
+
+.input:checked {
+  & + .icon {
+    border-color: var(--color-active);
+    // background-color: $active-font-color;
+
+    &:before {
+      @include icon-base;
+      content: var(--icon-check);
+      font-size: 11px;
+      line-height: $checkbox-size - $checkbox-size-border * 2;
+      color: var(--color-active);
+    }
+  }
+}
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+
+  &:hover .icon {
+    border-color: var(--color-light-grey);
+  }
+}

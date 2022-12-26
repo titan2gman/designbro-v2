@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta content='initial-scale=1, width=device-width' name='viewport'>
+    <title>DesignBro</title>
+    <style type='text/css'>
+      body {
+        font-size: 10px;
+        padding-top: 70px;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      .header {
+        padding-top: 65px;
+        padding-bottom: 20px;
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 0.2px;
+      }
+
+      table {
+        max-width: 640px;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .left {
+        text-align: left;
+      }
+
+      .help {
+        font-size: 13px;
+        line-height: 24px;
+        color: #b2b2b2;
+        letter-spacing: 1px;
+        padding-bottom: 75px;
+      }
+
+      .footer {
+        background-color: #ed1943;
+        color: white;
+        padding-top: 35px;
+        padding-bottom: 30px;
+      }
+
+      .footer-pic {
+        display: inline-block;
+        padding-right: 12px;
+      }
+
+      .main-btn {
+        display: inline-block;
+        padding: 0 34px;
+        background-color: black;
+        height: 52px;
+        line-height: 52px;
+        color: white;
+        border-radius: 26px;
+        text-decoration: none;
+        font-size: 16px;
+        letter-spacing: 1px;
+      }
+
+      .main-btn:focus,
+      .main-btn:hover,
+      .main-btn:visited {
+        color: white;
+      }
+
+      .arrow {
+        width: 16px;
+        height: 8px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .padding-bottom-25 {
+        padding-bottom: 25px;
+      }
+
+      .text {
+        color: #5c5c5c;
+        font-size: 18px;
+        padding-bottom: 25px;
+      }
+
+      .sm-table {
+        padding-bottom: 50px;
+        width: 350px;
+      }
+
+      .md-table {
+        padding-bottom: 50px;
+        width: 500px;
+      }
+
+      .link {
+        color: black;
+      }
+
+      .bold {
+        font-weight: 600;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table class='center' cellpadding='0' cellspacing='0' align='center'>
+      <tr>
+        <td>
+          <a href='<%= host_url %>'>
+            <%= image_tag 'email_photo.jpg', style: 'width: 100%;' %>
+          </a>
+        </td>
+      </tr>
+
+      <%= yield %>
+
+      <tr>
+        <td class='help'>
+          Need help? Contact us:
+          <br />
+
+          <a href='mailto:<%= mail_from %>' style='color: #ed1943;'>
+            chris@designbro.com
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class='footer'>
+          <a href='https://fb.me/designbrocom' class='footer-pic'>
+            <%= image_tag 'fb_white.png', style: 'height: 34px;' %>
+          </a>
+          <a href='https://twitter.com/designbrodotcom' class='footer-pic'>
+            <%= image_tag 'twt_white.png', style: 'height: 34px;' %>
+          </a>
+          <a href='https://www.instagram.com/designbrodotcom' class='footer-pic'>
+            <%= image_tag 'inst_white.png', style: 'height: 34px;' %>
+          </a>
+          <a href='https://www.pinterest.com/designbrodotcom' class='footer-pic'>
+            <%= image_tag 'pin_white.png', style: 'height: 34px;' %>
+          </a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

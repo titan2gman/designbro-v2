@@ -1,0 +1,25 @@
+<tr>
+  <td class='header'>
+    Congratulations! Awesome news, the client selected you as the winner of the project: <%= cut_on_word(@project.name) %>
+  </td>
+</tr>
+<tr>
+  <td class='text left'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+          Just make sure you send over the files as quickly as possible (you have 3 days for this), to make sure you get paid the $<%= @project.winner_prize %> prize.
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td class='padding-bottom-25'>
+    <a href='<%= "#{host_url}/d/projects/#{@project.id}" %>' class='main-btn'>
+      Open Project
+
+      <%= image_tag 'arrow_white.png', class: 'arrow' %>
+    </a>
+  </td>
+</tr>

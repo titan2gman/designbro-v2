@@ -1,0 +1,114 @@
+.form {
+  height: 100%;
+}
+
+.content {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.questionWrapper {
+  width: 100%;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.27;
+  color: #0c293f;
+  text-align: center;
+  padding-bottom: 120px;
+}
+
+.option {
+  padding: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.28;
+  text-align: center;
+  color: #0c293f;
+  display: inline-block;
+  width: 220px;
+  box-shadow: 0 3px 10px 0 rgba(164, 175, 184, 0.75);
+  margin: 20px;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  cursor: pointer;
+
+  &:hover {
+    circle {
+      fill: #60f5b5;
+    }
+  }
+}
+
+.optionImg {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+  height: 100px;
+  width: 100px;
+
+  circle {
+    fill: #18DA8E;
+  }
+}
+
+:global {
+  .st1 {
+    fill: #fff;
+  }
+}
+
+.faded {
+  opacity: 0.5;
+  transform: scale(0.7);
+
+  .option {
+    circle {
+      fill: #ccd2d7 !important;
+    }
+
+    &:hover {
+      circle {
+        fill: #18DA8E !important;
+      }
+    }
+  }
+
+  .selected {
+    border: solid 4px #18da8e;
+    cursor: auto !important;
+
+    circle {
+      fill: #18DA8E !important;
+    }
+  }
+}
+
+.inputs {
+  max-width: 280px;
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    padding: 100px 20px 0;
+    align-items: normal;
+  }
+
+  .faded {
+    display: none;
+  }
+
+  .option {
+    width: 150px;
+    font-size: 14px;
+    padding: 20px 10px;
+  }
+
+  .optionImg {
+    width: 80px;
+  }
+}

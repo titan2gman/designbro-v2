@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta content='initial-scale=1, width=device-width' name='viewport'>
+
+    <title><%= I18n.t('site_name') %></title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+    <style type='text/css'>
+      body {
+        font-size: 10px;
+        padding-top: 70px;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      header {
+        margin-bottom: 70px;
+      }
+
+      .logo {
+        height: 50px;
+      }
+
+      .title {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 35px;
+      }
+
+      .clearfix {
+        overflow: auto;
+        zoom: 1;
+      }
+
+      .info-table {
+        font-size: 14px;
+        margin-bottom: 40px;
+      }
+
+      .info-table tr td {
+        padding-bottom: 10px;
+        padding-right: 15px;
+      }
+
+      .info-table:first-of-type {
+        width: 40%;
+        float: left;
+        margin-right: 60px;
+      }
+
+      .price-table {
+        width: 100%;
+        font-size: 19px;
+        margin-bottom: 40px;
+      }
+
+      .price-table tfoot {
+        font-weight: bold;
+      }
+
+      .price-table tr td {
+        line-height: 60px;
+        border-top: 1px solid rgba(149, 149, 149, 0.3);
+      }
+
+      .text-right {
+        text-align: right;
+      }
+
+      .info-text {
+        font-size: 19px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img src="<%= image_url 'logo_dark.svg' %>" class="logo" alt="DesignBro">
+    </header>
+
+    <p class="title"><%= I18n.t('invoice_receipt.title', project_type_name: project_type_name) %></p>
+
+    <div class="clearfix">
+      <table cellpadding='0' cellspacing='0' class="info-table">
+        <tbody>
+          <tr>
+            <td><%= I18n.t('invoice_receipt.info.payer.title') %></td>
+            <td><%= @client.name %></td>
+          </tr>
+          <tr>
+            <td><%= I18n.t('invoice_receipt.info.company_name.title') %></td>
+            <td><%= @company.company_name || '-' %></td>
+          </tr>
+          <tr>
+            <td><%= I18n.t('invoice_receipt.info.country.title') %></td>
+            <td><%= @company.country %></td>
+          </tr>
+          <tr>
+            <td><%= I18n.t('invoice_receipt.info.payment_method.title') %></td>
+            <td><%= payment_type_name %></td>
+          </tr>
+          <tr>
+            <td><%= I18n.t('invoice_receipt.info.invoice_number.title') %></td>
+
+            <td style='word-break: break-all'>
+              <%= @payment.payment_id %>
+            </td>
+          </tr>
+          <tr>
+            <td><%= I18n.t('invoice_receipt.info.date.title') %></td>
+            <td><%= @payment.created_at.strftime('%d %b %Y') %></td>
+          </tr>
+          <% if @company.vat.present? %>
+            <tr>
+              <td><%= I18n.t('invoice_receipt.info.vat.title') %></td>
+              <td><%= @company.vat %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+      <table cellpadding='0' cellspacing='0' class="info-table">
+        <tbody>
+          <tr>
+            <td><%= I18n.t('invoice_receipt.info.paid_to.title') %></td>
+            <td><%= I18n.t('invoice_receipt.info.paid_to.value') %></td>
+          </tr>
+          <tr>
+            <td><%= I18n.t('invoice_receipt.info.address.title') %></td>
+            <td><%= I18n.t('invoice_receipt.info.address.value') %></td>
+          </tr>
+          <tr>
+            <td><%= I18n.t('invoice_receipt.info.vat.title') %></td>
+            <td><%= I18n.t('invoice_receipt.info.vat.value') %></td>
+          </tr>
+          <tr>
+            <td><%= I18n.t('invoice_receipt.info.iban.title') %></td>
+            <td><%= I18n.t('invoice_receipt.info.iban.value') %></td>
+          </tr>
+          <tr>
+            <td><%= I18n.t('invoice_receipt.info.swift.title') %></td>
+            <td><%= I18n.t('invoice_receipt.info.swift.value') %></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <table cellpadding='0' cellspacing='0' class="price-table">
+      <tfoot>
+        <tr>
+          <td><%= I18n.t('invoice_receipt.table.total') %></td>
+          <td class="text-right"><%= I18n.t('invoice_receipt.table.dollar_plus', amount: number_with_precision(@project.price, precision: 2)) %></td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td><%= I18n.t('invoice_receipt.table.project', project_type_name: project_type_name) %></td>
+          <td class="text-right"><%= I18n.t('invoice_receipt.table.dollar_plus', amount: number_with_precision(project_type_price, precision: 2)) %></td>
+        </tr>
+        <tr>
+          <td><%= I18n.t('invoice_receipt.table.vat', vat_percent: vat_percent(@project)) %></td>
+          <td class="text-right"><%= I18n.t('invoice_receipt.table.dollar_plus', amount: number_with_precision(@vat_price, precision: 2)) %></td>
+        </tr>
+        <% unless nda_free?(@nda) %>
+          <tr>
+            <td><%= I18n.t('invoice_receipt.table.nda', nda_type: @nda.nda_type) %></td>
+            <td class="text-right"><%= I18n.t('invoice_receipt.table.dollar_plus', amount: number_with_precision(@nda.price, precision: 2)) %></td>
+          </tr>
+        <% end %>
+        <% if @project.upgrade_package %>
+          <tr>
+            <td><%= I18n.t('invoice_receipt.table.upgrade_pack') %></td>
+            <td class="text-right"><%= I18n.t('invoice_receipt.table.dollar_plus', amount: number_with_precision(upgrade_price, precision: 2)) %></td>
+          </tr>
+        <% end %>
+        <% if @project.discount_amount_cents > 0 %>
+          <tr>
+            <td><%= I18n.t('invoice_receipt.table.discount') %></td>
+            <td class="text-right"><%= I18n.t('invoice_receipt.table.dollar_minus', amount: number_with_precision(@project.discount_amount.to_f, precision: 2)) %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <p class="info-text">
+      <%= I18n.t('invoice_receipt.footer', payment_id: @payment.payment_id) %>
+    </p>
+  </body>
+</html>

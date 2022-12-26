@@ -1,0 +1,36 @@
+<ol>
+  <li>
+    <p>1. Download database dump via <b>Download</b> button </p>
+  </li>
+  <li>
+    <p>2. In terminal move to your rails project directory </p>
+    <pre class='code-snippet'>
+      cd your/rails_app_directory/
+    </pre>
+  </li>
+  <li>
+    <p>3. Shut down rails server if it is running </p>
+  </li>
+  <li>
+    <p>4. Remove and create local database: </p>
+    You should be in rails project directory
+    <pre class='code-snippet'>
+      bundle exec rake db:drop db:create
+    </pre>
+  </li>
+  <li>
+    <p>5. Importing data from dumped database:</p>
+    <pre class='code-snippet'>
+      gunzip &lt;path_to_downloaded_file_name&gt;/filename.gz | psql -U &lt;local_database_user_name&gt; -d designbro_development -f &lt;path_to_downloaded_file_name&gt;/filename
+    </pre>
+    <p>Get <b>local_database_user_name</b> from <b>.env</b> file. See <b>DB_USERNAME</b> column</p>
+    <p>For example, if database dump was downloaded into <b>&lt;rails_project&gt;/tmp</b></p>
+    <p>and you are in <b>&lt;rails_project&gt;</b> directory</p>
+    <p>and downloaded file name is <b>some_file_name.gz</b></p>
+    <p>and DB_USERNAME is <b>db_username</b></p>
+    <p>you should do next:</p>
+    <pre class='code-snippet'>
+      gunzip tmp/some_file_name.gz | psql -U db_username -d designbro_development -f tmp/some_file_name
+    </pre>
+  </li>
+</ol>

@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 30px;
+  box-shadow: 0 4px 14px 0 rgba(164, 175, 184, 0.75);
+  background-color: #ffffff;
+}
+
+.backButtonWrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+}
+
+.continueButtonWrapper {
+  text-align: center;
+}
+
+.validationWrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

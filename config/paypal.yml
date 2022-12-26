@@ -1,0 +1,16 @@
+test: &default
+  mode: sandbox
+  client_id: <%= ENV.fetch('PAYPAL_CLIENT_ID') %>
+  client_secret: <%= ENV.fetch('PAYPAL_CLIENT_SECRET') %>
+  ssl_options:
+    ca_file: null
+
+development:
+  <<: *default
+
+staging:
+  <<: *default
+
+production:
+  <<: *default
+  mode: live

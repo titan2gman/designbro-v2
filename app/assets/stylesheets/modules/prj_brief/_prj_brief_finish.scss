@@ -1,0 +1,9 @@
+.prjb-system-message {
+  margin-bottom: 40px;
+}
+
+@include media-breakpoint-up(lg) {
+  .prjb-system-message {
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,56 @@
+.designerItem {
+  display: flex;
+  padding: 25px;
+  box-shadow: 0 3px 10px 0 rgba(black, 0.15);
+  position: relative;
+  align-items: center;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-size: 14px;
+  word-break: break-word;
+  line-height: 1.2;
+
+  &:hover {
+    color: var(--color-dark-grey);
+    box-shadow: 0 5px 15px 0 rgba(black, 0.15);
+  }
+
+  &:global {
+    &.selected {
+      border: 2px solid var(--color-active);
+      color: var(--color-dark-grey);
+      box-shadow: 0 5px 15px 0 rgba(black, 0.15);
+    }
+  }
+}
+
+.designerName {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.tick {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-size: 2em;
+  background: var(--color-white) url("~new-project-product/tick-icon-green.svg") center;
+  border: 3px solid var(--color-active);
+}
+
+.avatar {
+  background-image: url('~new-project-product/avatar.svg');
+  background-position: center;
+  width: 80px;
+  height: 80px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+}
+.content {
+  flex: 1;
+}

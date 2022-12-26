@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "required": [
+    "errors"
+  ],
+  "properties": {
+    "errors": {
+      "type": "object",
+      "required": [
+        "brand_name",
+        "what_is_special",
+        "where_it_is_used",
+        "background_story"
+      ],
+      "properties": {
+        "brand_name": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "additional_text": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "what_is_special": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "where_it_is_used": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "background_story": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

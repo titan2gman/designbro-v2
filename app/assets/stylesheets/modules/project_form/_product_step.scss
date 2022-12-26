@@ -1,0 +1,235 @@
+$products: 'logo', 'brand-identity', 'packaging', 'website', 'website-banner', 'flyer', 'poster', 'menu', 'billboard', 'business-card', 'book-cover', 'album-cover', 'magazine-cover', 't-shirt', 'instagram-post', 'facebook', 'twitter', 'linkedin', 'youtube', 'zoom-background', 'manual';
+
+.product-step, .projects-list, .new-project-step {
+  .brand-hint {
+    color: #b7b7b7;
+    margin-left: 10px;
+    font-size: 13px;
+    display: inline-block;
+
+    .switch-brand {
+      color: #b7b7b7;
+      text-decoration: underline;
+      cursor: pointer;
+      font-size: 13px;
+
+      &:hover {
+        color: #4B4B4B;
+      }
+    }
+  }
+}
+
+.new-project-step {
+  .brand-hint {
+    margin-bottom: 20px;
+  }
+
+  .col-md-4 {
+    margin-top: 40px;
+  }
+}
+
+.product-step {
+  h1 {
+    display: inline-block;
+
+    .brand-name {
+      color: #5EA2D7;
+    }
+  }
+}
+
+.products-list {
+  margin-bottom: 5rem;
+  .product-item {
+    text-align: center;
+    color: #b7b7b7;
+    padding: 35px;
+    box-shadow: 0px 3px 10px 0px rgba(black, 0.15);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 10px;
+    margin-bottom: 30px;
+    align-items: center;
+    border: 2px solid transparent;
+    cursor: pointer;
+    min-height: 300px;
+    flex: 1;
+
+    &:hover {
+      color: #4B4B4B;
+      box-shadow: 0px 5px 15px 0px rgba(black, 0.15);
+
+      .product-logo {
+        @each $product in $products {
+          &.#{$product} {
+            background: image-url("new-project-product/#{$product}-icon-blue.svg") center no-repeat;
+          }
+        }
+      }
+    }
+
+    &.selected {
+      border: 2px solid #5EA2D7;
+      color: #4B4B4B;
+      box-shadow: 0px 5px 15px 0px rgba(black, 0.15);
+
+      .product-logo {
+        @each $product in $products {
+          &.#{$product} {
+            background: image-url("new-project-product/#{$product}-icon-blue.svg") center no-repeat;
+          }
+        }
+      }
+
+      .tick {
+        position: absolute;
+        right: -15px;
+        top: -15px;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #fff;
+        background-image: image-url("new-project-product/tick-icon.svg");
+        background-size: 2em;
+        background-position: center;
+        border: 3px solid #5EA2D7;
+      }
+    }
+
+    .product-logo {
+      height: 120px;
+      width: 120px;
+      display: inline-block;
+
+      @each $product in $products {
+        &.#{$product} {
+          background: image-url("new-project-product/#{$product}-icon-grey.svg") center no-repeat;
+        }
+      }
+    }
+
+    .product-name {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .product-description {
+      flex: 1;
+      font-size: 14px;
+    }
+
+    .more-information {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 12px;
+      a {
+        color: #b7b7b7;
+        text-decoration: underline;
+        &:hover {
+          color: #4B4B4B;
+        }
+      }
+    }
+  }
+}
+
+.brand-name-input {
+  margin-top: 35px;
+
+  p {
+    margin-bottom: 5px;
+    color: #4B4B4B;
+  }
+
+  .main-input {
+    padding-bottom: 5px;
+  }
+}
+
+.product-brands-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  .brand-item-wrapper {
+    display: inline-block;
+    margin: 0 10px;
+
+    & > .brand-name {
+      text-align: center;
+      margin: 10px 0;
+      color: #4B4B4B;
+      width: 125px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  .brand-item {
+    width: 125px;
+    height: 125px;
+    box-shadow: 0px 3px 5px 0px rgba(black, 0.1);
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    & > .brand-name {
+      text-align: center;
+      color: #fff;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &.new-brand {
+      background: #EBECED;
+      display: flex;
+      flex-direction: column;
+
+      .plus {
+        color: #A2A3A4;
+        flex: 1;
+        font-size: 60px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .new-brand-label {
+        color: #A2A3A4;
+        flex: 1;
+        font-size: 18px;
+        text-align: center
+      }
+    }
+
+    &.selected {
+      border: 2px solid #5EA2D7;
+      color: #4B4B4B;
+      box-shadow: 0px 5px 15px 0px rgba(black, 0.15);
+      position: relative;
+
+      .tick {
+        position: absolute;
+        right: -10px;
+        top: -10px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #fff;
+        background-image: image-url("new-project-product/tick-icon.svg");
+        background-size: 1.5em;
+        background-position: center;
+        border: 2px solid #5EA2D7;
+      }
+    }
+  }
+}

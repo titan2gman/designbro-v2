@@ -1,0 +1,15 @@
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0c293f;
+}
+
+.detailDescription {
+  font-size: 16px;
+  color: #96a3ad;
+  max-width: 380px;
+
+  &.designsCount {
+    max-width: 380px;
+  }
+}

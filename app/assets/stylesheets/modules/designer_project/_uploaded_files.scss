@@ -1,0 +1,41 @@
+.dpj-files-header-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+  align-items: center;
+}
+.dpj-files-header-bottom {
+  text-align: right;
+  padding-top: 20px;
+}
+.dpj-files-header-top__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 2;
+  margin-bottom: 0;
+}
+.dpj-files-header-bottom__download-link-icon {
+  font-size: 21px;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+.dpj-file-icon__wrap {
+  padding-top: 30px;
+  overflow: hidden;
+}
+
+$dpj-file-icon-indent: 20px;
+.dpj-file-icon__list {
+  margin-left: -$dpj-file-icon-indent;
+  margin-right: -$dpj-file-icon-indent;
+}
+.dpj-file-icon__item {
+  margin: 0 $dpj-file-icon-indent 30px;
+}
+
+@include media-breakpoint-up(md) {
+  .dpj-file-icon__wrap {
+    padding-top: 10px;
+  }
+}

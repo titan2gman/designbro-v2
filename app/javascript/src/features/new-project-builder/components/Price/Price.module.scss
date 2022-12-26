@@ -1,0 +1,26 @@
+.priceWrapper {
+  width: max-content;
+  margin-bottom: 12px;
+
+  .free {
+    color: #18da8e;
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 5px;
+  }
+
+  .price {
+    font-size: 18px;
+    color: #0c293f;
+    padding: 10px 0;
+
+    &.crossed {
+      text-decoration: line-through;
+      color: #a4afb8;
+    }
+  }
+
+  .total {
+    font-size: 16px;
+  }
+}

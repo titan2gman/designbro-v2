@@ -1,0 +1,21 @@
+<tr>
+  <td class='header'>
+    Welcome to DesignBro!
+  </td>
+</tr>
+<tr>
+  <td class='text'>
+    We are thrilled you've joined our community.
+    <br />
+    Stay tuned for exciting promotions and new product launches!
+  </td>
+</tr>
+<tr>
+  <td class='text'>
+    <a href='<%= confirmation_url(@resource, confirmation_token: @token, config: message['client-config'].to_s, redirect_url: message['redirect-url']) %>' class='main-btn bold'>
+      Activate your account
+
+      <%= image_tag 'arrow_white.png', class: 'arrow' %>
+    </a>
+  </td>
+</tr>

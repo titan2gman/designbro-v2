@@ -1,0 +1,69 @@
+.earn-subheader {
+  padding-top: 45px;
+  padding-bottom: 30px;
+}
+.earn-subheader__info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.earn-subheader__info-block {
+  margin-right: 20px;
+  text-align: left;
+}
+.earn-subheader__info-value {
+  font-size: 24px;
+  font-weight: bold;
+}
+.earn-subheader__info-title {
+  font-size: 10px;
+  color: color(grey-200);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.earn-subheader__info-btn {
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+.earn__tabs-titles {
+  border-bottom: 1px solid rgba(color(grey-200), 0.25);
+}
+.my-earn-items {
+  margin-bottom: 80px;
+}
+
+@include media-breakpoint-up(md) {
+  .earn-subheader {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .earn-subheader__title {
+    margin-top: 25px;
+  }
+  .earn-subheader__info-block {
+    margin-right: 0;
+    margin-left: 25px;
+    text-align: right;
+  }
+  .earn-subheader__info-title {
+    margin-bottom: 0;
+  }
+  .earn-subheader__info-btn {
+    margin-left: 40px;
+    display: inline-block;
+    margin-top: 25px;
+  }
+  .earn__content {
+    padding-top: 20px;
+    padding-bottom: 100px;
+  }
+  .earn__tab-title {
+    font-size: 22px;
+    letter-spacing: initial;
+    margin-right: 50px;
+  }
+  .my-earn-items {
+    margin-bottom: 70px;
+  }
+}

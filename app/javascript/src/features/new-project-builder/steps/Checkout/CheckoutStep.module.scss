@@ -1,0 +1,61 @@
+.checkout {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 150px;
+  margin: 70px auto 0;
+  max-width: 1050px;
+}
+
+.billing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 605px;
+
+  .details {
+    margin-top: 40px;
+    width: 100%;
+
+    .detailsHeader {
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+}
+
+.input {
+  margin: 10px 0;
+}
+
+.totals {
+  flex: 2;
+  flex: 370px;
+  margin-left: 50px;
+  margin-top: 58px;
+
+  .totalsHeading {
+    font-size: 26px;
+    font-weight: 700;
+    color: #0c293f;
+    margin-bottom: 35px;
+  }
+}
+
+.heading {
+  font-weight: 800;
+  line-height: 1.2;
+  font-size: 26px;
+  color: #0c293f;
+  margin-bottom: 30px;
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 992px) {
+  .checkout {
+    padding: 10px;
+  }
+  .totals {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,16 @@
+.secondary-modal__header {
+  margin-bottom: 40px;
+  .secondary-modal__text {
+    letter-spacing: 0.4px;
+    line-height: initial;
+  }
+}
+.secondary-modal__title {
+  font-size: 20px;
+  color: color('black');
+  margin-bottom: 12px;
+}
+.secondary-modal__text {
+  font-size: 13px;
+  line-height: 2;
+}

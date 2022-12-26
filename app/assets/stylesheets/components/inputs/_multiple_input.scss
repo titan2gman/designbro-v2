@@ -1,0 +1,49 @@
+.multiple-input {
+  margin-top: 15px;
+  input::placeholder {
+    color: #b2b2b2;
+  }
+}
+.multiple-input__tag {
+  background-color: #f0f0f0;
+  font-size: 13px;
+  padding: 10px 56px 10px 20px;
+  border-radius: 18px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  position: relative;
+}
+.multiple-input__tag-remove {
+  font-size: 22px;
+  color: #b2b2b2;
+  padding-left: 25px;
+  line-height: 1;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  cursor: pointer;
+  margin-top: -10px;
+}
+.multiple-input__suggestions {
+  background: white;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 12px 13px rgba(color(blue-700), 0.07);
+  li {
+    font-size: 13px;
+    padding: 5px 10px;
+    &:hover {
+      cursor: pointer;
+    }
+    &:hover,
+    &.active {
+      color: color(green-500);
+    }
+    span > mark {
+      background-color: transparent;
+      color: color(green-500);
+    }
+  }
+}

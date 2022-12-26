@@ -1,0 +1,28 @@
+<tr>
+  <td class='header'>
+    Thank you for selecting your finalists, you just put a smile on the designer’s face
+  </td>
+</tr>
+<tr>
+  <td class='text left'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+          In the finalist stage your selected designers will make your stationery items. Make sure you give them feedback, and check to see if all relevant information is on the items! Do keep in mind that you need to select your winner on time: You don’t want to risk losing your project!
+          <br />
+          <br />
+          You have <strong><%= humanize_expire_duration(@project.finalist_stage_expire_duration) %></strong> left to choose a winner.
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td class='padding-bottom-25'>
+    <a href='<%= "#{host_url}/c/projects/#{@project.id}" %>' class='main-btn'>
+      Open Project
+
+      <%= image_tag 'arrow_white.png', class: 'arrow' %>
+    </a>
+  </td>
+</tr>

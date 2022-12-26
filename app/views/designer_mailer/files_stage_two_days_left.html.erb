@@ -1,0 +1,28 @@
+<tr>
+  <td class='header'>
+    It is time to upload your files for the project: <%= cut_on_word(@project.name) %>
+  </td>
+</tr>
+<tr>
+  <td class='text left'>
+    <table class='md-table' align='center'>
+      <tr>
+        <td>
+          Don’t risk out on losing out on your $<%= @project.winner_prize %> prize. All you have to do is upload the design files; do it now!
+          <br />
+          <br />
+          Just a reminder: upload a version with and without fonts outlined, and make sure there are no elements that are someone else’s copyright, like stock images. Have questions about this, contact <a href='mailto:support@designbro.com' class='link'>support</a>.
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td class='padding-bottom-25'>
+    <a href='<%= "#{host_url}/d/projects/#{@project.id}/files" %>' class='main-btn'>
+      Open Project
+
+      <%= image_tag 'arrow_white.png', class: 'arrow' %>
+    </a>
+  </td>
+</tr>

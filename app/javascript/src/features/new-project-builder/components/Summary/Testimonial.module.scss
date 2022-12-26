@@ -1,0 +1,28 @@
+.detailsTestimonial {
+  margin-top: 33px;
+
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0c293f;
+  }
+
+  .text {
+    font-size: 16px;
+    color: #a4afb8;
+  }
+
+  .author {
+    font-size: 16px;
+    color: #0c293f;
+
+    .stars {
+      color: #a4afb8;
+      letter-spacing: 1px;
+
+      &.filled {
+        color: #18da8e;
+      }
+    }
+  }
+}

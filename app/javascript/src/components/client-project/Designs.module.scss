@@ -1,0 +1,39 @@
+.addSpotBtn {
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 24px;
+  margin-bottom: 45px;
+  max-width: 270px;
+  cursor: pointer;
+  padding-bottom: 100%;
+  position: relative;
+
+  div {
+    text-align: center;
+  }
+}
+
+.addSpotBtnContent {
+  color: var(--color-active);
+  border: 3px solid var(--color-active);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 270px;
+}
+
+.addSpotPlus {
+  font-size: 100px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 3px 0 0 var(--color-active), -3px 0 0 var(--color-active), 0 3px 0 var(--color-active), 0 -3px 0 var(--color-active), 3px 3px var(--color-active), -3px -3px 0 var(--color-active), 3px -3px 0 var(--color-active), -3px 3px 0 var(--color-active);
+  margin: 20px 0;
+}
+
+.addSpotPrice {
+  font-size: 20px;
+}

@@ -1,0 +1,30 @@
+.home-plane {
+  padding-top: 80px;
+  padding-bottom: 110px;
+  background-color: color(grey-430);
+  background-size: cover;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+.home-plane__title {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  line-height: 2;
+  margin-bottom: 95px;
+  letter-spacing: 0.7px;
+}
+.home-plane__title--lg {
+  font-size: 36px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+@include media-breakpoint-up(lg) {
+  .home-plane {
+    @include background-image-retina('photo3.jpg', 'photo3_2x.jpg');
+    padding-top: 155px;
+    padding-bottom: 0;
+  }
+}

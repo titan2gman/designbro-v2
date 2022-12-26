@@ -1,0 +1,17 @@
+.main-hint {
+  display: flex;
+  margin-bottom: 5px;
+}
+.main-hint__icon {
+  display: inline-block;
+  float: left;
+  flex-shrink: 0;
+  font-size: 20px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+.main-hint__text {
+  font-size: 13px;
+  line-height: 1.7;
+  margin-bottom: 5px;
+}

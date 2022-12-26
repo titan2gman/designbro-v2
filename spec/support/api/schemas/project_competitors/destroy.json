@@ -1,0 +1,55 @@
+{
+  "type": "object",
+  "required": [
+    "data"
+  ],
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": [
+        "id",
+        "type",
+        "attributes"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "object",
+          "required": [
+            "url",
+            "name",
+            "rate",
+            "website",
+            "comment",
+            "uploadedFileId"
+          ],
+          "properties": {
+            "url": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "rate": {
+              "type": "number"
+            },
+            "website": {
+              "type": "string"
+            },
+            "comment": {
+              "type": "string"
+            },
+            "uploadedFileId": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

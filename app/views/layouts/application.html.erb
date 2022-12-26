@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="initial-scale=1, width=device-width" name="viewport">
+
+    <meta name="robots" content="noindex, nofollow">
+
+    <% unless Rails.env.test? %>
+      <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" as="style">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700">
+    <% end %>
+
+    <%= favicon_link_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', rel: 'preload', as: 'style' %>
+    <%= stylesheet_link_tag 'application', media: 'all', rel: 'stylesheet' %>
+
+    <script src="https://js.stripe.com/v3/"></script>
+
+    <script type="text/javascript">
+      window.env = '<%= Rails.env %>'
+    </script>
+
+    <% unless Rails.env.test? %>
+      <script type="text/javascript">
+        window.PayPalEnv = '<%= Rails.env.production? ? 'production' : 'sandbox' %>'
+        window.PayPalKey = '<%= ENV.fetch('PAY_PAL_EXPRESS_CHECKOUT_API_KEY') %>'
+      </script>
+
+      <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    <% end %>
+
+    <% if Rails.env.production? || Rails.env.staging? %>
+      <script type="text/javascript">
+        window.intercom_app_id = '<%= ENV.fetch('INTERCOM_APP_ID') %>'
+      </script>
+
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer', '<%= ENV.fetch('GOOGLE_ANALYTICS_KEY') %>');</script>
+      <!-- End Google Tag Manager -->
+    <% end %>
+
+    <% if Rails.env.production? %>
+      <!-- Facebook Pixel Code -->
+      <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+       fbq('init', '223418428184695');
+      fbq('track', 'PageView');
+      </script>
+      <noscript>
+      <img height="1" width="1"
+      src="https://www.facebook.com/tr?id=223418428184695&ev=PageView
+      &noscript=1"/>
+      </noscript>
+      <!-- End Facebook Pixel Code -->
+    <% end %>
+
+    <title>DesignBro</title>
+
+    <script type="text/javascript">
+      window.me = <%= raw @user ? ActiveModelSerializers::SerializableResource.new(@user).as_json.to_json : 'null' %>
+    </script>
+
+    <script src="https://www.dwin1.com/19038.js" type="text/javascript" defer="defer"></script>
+  </head>
+
+  <body>
+    <%= yield %>
+
+    <% if Rails.env.production? %>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2BHQV2"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+    <% end %>
+
+    <%= javascript_packs_with_chunks_tag 'application' %>
+    <%= stylesheet_packs_with_chunks_tag 'application' %>
+  </body>
+</html>

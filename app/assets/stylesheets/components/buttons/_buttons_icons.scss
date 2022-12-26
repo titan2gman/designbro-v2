@@ -1,0 +1,21 @@
+.icon-button {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: 0.1s color ease-in-out;
+  * {
+    vertical-align: middle;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.icon-button--grey-black {
+  color: color(grey-400);
+  &:hover, &:focus {
+    color: black;
+  }
+  &.icon-button--active {
+    color: black;
+  }
+}

@@ -1,0 +1,97 @@
+.main-button {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  font-family: inherit;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-width: 2px;
+  border-style: solid;
+  cursor: pointer;
+  transition: 0.1s all ease-in-out;
+  overflow: hidden;
+  &:focus {
+    outline: none;
+  }
+  * {
+    vertical-align: middle;
+  }
+}
+.main-button--sm {
+  font-size: 12px;
+  border-radius: 18px;
+  padding: 8px 20px;
+}
+.main-button--md {
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 19px;
+  padding: 9.5px 25px;
+}
+.main-button--lg {
+  font-size: 13px;
+  line-height: 40px;
+  border-radius: 26px;
+  padding: 4px 34px;
+}
+.main-button--clear-white {
+  color: white;
+  border-color: white;
+  &:hover, &:focus {
+    color: color(green-500);
+    background-color: white;
+  }
+}
+.main-button--black-pink {
+  color: white;
+  background-color: black;
+  border-color: black;
+  &:hover, &:focus {
+    background-color: color(green-500);
+    border-color: color(green-500);
+  }
+}
+.main-button--pink-black {
+  color: white;
+  background-color: color(green-500);
+  border-color: color(green-500);
+  &:hover, &:focus {
+    background-color: black;
+    border-color: black;
+  }
+}
+.main-button--orange {
+  color: color(orange-400);
+  border-color: currentColor;
+  &:hover {
+    color: white;
+    background-color: color(orange-400);
+  }
+}
+.main-button--clear-black {
+  color: black;
+  border-color: black;
+  &:hover, &:focus {
+    color: white;
+    background-color: black;
+  }
+}
+.main-button--clear-grey {
+  color: color(grey-400);
+  border-color: color(grey-200);
+  &:hover, &:focus {
+    color: white;
+    background-color: color(grey-200);
+  }
+}
+.main-button--grey-black {
+  color: color(grey-380);
+  border-color: currentColor;
+  &:hover, &:focus {
+    color: black;
+  }
+  &[disabled] {
+    color: color(grey-380);
+  }
+}

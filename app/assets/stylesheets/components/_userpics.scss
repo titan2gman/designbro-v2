@@ -1,0 +1,47 @@
+.main-userpic {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: color(grey-110);
+  border-radius: 50%;
+}
+
+.main-userpic-sm {
+  width: 28px;
+  height: 28px;
+  padding: 2px 2px 0;
+}
+.main-userpic__text-sm {
+  display: block;
+  font-size: 10px;
+  color: color(grey-200);
+  margin-bottom: 2px;
+  width: 100%;
+}
+
+.main-userpic-md {
+  width: 34px;
+  height: 34px;
+  padding: 2px 2px 0;
+}
+.main-userpic__text-md {
+  display: block;
+  font-size: 12px;
+  color: black;
+  margin-bottom: 2px;
+  width: 100%;
+}
+
+.main-userpic-lg {
+  width: 102px;
+  height: 102px;
+  padding: 10px 10px 5px;
+}
+.main-userpic__text-lg {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 5px;
+  width: 100%;
+}

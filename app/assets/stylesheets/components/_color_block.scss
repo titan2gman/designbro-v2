@@ -1,0 +1,16 @@
+.color-block {
+  height: 44px;
+  width: 60px;
+  border: 1px solid color(grey-120);
+}
+.color-block-lg {
+  height: 82px;
+  width: 86px;
+  border: 1px solid color(grey-120);
+}
+
+@include media-breakpoint-up(md) {
+  .color-block {
+    width: 86px;
+  }
+}

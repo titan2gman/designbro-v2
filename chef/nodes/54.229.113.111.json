@@ -1,0 +1,16 @@
+{
+  "name": "staging",
+  "environment": "staging",
+  "project": {
+    "branch": "master"
+  },
+  "run_list": [
+    "role[setup]",
+    "role[database]",
+    "role[web]",
+    "role[security]"
+  ],
+  "automatic": {
+    "ipaddress": "54.229.113.111"
+  }
+}

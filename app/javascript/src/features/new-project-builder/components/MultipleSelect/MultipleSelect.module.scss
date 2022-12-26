@@ -1,0 +1,71 @@
+.tag {
+  background: url("~new-project-product/tick-icon-green.svg") -10px -6px no-repeat;
+  background-size: 36px;
+  padding-left: 20px !important;
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  padding: 2px 0;
+}
+.remove {
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 22px;
+  line-height: 16px;
+  vertical-align: middle;
+  color: #ccd2d7;
+}
+
+.tagInput {
+}
+
+.tagInputField {
+  color: #96a3ad;
+
+  &::placeholder {
+    color: #96a3ad !important;
+  }
+}
+
+.selected {
+  padding: 10px 0;
+}
+
+.suggestions {
+  font-size: 16px;
+  text-align: left;
+  box-shadow: 0 3px 5px 0 rgba(164, 175, 184, 0.75);
+  padding: 15px;
+
+  :global(ul) {
+    margin: 0
+  }
+
+  :global(li) {
+    padding: 2px 0;
+  }
+
+  :global(mark) {
+    color: #18da8e;
+    background: transparent;
+  }
+}
+
+.activeSuggestion {
+  cursor: pointer;
+}
+
+.tagInputField {
+  width: 100%;
+  border: none;
+  border-bottom: solid 1px #ccd2d7;
+  padding: 10px 0;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.49;
+  color: #a4afb8;
+
+  &:focus {
+  	outline: none;
+  }
+}

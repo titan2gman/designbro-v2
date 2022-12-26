@@ -1,0 +1,72 @@
+.previous-version {
+  position: relative;
+}
+
+.preview__container {
+  padding: 0px 27.7px 27.7px 27.7px;
+  overflow-x: auto;
+}
+
+.preview__thumbnail {
+  width: 158px;
+  height: 158px;
+  margin: 10px 20.1px 0 0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.preview__thumbnail-active {
+  outline: solid 2px #18da8e;
+
+  &::after {
+      content: '\A';
+      position: absolute;
+      width: 100%; height:100%;
+      top:0; left:0;
+      background:#3e4042;
+      opacity: 0.5;
+  }
+}
+
+.preview__content {
+  display: flex;
+}
+
+.preview__thumbnail-idx {
+  z-index: 9;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  color: white;
+  width: 27.2px;
+  height: 27.2px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #d7d7d7;
+
+  font-family: Montserrat;
+  font-size: 14.8px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.65;
+  letter-spacing: -0.3px;
+  color: #3e4042;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview__thumbnail-check {
+  z-index: 9;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  color: #18da8e;
+}
+
+.preview__thumbnail-check-icon {
+  width: 30.4px;
+  height: 23.9px;
+}
