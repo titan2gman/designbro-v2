@@ -19,3 +19,4 @@ class Nda < ApplicationRecord
     !free?
   end
 end
+
