@@ -100,4 +100,3 @@ group :test do
   gem 'wisper-rspec', '~> 1.0'
   gem 'zonebie', '~> 0.6.1'
 end
-
